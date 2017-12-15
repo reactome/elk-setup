@@ -1,0 +1,7 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+    - /logs_for_elk/extended_log
+
+output.logstash:
+  hosts: ["logstash_server:5043"]

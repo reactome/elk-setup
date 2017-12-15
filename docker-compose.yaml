@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+    esserver:
+        image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.0.0
+        volumes:
+            - "./esdata:/usr/share/elasticsearch/data/"
+        ports:
+            - "9200:9200"
+            - "9300:9300"
+        environment:
+            - discovery.type=single-node
+            - node.name=esserver
+            - network.host=_site_
+
+    kibserver:
+        image: docker.elastic.co/kibana/kibana-oss:6.0.0
+        volumes:
+            - "./kibana.yaml:/usr/share/kibana/config/kibana.yml"
+            - "./kibanadata:/usr/share/kibana/data"
+        ports:
+            - "5601:5601"
+        depends_on:
+            - esserver
+
+    logstash_server:
+        build:
+            context: .
+            dockerfile: logstash.dockerfile
+        volumes:
+            - "./logstash.yaml:/usr/share/logstash/config/logstash.yaml"
+            - "./pipeline.conf:/usr/share/logstash/pipeline/pipeline.conf"
+            - "./logstash.patterns:/usr/share/logstash/pipeline/patterns/logstash.patterns"
+        ports:
+            - "9600:9600"
+            - "5043:5043"
+        depends_on:
+            - esserver

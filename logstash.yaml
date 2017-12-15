@@ -1,0 +1,11 @@
+pipeline:
+  batch:
+    size: 125
+    delay: 5
+
+path:
+    config: /usr/share/logstash/pipeline
+
+xpack:
+    monitoring:
+        enabled: false
