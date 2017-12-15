@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "9e6c3610-d6c6-11e7-aaf1-77dbb7c0e5e2",
+    "_type": "search",
+    "_source": {
+      "title": "\"download/current\" messages",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@apache_timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"REACTOME_INDEX\",\"type\":\"phrases\",\"key\":\"reactome_application\",\"value\":\"download/current\",\"params\":[\"download/current\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"reactome_application\":\"download/current\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "f0def180-d9ff-11e7-9674-0d8ba7b98d8b",
+    "_type": "search",
+    "_source": {
+      "title": "Bots",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@apache_timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"useragent.device:Spider || useragent.name:*bot*\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "be3d8480-d9ff-11e7-9674-0d8ba7b98d8b",
+    "_type": "search",
+    "_source": {
+      "title": "Non-bots",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@apache_timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"NOT (useragent.device:Spider && useragent.name:*bot*)\"},\"filter\":[]}"
+      }
+    }
+  }
+]
