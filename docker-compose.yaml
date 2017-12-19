@@ -5,9 +5,6 @@ services:
         image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.1.0
         volumes:
             - "./esdata:/usr/share/elasticsearch/data/"
-        ports:
-            - "9200:9200"
-            - "9300:9300"
         environment:
             - discovery.type=single-node
             - node.name=esserver
@@ -18,8 +15,6 @@ services:
         volumes:
             - "./kibana.yaml:/usr/share/kibana/config/kibana.yml"
             - "./kibanadata:/usr/share/kibana/data"
-        ports:
-            - "5601:5601"
         depends_on:
             - esserver
 
@@ -28,14 +23,17 @@ services:
             context: .
             dockerfile: logstash.dockerfile
         volumes:
-            - "./logstash.yaml:/usr/share/logstash/config/logstash.yaml"
-            - "./pipeline.conf:/usr/share/logstash/pipeline/pipeline.conf"
+            - "./logstash.opts:/etc/init.d/logstash"
+            - "./logstash.yaml:/usr/share/logstash/config/logstash.yml"
+            - "./pipeline.conf:/usr/share/logstash/pipeline/logstash.conf"
             - "./logstash.patterns:/usr/share/logstash/pipeline/patterns/logstash.patterns"
+            - "./logstashqueue:/var/queue"
         ports:
-            - "9600:9600"
             - "5043:5043"
         depends_on:
             - esserver
+        environment:
+             - "LS_OPTS=--quiet"
 
     nginx:
         depends_on:
@@ -53,4 +51,3 @@ services:
             - "./server.crt:/etc/nginx/conf.d/server.crt"
             - "./server.key:/etc/nginx/conf.d/server.key"
             - "./.htpasswd:/etc/nginx/conf.d/.htpasswd"
-        # command: [nginx-debug, '-g', 'daemon off;']

@@ -6,6 +6,10 @@ pipeline:
 path:
     config: /usr/share/logstash/pipeline
 
-xpack:
-    monitoring:
-        enabled: false
+log:
+    level: warn
+
+queue:
+    type: persisted
+
+path.queue: /var/queue/
