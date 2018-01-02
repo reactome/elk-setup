@@ -2,7 +2,7 @@ ST_ID_SPECIES [A-Za-z]{3}
 ST_ID_NUM \d+
 ST_ID_VERSION (\d+)
 STABLE_IDENTIFIER R-%{ST_ID_SPECIES:reactome_species_code}-%{ST_ID_NUM:reactome_stId_number}((\.|\-)%{ST_ID_VERSION:reactome_stId_versionNumber})?
-REACTOME_APPLICATION /content/detail|/instance/browser|PathwayBrowser|DiagramJS/diagram|FireworksJs/fireworks|ContentService|content/query\?q=|AnalysisService|ReactomeRESTfulAPI|cgi-bin|download/current/diagram|download/current/fireworks|download/current/|/wordpress/wp-content/plugins|/wordpress/wp-login.php|/wordpress/wp-includes
+REACTOME_APPLICATION /content/detail|/instance/browser|PathwayBrowser|DiagramJS/diagram|FireworksJs/fireworks|ContentService|content/query\?q=|AnalysisService|ReactomeRESTfulAPI|cgi-bin|download/current/diagram|download/current/fireworks|download/current/|/wordpress/wp-content/plugins|/wordpress/wp-login.php|/wordpress/wp-includes|/icon-lib|/ehld-icons
 REFERRER_URL %{URIPROTO}://(?:%{USER:referrer_usr}(?::[^@]*)?@)?(?:%{URIHOST:referrer_domain})?(?:%{URIPATHPARAM:referrer_path})?
 WS_PATH (/([^/])+)+
 WS_ARGS /[^/]+$
