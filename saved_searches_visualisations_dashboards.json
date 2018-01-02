@@ -89,6 +89,56 @@
     }
   },
   {
+    "_id": "4d4cfa10-e50f-11e7-815f-f53824da1d62",
+    "_type": "search",
+    "_source": {
+      "title": "Downloads of graph database (reactome.graphdb.tgz)",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "geoip.city_name",
+        "response",
+        "probably_a_bot",
+        "bytes",
+        "useragent.name"
+      ],
+      "sort": [
+        "@apache_timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"reactome_download_file_name:*graph*\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e32414d0-eff8-11e7-ab79-0106ee0f2b35",
+    "_type": "search",
+    "_source": {
+      "title": "Request from internal IP address",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@apache_timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"clientip.keyword:/10\\\\..*/ || clientip.keyword:/192\\\\..*/ || clientip.keyword:/172\\\\..*/\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
     "_id": "bb88ee20-d615-11e7-aaf1-77dbb7c0e5e2",
     "_type": "visualization",
     "_source": {
@@ -307,6 +357,59 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "acbf7cc0-efe1-11e7-843d-ab34e03fddd6",
+    "_type": "visualization",
+    "_source": {
+      "title": "Number of hits, by country and city (non-bot requests)",
+      "visState": "{\"title\":\"Number of hits, by country and city (non-bot requests)\",\"type\":\"table\",\"params\":{\"perPage\":50,\"showPartialRows\":true,\"showMeticsAtAllLevels\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.country_name.keyword\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.city_name.keyword\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "be3d8480-d9ff-11e7-9674-0d8ba7b98d8b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "142854f0-efeb-11e7-ab79-0106ee0f2b35",
+    "_type": "visualization",
+    "_source": {
+      "title": "Popular bot names",
+      "visState": "{\"title\":\"Popular bot names\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"useragent.name.keyword\",\"size\":200,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "f0def180-d9ff-11e7-9674-0d8ba7b98d8b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "4b292040-eff2-11e7-ab79-0106ee0f2b35",
+    "_type": "visualization",
+    "_source": {
+      "title": "Bytes: bots vs. non-bots",
+      "visState": "{\"type\":\"timelion\",\"title\":\"Bytes: bots vs. non-bots\",\"params\":{\"expression\":\".es(index=logstash-*,timefield=@apache_timestamp,metric=sum:bytes,q='probably_a_bot=true').label(label='bytes from bots').yaxis(units=bytes),  .es(index=logstash-*,timefield=@apache_timestamp,metric=sum:bytes,q='!_exists_:probably_a_bot').label(label='bytes from non-bots').yaxis(units=bytes)\",\"interval\":\"auto\"}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
       }
     },
     "_meta": {
