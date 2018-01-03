@@ -2,7 +2,7 @@ ST_ID_SPECIES [A-Za-z]{3}
 ST_ID_NUM \d+
 ST_ID_VERSION (\d+)
 STABLE_IDENTIFIER R-%{ST_ID_SPECIES:reactome_species_code}-%{ST_ID_NUM:reactome_stId_number}((\.|\-)%{ST_ID_VERSION:reactome_stId_versionNumber})?
-REACTOME_APPLICATION /content/detail|/instance/browser|PathwayBrowser|DiagramJS/diagram|FireworksJs/fireworks|ContentService|content/query\?q=|AnalysisService|ReactomeRESTfulAPI|cgi-bin|download/current/diagram|download/current/fireworks|download/current/|/wordpress/wp-content/plugins|/wordpress/wp-login.php|/wordpress/wp-includes|/icon-lib|/ehld-icons
+REACTOME_APPLICATION /content/detail|/instance/browser|PathwayBrowser|DiagramJS/diagram|FireworksJs/fireworks|ContentService|content/query\?q=|AnalysisService|ReactomeRESTfulAPI|cgi-bin|download/current/diagram|download/current/fireworks|download/current/|/wordpress/wp-content/plugins|/wordpress/wp-login.php|/wordpress/wp-includes|/icon-lib|/ehld-icons|/dev/|/pages/documentation|/user/guide|/content/advanced|/community/
 REFERRER_URL %{URIPROTO}://(?:%{USER:referrer_usr}(?::[^@]*)?@)?(?:%{URIHOST:referrer_domain})?(?:%{URIPATHPARAM:referrer_path})?
 WS_PATH (/([^/])+)+
 WS_ARGS /[^/]+$
@@ -13,4 +13,4 @@ CONTENT_SERVICE_PATH /ContentService%{WS_PATH:reactome_contentService_path}%{WS_
 ANALYSIS_SERVICE_PATH /AnalysisService%{WS_PATH:reactome_analysisService_path}%{WS_ARGS:reactome_analysisService_args}
 CGI_SCRIPT_NAME /cgi-bin/%{CGI_SCRIPT:reactome_CGI_Script}?.*
 DOWNLOAD_FILE /download/current/%{DOWNLOAD_FILE_PATTERN:reactome_download_file_name}
-BOT .*((b|B)ot)|((s|S)pider).*
+BOT .*((b|B)ot)|((s|S)pider)|((c|C)rawler).*
