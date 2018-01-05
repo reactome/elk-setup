@@ -9,7 +9,7 @@ services:
             - discovery.type=single-node
             - node.name=esserver
             - network.host=_site_
-            - ES_JAVA_OPTS="-Xms2g -Xmx4g"
+            - "ES_JAVA_OPTS=-Xms2g -Xmx6g"
 
     kibserver:
         image: docker.elastic.co/kibana/kibana-oss:6.1.0
