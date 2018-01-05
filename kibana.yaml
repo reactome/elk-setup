@@ -3,3 +3,4 @@ server:
     name: "kibserver"
     host: "kibserver"
 elasticsearch.url: "http://esserver:9200"
+elasticsearch.requestTimeout: 10000
