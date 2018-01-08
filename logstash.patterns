@@ -2,7 +2,12 @@ ST_ID_SPECIES [A-Za-z]{3}
 ST_ID_NUM \d+
 ST_ID_VERSION (\d+)
 STABLE_IDENTIFIER R-%{ST_ID_SPECIES:reactome_species_code}-%{ST_ID_NUM:reactome_stId_number}((\.|\-)%{ST_ID_VERSION:reactome_stId_versionNumber})?
-REACTOME_APPLICATION /content/detail|/instance/browser|PathwayBrowser|DiagramJS/diagram|FireworksJs/fireworks|ContentService|content/query\?q=|AnalysisService|ReactomeRESTfulAPI|cgi-bin|download/current/diagram|download/current/fireworks|download/current/|/wordpress/wp-content/plugins|/wordpress/wp-login.php|/wordpress/wp-includes|/icon-lib|/ehld-icons|/dev/|/pages/documentation|/user/guide|/content/advanced|/community/
+
+#REACTOME_APPLICATION /content/detail|/instance/browser|pathwaybrowser|diagramjs/diagram/.*|fireworksjs/fireworks|contentservice|content/query\?q=|analysisservice|reactomerestfulapi|cgi-bin|download/current/diagram|download/current/fireworks|download/current/|/wordpress/wp-content/plugins|/wordpress/wp-login.php|/wordpress/wp-includes|/icon-lib|/ehld-icons|/dev/?|/pages/documentation/*|/user/guide|/content/advanced|/community/|/content/gettags|/content/resources/|/content/schema/objects/|(/content/schema).*|(/about/).*|/download-data|/tools/|/icon-info|/linking-to-us|/cite|/template-cgi|/staff
+
+REACTOME_APPLICATION (?i^\/(pathwaybrowser|community|about|dev|cgi-bin|user\/guide|pages\/documentation|staff|template-cgi|cite|linking-to-us|icon-info|icon-lib|ehld-icons|tools|download-data|staff|wordpress\/(wp-content\/plugins\/|wp-login\.php|wp-includes)|(content|analysis)service|content\/(query\?q=|advanced|details?|gettags|resources|schema\/objects|schema)|diagramjs\/diagram|fireworksjs\/fireworks|download\/current\/(diagram|fireworks|.*)))
+
+
 REFERRER_URL %{URIPROTO}://(?:%{USER:referrer_usr}(?::[^@]*)?@)?(?:%{URIHOST:referrer_domain})?(?:%{URIPATHPARAM:referrer_path})?
 WS_PATH (/([^/])+)+
 WS_ARGS /[^/]+$
