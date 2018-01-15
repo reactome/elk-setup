@@ -3,7 +3,7 @@ ST_ID_NUM \d+
 ST_ID_VERSION (\d+)
 STABLE_IDENTIFIER R-%{ST_ID_SPECIES:reactome_species_code}-%{ST_ID_NUM:reactome_stId_number}((\.|\-)%{ST_ID_VERSION:reactome_stId_versionNumber})?
 
-REACTOME_APPLICATION (?i:^\/(pathwaybrowser|reactomerestfulapi|community|about|dev|cgi-bin|user\/guide|pages\/documentation|staff|template-cgi|cite|linking-to-us|icon-info|icon-lib|ehld-icons|tools|download-data|staff|wordpress\/(wp-content\/plugins\/|wp-login\.php|wp-includes)|(content|analysis)service|content\/(query\?q=|advanced|details?|gettags|resources|schema\/objects|schema)|diagramjs\/diagram|fireworksjs\/fireworks|download\/current\/(diagram|fireworks|(?:.*))))
+REACTOME_APPLICATION (?i:^\/(cabigr3webapp(201[0-9])?|pathwaybrowser|reactomerestfulapi|community|about|dev|cgi-bin|user\/guide|pages\/documentation|staff|template-cgi|cite|linking-to-us|icon-info|icon-lib|ehld-icons|tools|download-data|staff|wordpress\/(wp-content\/plugins\/|wp-login\.php|wp-includes)|(content|analysis)service|content\/(query\?q=|advanced|details?|gettags|resources|schema\/objects|schema)|diagramjs\/diagram|fireworksjs\/fireworks|download\/current\/(diagram|fireworks|(?:.*))))
 
 REFERRER_URL \"?(?:%{URIPROTO}://)?(%{USER:referrer_usr}(?::[^@]*)?@)?(%{URIHOST:referrer_domain})?(%{URIPATHPARAM:referrer_path})?\"?
 WS_PATH (/([^/])+)+
