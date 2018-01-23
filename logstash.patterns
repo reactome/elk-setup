@@ -1,7 +1,9 @@
 ST_ID_SPECIES [A-Za-z]{3}
 ST_ID_NUM \d+
 ST_ID_VERSION (\d+)
-STABLE_IDENTIFIER R-%{ST_ID_SPECIES:reactome_species_code}-%{ST_ID_NUM:reactome_stId_number}((\.|\-)%{ST_ID_VERSION:reactome_stId_versionNumber})?
+NEW_STABLE_IDENTIFIER R-%{ST_ID_SPECIES:reactome_species_code}-%{ST_ID_NUM:reactome_stId_number}((\.|\-)%{ST_ID_VERSION:reactome_stId_versionNumber})?
+LEGACY_STABLE_IDENTIFIER REACT_[0-9]+(\.%{ST_ID_VERSION:reactome_stId_versionNumber})?
+STABLE_IDENTIFIER %{NEW_STABLE_IDENTIFIER}|%{LEGACY_STABLE_IDENTIFIER:reactome_legacy_stable_identifier}
 
 REACTOME_APPLICATION (?i:^\/(cabigr3webapp(201[0-9])?|pathwaybrowser|reactomerestfulapi|community|about|dev|cgi-bin|user\/guide|pages\/documentation|staff|template-cgi|cite|linking-to-us|icon-info|icon-lib|ehld-icons|tools|download-data|staff|wordpress\/(wp-content\/plugins\/|wp-login\.php|wp-includes)|(content|analysis)service|content\/(query\?q=|advanced|details?|gettags|resources|schema\/objects|schema)|diagramjs\/diagram|fireworksjs\/fireworks|download\/current\/(diagram|fireworks|(?:.*))))
 
