@@ -70,29 +70,6 @@
     }
   },
   {
-    "_id": "e32414d0-eff8-11e7-ab79-0106ee0f2b35",
-    "_type": "search",
-    "_source": {
-      "title": "Request from internal IP address",
-      "description": "",
-      "hits": 0,
-      "columns": [
-        "_source"
-      ],
-      "sort": [
-        "@apache_timestamp",
-        "desc"
-      ],
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"clientip.keyword:/10\\\\..*/ || clientip.keyword:/192\\\\..*/ || clientip.keyword:/172\\\\..*/\",\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "be3d8480-d9ff-11e7-9674-0d8ba7b98d8b",
     "_type": "search",
     "_source": {
@@ -132,6 +109,29 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"probably_a_bot:true\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e32414d0-eff8-11e7-ab79-0106ee0f2b35",
+    "_type": "search",
+    "_source": {
+      "title": "Request from internal IP address",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "internal_IP"
+      ],
+      "sort": [
+        "@apache_timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"_exists_:internal_IP && internal_IP:true\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
