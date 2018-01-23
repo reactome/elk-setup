@@ -15,4 +15,4 @@ CONTENT_SERVICE_PATH /ContentService%{WS_PATH:reactome_contentService_path}%{WS_
 ANALYSIS_SERVICE_PATH /AnalysisService%{WS_PATH:reactome_analysisService_path}%{WS_ARGS:reactome_analysisService_args}
 CGI_SCRIPT_NAME /cgi-bin/%{CGI_SCRIPT:reactome_CGI_Script}?.*
 DOWNLOAD_FILE /download/current/%{DOWNLOAD_FILE_PATTERN:reactome_download_file_name}
-BOT .*((b|B)ot)|((s|S)pider)|((c|C)rawler).*
+BOT .*(((b|B)ot)|((s|S)pider)|((c|C)rawler)).*
