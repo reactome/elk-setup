@@ -3,7 +3,7 @@
 filebeat.prospectors:
 - input_type: log
   paths:
-    - /logs_for_elk/extended_log
+    - /logs_for_elk/*extended_log*
     - /logs_for_elk/reactomews/*.txt 
 
 output.logstash:
