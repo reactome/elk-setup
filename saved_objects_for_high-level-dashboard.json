@@ -6,7 +6,7 @@
       "title": "High-level dashboard",
       "hits": 0,
       "description": "",
-      "panelsJSON": "[{\"gridData\":{\"h\":6,\"i\":\"1\",\"w\":3,\"x\":3,\"y\":0},\"id\":\"495eafa0-02ad-11e8-b587-9994591e1da8\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":5,\"i\":\"2\",\"w\":6,\"x\":0,\"y\":9},\"id\":\"d9838c50-02c5-11e8-b587-9994591e1da8\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":6,\"i\":\"3\",\"w\":3,\"x\":9,\"y\":0},\"id\":\"b9cdc3d0-02bb-11e8-b587-9994591e1da8\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":5,\"i\":\"4\",\"w\":12,\"x\":0,\"y\":26},\"id\":\"17e68b20-02d3-11e8-b587-9994591e1da8\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":5,\"i\":\"5\",\"w\":4,\"x\":0,\"y\":31},\"id\":\"bdaf3a60-02d4-11e8-b587-9994591e1da8\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":5,\"i\":\"6\",\"w\":4,\"x\":4,\"y\":31},\"id\":\"d3165aa0-02d4-11e8-b587-9994591e1da8\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":5,\"i\":\"7\",\"w\":4,\"x\":8,\"y\":31},\"id\":\"736923c0-02d5-11e8-b587-9994591e1da8\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":6,\"i\":\"8\",\"w\":3,\"x\":0,\"y\":0},\"id\":\"5c052ca0-02d6-11e8-b587-9994591e1da8\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":6,\"i\":\"9\",\"w\":3,\"x\":6,\"y\":0},\"id\":\"18f30630-02e0-11e8-b587-9994591e1da8\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":3,\"i\":\"10\",\"w\":5,\"x\":0,\"y\":6},\"id\":\"36067bf0-02de-11e8-b587-9994591e1da8\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":3,\"i\":\"11\",\"w\":5,\"x\":5,\"y\":6},\"id\":\"613186a0-02d7-11e8-b587-9994591e1da8\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":5,\"i\":\"12\",\"w\":6,\"x\":6,\"y\":9},\"id\":\"687a9400-02b5-11e8-b587-9994591e1da8\",\"panelIndex\":\"12\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":4,\"i\":\"14\",\"w\":12,\"x\":0,\"y\":14},\"id\":\"1351a510-0515-11e8-b587-9994591e1da8\",\"panelIndex\":\"14\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":4,\"i\":\"15\",\"w\":12,\"x\":0,\"y\":22},\"id\":\"4bcb6ae0-0513-11e8-b587-9994591e1da8\",\"panelIndex\":\"15\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":4,\"i\":\"16\",\"w\":12,\"x\":0,\"y\":18},\"id\":\"ac37b590-051e-11e8-b587-9994591e1da8\",\"panelIndex\":\"16\",\"type\":\"visualization\",\"version\":\"6.1.1\"}]",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":3,\"y\":0,\"w\":3,\"h\":6,\"i\":\"1\"},\"id\":\"495eafa0-02ad-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":9,\"w\":6,\"h\":5,\"i\":\"2\"},\"id\":\"d9838c50-02c5-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":9,\"y\":0,\"w\":3,\"h\":6,\"i\":\"3\"},\"id\":\"b9cdc3d0-02bb-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":26,\"w\":12,\"h\":5,\"i\":\"4\"},\"id\":\"17e68b20-02d3-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":31,\"w\":4,\"h\":5,\"i\":\"5\"},\"id\":\"bdaf3a60-02d4-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":4,\"y\":31,\"w\":4,\"h\":5,\"i\":\"6\"},\"id\":\"d3165aa0-02d4-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":8,\"y\":31,\"w\":4,\"h\":5,\"i\":\"7\"},\"id\":\"736923c0-02d5-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":0,\"y\":0,\"w\":3,\"h\":6,\"i\":\"8\"},\"id\":\"5c052ca0-02d6-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":6,\"y\":0,\"w\":3,\"h\":6,\"i\":\"9\"},\"id\":\"18f30630-02e0-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":0,\"y\":6,\"w\":3,\"h\":3,\"i\":\"10\"},\"id\":\"36067bf0-02de-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":3,\"y\":6,\"w\":3,\"h\":3,\"i\":\"11\"},\"id\":\"613186a0-02d7-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":6,\"y\":9,\"w\":6,\"h\":5,\"i\":\"12\"},\"id\":\"687a9400-02b5-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"14\",\"gridData\":{\"x\":0,\"y\":14,\"w\":12,\"h\":4,\"i\":\"14\"},\"id\":\"1351a510-0515-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":0,\"y\":22,\"w\":12,\"h\":4,\"i\":\"15\"},\"id\":\"4bcb6ae0-0513-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"16\",\"gridData\":{\"x\":0,\"y\":18,\"w\":12,\"h\":4,\"i\":\"16\"},\"id\":\"ac37b590-051e-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"17\",\"gridData\":{\"x\":9,\"y\":6,\"w\":3,\"h\":3,\"i\":\"17\"},\"id\":\"5e608a20-0539-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"18\",\"gridData\":{\"x\":6,\"y\":6,\"w\":3,\"h\":3,\"i\":\"18\"},\"id\":\"b88ddde0-0539-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"}]",
       "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
       "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-11\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-16\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
       "version": 1,
@@ -246,23 +246,6 @@
     }
   },
   {
-    "_id": "3a7c2790-02c8-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "AnalysisService via PathwayBrowser",
-      "visState": "{\"title\":\"AnalysisService via PathwayBrowser\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/AnalysisService\\\" && referrer:/.*PathwayBrowser.*/\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "1351a510-0515-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
@@ -365,6 +348,59 @@
     }
   },
   {
+    "_id": "36067bf0-02de-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Average number of unique IPs per month.",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"json\":\"\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"cardinality\"},\"json\":\"\"},\"schema\":\"metric\",\"type\":\"avg_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"Average number of unique IPs per month.\",\"type\":\"metric\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5e608a20-0539-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Avg. data transfer per month",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{\"field\":\"bytes\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"sum\"}},\"schema\":\"metric\",\"type\":\"avg_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"Avg. data transfer per month\",\"type\":\"metric\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:internal_IP && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5c052ca0-02d6-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "unique IPs per month",
+      "visState": "{\"title\":\"unique IPs per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"json\":\"\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200 && !_exists_:internal_IP\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
     "_id": "16091360-02e5-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
@@ -417,17 +453,16 @@
     }
   },
   {
-    "_id": "5c052ca0-02d6-11e8-b587-9994591e1da8",
+    "_id": "b88ddde0-0539-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
-      "title": "unique IPs per month",
-      "visState": "{\"title\":\"unique IPs per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"json\":\"\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "title": "Avg. hits per month",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"avg_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"Avg. hits per month\",\"type\":\"metric\"}",
+      "uiStateJSON": "{}",
       "description": "",
-      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200 && !_exists_:internal_IP\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && response:200 !_exists_:internal_IP\"}}"
       }
     },
     "_meta": {
@@ -435,17 +470,68 @@
     }
   },
   {
-    "_id": "36067bf0-02de-11e8-b587-9994591e1da8",
+    "_id": "a95d49c0-053c-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
-      "title": "Average number of unique IPs per month.",
-      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"json\":\"\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"cardinality\"},\"json\":\"\"},\"schema\":\"metric\",\"type\":\"avg_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"Average number of unique IPs per month.\",\"type\":\"metric\"}",
+      "title": "Top 10 browsers",
+      "visState": "{\"title\":\"Top 10 browsers\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"useragent.name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
       "uiStateJSON": "{}",
       "description": "",
       "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d346cf90-053c-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 10 bots",
+      "visState": "{\"title\":\"Top 10 bots\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"useragent.name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Bot name\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"bytes\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b61f8e40-053f-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService via PathwayBrowser",
+      "visState": "{\"title\":\"AnalysisService via PathwayBrowser\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/AnalysisService\\\" && referrer:*PathwayBrowser* && !_exists_:internal_IP && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "6f4ad0a0-0540-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Downloads via AnalysisService",
+      "visState": "{\"title\":\"Downloads via AnalysisService\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showMeticsAtAllLevels\":true,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:\\\"/AnalysisService\\\" && request:*download* && !_exists_:probably_a_bot && !_exists_:internal_IP\"}}"
       }
     },
     "_meta": {
