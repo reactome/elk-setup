@@ -1,18 +1,26 @@
 ST_ID_SPECIES [A-Za-z]{3}
 ST_ID_NUM \d+
 ST_ID_VERSION (\d+)
-STABLE_IDENTIFIER R-%{ST_ID_SPECIES:reactome_species_code}-%{ST_ID_NUM:reactome_stId_number}((\.|\-)%{ST_ID_VERSION:reactome_stId_versionNumber})?
+NEW_STABLE_IDENTIFIER R-%{ST_ID_SPECIES:reactome_species_code}-%{ST_ID_NUM:reactome_stId_number}((\.|\-)%{ST_ID_VERSION:reactome_stId_versionNumber})?
+LEGACY_STABLE_IDENTIFIER REACT_[0-9]+(\.%{ST_ID_VERSION:reactome_stId_versionNumber})?
+STABLE_IDENTIFIER %{NEW_STABLE_IDENTIFIER}|%{LEGACY_STABLE_IDENTIFIER:reactome_legacy_stable_identifier}
 
-REACTOME_APPLICATION (?i:^\/(pathwaybrowser|reactomerestfulapi|community|about|dev|cgi-bin|user\/guide|pages\/documentation|staff|template-cgi|cite|linking-to-us|icon-info|icon-lib|ehld-icons|tools|download-data|staff|wordpress\/(wp-content\/plugins\/|wp-login\.php|wp-includes)|(content|analysis)service|content\/(query\?q=|advanced|details?|gettags|resources|schema\/objects|schema)|diagramjs\/diagram|fireworksjs\/fireworks|download\/current\/(diagram|fireworks|(?:.*))))
+REACTOME_APPLICATION (?i:^\/(cabigr3webapp(201[0-9])?|pathwaybrowser|reactomerestfulapi|community|about|dev|cgi-bin|user\/guide|pages\/documentation|staff|template-cgi|cite|linking-to-us|icon-info|icon-lib|ehld-icons|tools|download-data|staff|wordpress\/(wp-content\/plugins\/|wp-login\.php|wp-includes)|(content|analysis)service|content\/(query\?q=|advanced|details?|gettags|resources|schema\/objects|schema)|diagramjs\/diagram|fireworksjs\/fireworks|download\/current\/(diagram|fireworks|(?:.*))))
 
 REFERRER_URL \"?(?:%{URIPROTO}://)?(%{USER:referrer_usr}(?::[^@]*)?@)?(%{URIHOST:referrer_domain})?(%{URIPATHPARAM:referrer_path})?\"?
 WS_PATH (/([^/])+)+
 WS_ARGS /[^/]+$
 CGI_SCRIPT ([^?/])+
-DOWNLOAD_FILE_PATTERN ([^/]+((\.pdf|\.rtf|\.png)\.zip|\.txt|\.text|\.pdf|\.rtf|\.gz|\.tgz|\.zip))
+DOWNLOAD_FILE_PATTERN ([^/]+((\.pdf|\.rtf|\.png)\.zip|\.txt|\.text|\.pdf|\.rtf|\.gz|\.tgz|\.zip|\.jar))
 RESTFUL_API_PATH /ReactomeRESTfulAPI/RESTfulWS%{WS_PATH:reactome_RESTfulAPI_path}(%{WS_ARGS:reactome_RESTfulAPI_args})?
 CONTENT_SERVICE_PATH /ContentService%{WS_PATH:reactome_contentService_path}%{WS_ARGS:reactome_contentService_args}
 ANALYSIS_SERVICE_PATH /AnalysisService%{WS_PATH:reactome_analysisService_path}%{WS_ARGS:reactome_analysisService_args}
+
+CABIGR3WEBAPP_CYTOSCAPE_PATH (?i:Cytoscape\/(((plugins\/)?%{DOWNLOAD_FILE_PATTERN:reactome_cytoscape_download_file_name})|.*))
+LOOKUP_ID \d+
+CABIGR3WEBAPP_FISERVICE_PATH (?i:FIService\/(network|ReactomeRestful|cancerDruggability|cancerGeneIndex|[^/]+)(\/.*)?\/(%{LOOKUP_ID:reactome_FIService_lookup_id}|[^/]+)?)
+CABIGR3WEBAPP_PATH (?i:\/caBigR3WebApp(\d{4})?\/(%{DOWNLOAD_FILE_PATTERN:reactome_CABIGR3WEBAPP_download_file_name}|%{CABIGR3WEBAPP_FISERVICE_PATH:reactome_CABIGR3WEBAPP_FIService_path}|%{CABIGR3WEBAPP_CYTOSCAPE_PATH:reactome_CABIGR3WEBAPP_Cytoscape_path}))
+
 CGI_SCRIPT_NAME /cgi-bin/%{CGI_SCRIPT:reactome_CGI_Script}?.*
 DOWNLOAD_FILE /download/current/%{DOWNLOAD_FILE_PATTERN:reactome_download_file_name}
-BOT .*((b|B)ot)|((s|S)pider)|((c|C)rawler).*
+BOT .*(((b|B)ot)|((s|S)pider)|((c|C)rawler)).*
