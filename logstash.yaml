@@ -1,6 +1,6 @@
 pipeline:
   batch:
-    size: 125
+    size: 250
     delay: 5
 
 path:
@@ -13,3 +13,7 @@ queue:
     type: persisted
 
 path.queue: /var/queue/
+
+# The aggregate filter might not work
+# properly if there are multiple workers :(
+pipeline.workers: 1
