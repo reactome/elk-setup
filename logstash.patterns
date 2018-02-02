@@ -23,4 +23,7 @@ CABIGR3WEBAPP_PATH (?i:\/caBigR3WebApp(\d{4})?\/(%{DOWNLOAD_FILE_PATTERN:reactom
 
 CGI_SCRIPT_NAME /cgi-bin/%{CGI_SCRIPT:reactome_CGI_Script}?.*
 DOWNLOAD_FILE /download/current/%{DOWNLOAD_FILE_PATTERN:reactome_download_file_name}
-BOT .*(((b|B)ot)|((s|S)pider)|((c|C)rawler)).*
+BOT (?i:.*((bot)|(spider)|(crawler)).*)
+
+NONPAGEVIEW_FILE_EXTENSIONS ((css)|(j((s(on)?)|(pe?g)|(a(r|(vascript)))))|(gif)|(xml)|(rss)|(p((ng)|(df)))|(rtf)|(ico)|(t((xt)|(gz)|(ar)))|(zip)|(gz))
+NONPAGEVIEW_FILES (?i:.*\.%{NONPAGEVIEW_FILE_EXTENSIONS:reactome_file_extension})
