@@ -6,9 +6,9 @@
       "title": "High-level dashboard",
       "hits": 0,
       "description": "",
-      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":3,\"y\":0,\"w\":3,\"h\":6,\"i\":\"1\"},\"id\":\"495eafa0-02ad-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":9,\"w\":6,\"h\":5,\"i\":\"2\"},\"id\":\"d9838c50-02c5-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":9,\"y\":0,\"w\":3,\"h\":6,\"i\":\"3\"},\"id\":\"b9cdc3d0-02bb-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":26,\"w\":12,\"h\":5,\"i\":\"4\"},\"id\":\"17e68b20-02d3-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":31,\"w\":4,\"h\":5,\"i\":\"5\"},\"id\":\"bdaf3a60-02d4-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":4,\"y\":31,\"w\":4,\"h\":5,\"i\":\"6\"},\"id\":\"d3165aa0-02d4-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":8,\"y\":31,\"w\":4,\"h\":5,\"i\":\"7\"},\"id\":\"736923c0-02d5-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":0,\"y\":0,\"w\":3,\"h\":6,\"i\":\"8\"},\"id\":\"5c052ca0-02d6-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":6,\"y\":0,\"w\":3,\"h\":6,\"i\":\"9\"},\"id\":\"18f30630-02e0-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":0,\"y\":6,\"w\":3,\"h\":3,\"i\":\"10\"},\"id\":\"36067bf0-02de-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":3,\"y\":6,\"w\":3,\"h\":3,\"i\":\"11\"},\"id\":\"613186a0-02d7-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":6,\"y\":9,\"w\":6,\"h\":5,\"i\":\"12\"},\"id\":\"687a9400-02b5-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"14\",\"gridData\":{\"x\":0,\"y\":14,\"w\":12,\"h\":4,\"i\":\"14\"},\"id\":\"1351a510-0515-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":0,\"y\":22,\"w\":12,\"h\":4,\"i\":\"15\"},\"id\":\"4bcb6ae0-0513-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"16\",\"gridData\":{\"x\":0,\"y\":18,\"w\":12,\"h\":4,\"i\":\"16\"},\"id\":\"ac37b590-051e-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"17\",\"gridData\":{\"x\":9,\"y\":6,\"w\":3,\"h\":3,\"i\":\"17\"},\"id\":\"5e608a20-0539-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"18\",\"gridData\":{\"x\":6,\"y\":6,\"w\":3,\"h\":3,\"i\":\"18\"},\"id\":\"b88ddde0-0539-11e8-b587-9994591e1da8\",\"type\":\"visualization\",\"version\":\"6.1.1\"}]",
-      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
-      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-11\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-16\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "panelsJSON": "[\n  {\n    \"panelIndex\": \"1\",\n    \"gridData\": {\n      \"x\": 3,\n      \"y\": 0,\n      \"w\": 3,\n      \"h\": 6,\n      \"i\": \"1\"\n    },\n    \"id\": \"495eafa0-02ad-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"2\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 8,\n      \"w\": 6,\n      \"h\": 5,\n      \"i\": \"2\"\n    },\n    \"id\": \"d9838c50-02c5-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"3\",\n    \"gridData\": {\n      \"x\": 9,\n      \"y\": 0,\n      \"w\": 3,\n      \"h\": 6,\n      \"i\": \"3\"\n    },\n    \"id\": \"b9cdc3d0-02bb-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"4\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 25,\n      \"w\": 12,\n      \"h\": 5,\n      \"i\": \"4\"\n    },\n    \"id\": \"17e68b20-02d3-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"5\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 30,\n      \"w\": 4,\n      \"h\": 5,\n      \"i\": \"5\"\n    },\n    \"id\": \"bdaf3a60-02d4-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"6\",\n    \"gridData\": {\n      \"x\": 4,\n      \"y\": 30,\n      \"w\": 4,\n      \"h\": 5,\n      \"i\": \"6\"\n    },\n    \"id\": \"d3165aa0-02d4-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"7\",\n    \"gridData\": {\n      \"x\": 8,\n      \"y\": 30,\n      \"w\": 4,\n      \"h\": 5,\n      \"i\": \"7\"\n    },\n    \"id\": \"736923c0-02d5-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"8\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 0,\n      \"w\": 3,\n      \"h\": 6,\n      \"i\": \"8\"\n    },\n    \"id\": \"5c052ca0-02d6-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"9\",\n    \"gridData\": {\n      \"x\": 6,\n      \"y\": 0,\n      \"w\": 3,\n      \"h\": 6,\n      \"i\": \"9\"\n    },\n    \"id\": \"18f30630-02e0-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"10\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 6,\n      \"w\": 3,\n      \"h\": 2,\n      \"i\": \"10\"\n    },\n    \"id\": \"36067bf0-02de-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"11\",\n    \"gridData\": {\n      \"x\": 3,\n      \"y\": 6,\n      \"w\": 3,\n      \"h\": 2,\n      \"i\": \"11\"\n    },\n    \"id\": \"613186a0-02d7-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"12\",\n    \"gridData\": {\n      \"x\": 6,\n      \"y\": 8,\n      \"w\": 6,\n      \"h\": 5,\n      \"i\": \"12\"\n    },\n    \"id\": \"687a9400-02b5-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"14\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 13,\n      \"w\": 12,\n      \"h\": 4,\n      \"i\": \"14\"\n    },\n    \"id\": \"1351a510-0515-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"15\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 21,\n      \"w\": 12,\n      \"h\": 4,\n      \"i\": \"15\"\n    },\n    \"id\": \"4bcb6ae0-0513-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"16\",\n    \"gridData\": {\n      \"x\": 0,\n      \"y\": 17,\n      \"w\": 12,\n      \"h\": 4,\n      \"i\": \"16\"\n    },\n    \"id\": \"ac37b590-051e-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"17\",\n    \"gridData\": {\n      \"x\": 9,\n      \"y\": 6,\n      \"w\": 3,\n      \"h\": 2,\n      \"i\": \"17\"\n    },\n    \"id\": \"5e608a20-0539-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  },\n  {\n    \"panelIndex\": \"18\",\n    \"gridData\": {\n      \"x\": 6,\n      \"y\": 6,\n      \"w\": 3,\n      \"h\": 2,\n      \"i\": \"18\"\n    },\n    \"id\": \"b88ddde0-0539-11e8-b587-9994591e1da8\",\n    \"type\": \"visualization\",\n    \"version\": \"6.1.1\"\n  }\n]",
+      "optionsJSON": "{\n  \"darkTheme\": false,\n  \"hidePanelTitles\": false,\n  \"useMargins\": true\n}",
+      "uiStateJSON": "{\n  \"P-1\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-11\": {\n    \"spy\": {\n      \"mode\": {\n        \"fill\": false,\n        \"name\": null\n      }\n    }\n  },\n  \"P-12\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-14\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-15\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-16\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-2\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-3\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-4\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-5\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-6\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-7\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-8\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-9\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  }\n}",
       "version": 1,
       "timeRestore": true,
       "timeTo": "Sat Dec 31 2016 23:59:59 GMT-0500",
@@ -19,7 +19,34 @@
         "value": 0
       },
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+        "searchSourceJSON": "{\n  \"query\": {\n    \"language\": \"lucene\"\n  },\n  \"filter\": [],\n  \"highlightAll\": true,\n  \"version\": true\n}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "1c6fc5e0-0aac-11e8-9ec1-43336f9f6e69",
+    "_type": "dashboard",
+    "_source": {
+      "title": "AnalysisService",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":4,\"h\":5,\"i\":\"1\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"b61f8e40-053f-11e8-b587-9994591e1da8\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":4,\"y\":0,\"w\":4,\"h\":5,\"i\":\"2\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"6f4ad0a0-0540-11e8-b587-9994591e1da8\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":3,\"i\":\"3\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"9cd851d0-02c7-11e8-b587-9994591e1da8\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true,\"hidePanelTitles\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "Sat Dec 31 2016 23:59:59 GMT-0500",
+      "timeFrom": "Fri Jan 01 2016 00:00:00 GMT-0500",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
       }
     },
     "_meta": {
@@ -30,7 +57,7 @@
     "_id": "a93c39c0-02b6-11e8-b587-9994591e1da8",
     "_type": "search",
     "_source": {
-      "title": "Page views",
+      "title": "Page views - old",
       "description": "",
       "hits": 0,
       "columns": [
@@ -42,7 +69,47 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"!request:/.*\\\\.((css)|(json)|(js)|(javascript)|(jar)|(gif)|(jpg)|(jpeg)|(xml)|(rss)|(png)|(pdf)|(rtf)|(ico)|(txt)|(zip)|(tar)|(gz)|(tgz)|(jar))/ && !(request.raw:/.*header.php*/  || request.raw:/.*footer.php*/) && !_exists_:internal_IP && !clientip:\\\"::1\\\" && !clientip:127.0.0.1\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !request:/.*\\\\.((css)|(js)|(class)|(gif)|(jpg)|(jpeg)|(png)|(bmp)|(ico)|(rss)|(xml)|(swf))/ && !(request.raw:/.*header.php*/  || request.raw:/.*footer.php*/) && !_exists_:internal_IP && !clientip:\\\"::1\\\" && !clientip:127.0.0.1 && !_exists_:probably_a_bot\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "21cc6530-0a8d-11e8-9ec1-43336f9f6e69",
+    "_type": "search",
+    "_source": {
+      "title": "Page views (includes bots and all response codes)",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@apache_timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_not_a_page_view && !(clientip:\\\"::1\\\" || clientip:127.0.0.1 || clientip:206.108.125.163)\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "1351a510-0515-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "ReactomeTo*, BioPax, and ReactomePathways.gmt download counts",
+      "visState": "{\"title\":\"ReactomeTo*, BioPax, and ReactomePathways.gmt download counts\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"reactome_download_file_name.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Filename\",\"row\":false}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && (reactome_download_file_name:/.*Reactome((To)|2).*/ || reactome_download_file_name:*BioPax* || reactome_download_file_name:*ReactomePathways.gmt*) && (response:2*)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -67,17 +134,16 @@
     }
   },
   {
-    "_id": "d9838c50-02c5-11e8-b587-9994591e1da8",
+    "_id": "f963cdc0-0520-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
-      "title": "Referrals  - preferrred domains",
-      "visState": "{\"title\":\"Referrals  - preferrred domains\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"referrer_domain\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "title": "Top \"Interactions\" downloads",
+      "visState": "{\"title\":\"Top \\\"Interactions\\\" downloads\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"reactome_download_file_name.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Filename\",\"row\":false}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
-      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"referrer_domain:/.*((genecards)|(uniprot)|(ebi\\\\.ac\\\\.uk)|(omim)|(broad)|(ncbi)|(genenames)|(pathwaycommons)|(impala.molgen)|(reddit)).*/ && response:200 && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_download_file_name.raw:*interactions* && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -85,70 +151,16 @@
     }
   },
   {
-    "_id": "d3165aa0-02d4-11e8-b587-9994591e1da8",
+    "_id": "ac37b590-051e-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
-      "title": "Top 10 non-human stable identifiers",
-      "visState": "{\"title\":\"Top 10 non-human stable identifiers\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_stable_identifier.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"response:200 && !_exists_:probably_a_bot && !reactome_species_code:HSA\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "bdaf3a60-02d4-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Top 10 stable identifiers",
-      "visState": "{\"title\":\"Top 10 stable identifiers\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_stable_identifier.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"response:200 && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "17e68b20-02d3-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Top 10 countries",
-      "visState": "{\"title\":\"Top 10 countries\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.country_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "9cd851d0-02c7-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "ReactomeRESTfulAPI - ContentService - AnalysisService",
-      "visState": "{\"title\":\"ReactomeRESTfulAPI - ContentService - AnalysisService\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "title": "Top downloads",
+      "visState": "{\"title\":\"Top downloads\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"reactome_download_file_name.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Filename\",\"row\":false}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:/.*((AnalysisService)|(ContentService)|(ReactomeRESTfulAPI)).*/ && response:200 && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -167,24 +179,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "495eafa0-02ad-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Pages per month",
-      "visState": "{\"title\":\"Pages per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && response:200\"}}"
       }
     },
     "_meta": {
@@ -246,50 +240,16 @@
     }
   },
   {
-    "_id": "1351a510-0515-11e8-b587-9994591e1da8",
+    "_id": "5e608a20-0539-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
-      "title": "ReactomeTo*, BioPax, and ReactomePathways.gmt download counts",
-      "visState": "{\"title\":\"ReactomeTo*, BioPax, and ReactomePathways.gmt download counts\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"reactome_download_file_name.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Filename\",\"row\":false}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "title": "Avg. data transfer per month",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{\"field\":\"bytes\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"sum\"}},\"schema\":\"metric\",\"type\":\"avg_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"Avg. data transfer per month\",\"type\":\"metric\"}",
+      "uiStateJSON": "{}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && (reactome_download_file_name:/.*Reactome((To)|2).*/ || reactome_download_file_name:*BioPax* || reactome_download_file_name:*ReactomePathways.gmt*) && (response:2*)\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "4bcb6ae0-0513-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Uniprot2Reactome file downloads",
-      "visState": "{\"title\":\"Uniprot2Reactome file downloads\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"reactome_download_file_name.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Filename\",\"row\":false}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_download_file_name:*Uniprot2Reactome* && (response:2*) && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "f963cdc0-0520-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Top \"Interactions\" downloads",
-      "visState": "{\"title\":\"Top \\\"Interactions\\\" downloads\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"reactome_download_file_name.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Filename\",\"row\":false}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_download_file_name.raw:*interactions* && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:internal_IP && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -314,16 +274,50 @@
     }
   },
   {
-    "_id": "ac37b590-051e-11e8-b587-9994591e1da8",
+    "_id": "b88ddde0-0539-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
-      "title": "Top downloads",
-      "visState": "{\"title\":\"Top downloads\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"reactome_download_file_name.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Filename\",\"row\":false}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
+      "title": "Avg. hits per month",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"avg_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"Avg. hits per month\",\"type\":\"metric\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && response:200 !_exists_:internal_IP\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "4bcb6ae0-0513-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Uniprot2Reactome file downloads",
+      "visState": "{\"title\":\"Uniprot2Reactome file downloads\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"reactome_download_file_name.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Filename\",\"row\":false}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_download_file_name:*Uniprot2Reactome* && (response:2*) && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d346cf90-053c-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 10 bots",
+      "visState": "{\"title\":\"Top 10 bots\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"useragent.name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Bot name\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"bytes\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -348,52 +342,35 @@
     }
   },
   {
-    "_id": "36067bf0-02de-11e8-b587-9994591e1da8",
+    "_id": "d3165aa0-02d4-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
-      "title": "Average number of unique IPs per month.",
-      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"json\":\"\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"cardinality\"},\"json\":\"\"},\"schema\":\"metric\",\"type\":\"avg_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"Average number of unique IPs per month.\",\"type\":\"metric\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "5e608a20-0539-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Avg. data transfer per month",
-      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{\"field\":\"bytes\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"sum\"}},\"schema\":\"metric\",\"type\":\"avg_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"Avg. data transfer per month\",\"type\":\"metric\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:internal_IP && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "5c052ca0-02d6-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "unique IPs per month",
-      "visState": "{\"title\":\"unique IPs per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"json\":\"\"}}]}",
+      "title": "Top 10 non-human stable identifiers",
+      "visState": "{\"title\":\"Top 10 non-human stable identifiers\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_stable_identifier.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200 && !_exists_:internal_IP\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"response:200 && !_exists_:probably_a_bot && !reactome_species_code:HSA\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "bdaf3a60-02d4-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 10 stable identifiers",
+      "visState": "{\"title\":\"Top 10 stable identifiers\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_stable_identifier.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"response:200 && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -419,57 +396,6 @@
     }
   },
   {
-    "_id": "b9cdc3d0-02bb-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Data transfer (non-bot requests)",
-      "visState": "{\"title\":\"Data transfer (non-bot requests)\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":true,\"showMeticsAtAllLevels\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:internal_IP && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "18f30630-02e0-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Hits per month",
-      "visState": "{\"title\":\"Hits per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200 !_exists_:internal_IP\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "b88ddde0-0539-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Avg. hits per month",
-      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"avg_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"Avg. hits per month\",\"type\":\"metric\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && response:200 !_exists_:internal_IP\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "a95d49c0-053c-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
@@ -488,16 +414,17 @@
     }
   },
   {
-    "_id": "d346cf90-053c-11e8-b587-9994591e1da8",
+    "_id": "d9838c50-02c5-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
-      "title": "Top 10 bots",
-      "visState": "{\"title\":\"Top 10 bots\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"useragent.name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Bot name\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"bytes\"}}]}",
+      "title": "Referrals  - preferrred domains",
+      "visState": "{\"title\":\"Referrals  - preferrred domains\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"referrer_domain\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
+      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"referrer_domain:/.*((genecards)|(uniprot)|(ebi\\\\.ac\\\\.uk)|(omim)|(broad)|(ncbi)|(genenames)|(pathwaycommons)|(impala.molgen)|(reddit)).*/ && response:200 && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -505,16 +432,17 @@
     }
   },
   {
-    "_id": "b61f8e40-053f-11e8-b587-9994591e1da8",
+    "_id": "36067bf0-02de-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
-      "title": "AnalysisService via PathwayBrowser",
-      "visState": "{\"title\":\"AnalysisService via PathwayBrowser\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "title": "Average number of unique IPs per month.",
+      "visState": "{\n  \"aggs\": [\n    {\n      \"enabled\": true,\n      \"id\": \"1\",\n      \"params\": {\n        \"customBucket\": {\n          \"enabled\": true,\n          \"id\": \"1-bucket\",\n          \"params\": {\n            \"customInterval\": \"2h\",\n            \"extended_bounds\": {},\n            \"field\": \"@apache_timestamp\",\n            \"interval\": \"M\",\n            \"json\": \"\",\n            \"min_doc_count\": 1\n          },\n          \"schema\": {\n            \"aggFilter\": [],\n            \"deprecate\": false,\n            \"editor\": false,\n            \"group\": \"none\",\n            \"max\": null,\n            \"min\": 0,\n            \"name\": \"bucketAgg\",\n            \"params\": [],\n            \"title\": \"Bucket Agg\"\n          },\n          \"type\": \"date_histogram\"\n        },\n        \"customMetric\": {\n          \"enabled\": true,\n          \"id\": \"1-metric\",\n          \"params\": {\n            \"field\": \"clientip\",\n            \"json\": \"{\\\"precision_threshold\\\":40000}\"\n          },\n          \"schema\": {\n            \"aggFilter\": [\n              \"!top_hits\",\n              \"!percentiles\",\n              \"!percentile_ranks\",\n              \"!median\",\n              \"!std_dev\",\n              \"!sum_bucket\",\n              \"!avg_bucket\",\n              \"!min_bucket\",\n              \"!max_bucket\",\n              \"!derivative\",\n              \"!moving_avg\",\n              \"!serial_diff\",\n              \"!cumulative_sum\"\n            ],\n            \"deprecate\": false,\n            \"editor\": false,\n            \"group\": \"none\",\n            \"max\": null,\n            \"min\": 0,\n            \"name\": \"metricAgg\",\n            \"params\": [],\n            \"title\": \"Metric Agg\"\n          },\n          \"type\": \"cardinality\"\n        },\n        \"json\": \"\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"avg_bucket\"\n    }\n  ],\n  \"params\": {\n    \"addLegend\": false,\n    \"addTooltip\": true,\n    \"metric\": {\n      \"colorSchema\": \"Green to Red\",\n      \"colorsRange\": [\n        {\n          \"from\": 0,\n          \"to\": 10000\n        }\n      ],\n      \"invertColors\": false,\n      \"labels\": {\n        \"show\": true\n      },\n      \"metricColorMode\": \"None\",\n      \"percentageMode\": false,\n      \"style\": {\n        \"bgColor\": false,\n        \"bgFill\": \"#000\",\n        \"fontSize\": 30,\n        \"labelColor\": false,\n        \"subText\": \"\"\n      },\n      \"useRanges\": false\n    },\n    \"type\": \"metric\"\n  },\n  \"title\": \"Average number of unique IPs per month.\",\n  \"type\": \"metric\"\n}",
+      "uiStateJSON": "{}",
       "description": "",
+      "savedSearchId": "21cc6530-0a8d-11e8-9ec1-43336f9f6e69",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/AnalysisService\\\" && referrer:*PathwayBrowser* && !_exists_:internal_IP && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\n  \"filter\": [],\n  \"query\": {\n    \"query\": \"!_exists_:probably_a_bot && response:200\",\n    \"language\": \"lucene\"\n  }\n}"
       }
     },
     "_meta": {
@@ -531,7 +459,147 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:\\\"/AnalysisService\\\" && request:*download* && !_exists_:probably_a_bot && !_exists_:internal_IP\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:\\\"/AnalysisService\\\" && request:*download* && !_exists_:probably_a_bot && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f6c64ad0-0a97-11e8-9ec1-43336f9f6e69",
+    "_type": "visualization",
+    "_source": {
+      "title": "count of unique IP per year.",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"@timestamp\",\"interval\":\"y\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"cardinality\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":60,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"count of unique IP per year.\",\"type\":\"metric\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "21cc6530-0a8d-11e8-9ec1-43336f9f6e69",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5c052ca0-02d6-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "unique IPs per month",
+      "visState": "{\"title\":\"unique IPs per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":0,\"extended_bounds\":{},\"json\":\"\",\"customLabel\":\"Month\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "21cc6530-0a8d-11e8-9ec1-43336f9f6e69",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && (response:200 || response:304) && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "495eafa0-02ad-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Pages per month",
+      "visState": "{\"title\":\"Pages per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "21cc6530-0a8d-11e8-9ec1-43336f9f6e69",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "17e68b20-02d3-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 10 countries",
+      "visState": "{\"title\":\"Top 10 countries\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# page views\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.country_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "21cc6530-0a8d-11e8-9ec1-43336f9f6e69",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && (response:200 || response:304)\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b9cdc3d0-02bb-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Data transfer (non-bot requests)",
+      "visState": "{\"title\":\"Data transfer (non-bot requests)\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":true,\"showMeticsAtAllLevels\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:internal_IP && !_exists_:probably_a_bot && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "18f30630-02e0-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Hits per month",
+      "visState": "{\"title\":\"Hits per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && (response:200 || response:304) && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9cd851d0-02c7-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "ReactomeRESTfulAPI - ContentService - AnalysisService",
+      "visState": "{\"title\":\"ReactomeRESTfulAPI - ContentService - AnalysisService\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Hits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Application\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"customLabel\":\"Unique IPs\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/ && (response:200 || 304) && !_exists_:probably_a_bot\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b61f8e40-053f-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService via PathwayBrowser",
+      "visState": "{\"title\":\"AnalysisService via PathwayBrowser\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/analysisservice\\\" && referrer:*PathwayBrowser*  && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
