@@ -37,13 +37,7 @@
                         "match_mapping_type": "string",
                         "match": "message",
                         "mapping": {
-                            "type": "text",
-                            "fields": {
-                                "raw": {
-                                    "type": "keyword",
-                                    "ignore_above": 256
-                                }
-                            }
+                            "type": "text"
                         }
                     }
                 },
@@ -71,7 +65,26 @@
                         }
                     }
                 }
-            ]
+            ],
+            "properties": {
+                "geoip": {
+                    "dynamic": true,
+                    "properties": {
+                        "ip": {
+                            "type": "ip"
+                        },
+                        "location": {
+                            "type": "geo_point"
+                        },
+                        "latitude": {
+                            "type": "half_float"
+                        },
+                        "longitude": {
+                            "type": "half_float"
+                        }
+                    }
+                }
+            }
         }
     }
 }
