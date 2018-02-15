@@ -1,0 +1,140 @@
+GET reactome-main/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "terms": {
+            "response": [
+              "200",
+              "304"
+            ]
+          }
+        }
+      ],
+      "must_not": [
+        {
+          "exists": {
+            "field": "probably_a_bot"
+          }
+        },
+        {
+          "query_string": {
+            "default_field": "request",
+            "query": "/.*\\.((css)|(js)|(class)|(gif)|(jpg)|(jpeg)|(png)|(bmp)|(ico)|(rss)|(xml)|(swf))/"
+          }
+        },
+        {
+          "exists": {
+            "field": "internal_IP"
+          }
+        },
+        {
+          "terms": {
+            "clientip": [
+              "127.0.0.1",
+              "::1",
+              "206.108.125.163"
+            ]
+          }
+        },
+        {
+          "terms": {
+            "useragent.name": [
+              "Java",
+              "Other"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "size": 0,
+  "aggs": {
+    "monthly_count": {
+      "date_histogram": {
+        "field": "@apache_timestamp",
+        "interval": "month"
+      },
+      "aggs": {
+        "cardinality_ip_count": {
+          "cardinality": {
+            "field": "clientip",
+            "precision_threshold": 40000
+          }
+        }
+      }
+    }
+  }
+}
+
+GET reactome-main/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "terms": {
+            "response": [
+              "200",
+              "304"
+            ]
+          }
+        }
+      ],
+      "must_not": [
+        {
+          "exists": {
+            "field": "probably_a_bot"
+          }
+        },
+        {
+          "query_string" :{
+            "default_field": "request",
+            "query": "/.*\\.((css)|(js)|(class)|(gif)|(jpg)|(jpeg)|(png)|(bmp)|(ico)|(rss)|(xml)|(swf))/"
+          }
+        },
+        {
+          "exists": {
+            "field": "internal_IP"
+          }
+        },
+        {
+          "terms": {
+            "clientip": [
+              "127.0.0.1",
+              "::1",
+              "206.108.125.163"
+            ]
+          }
+        },
+        {
+          "terms": {
+            "useragent.name": [
+              "Java",
+              "Other"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "size": 0,
+  "aggs": {
+    "monthly_count": {
+      "date_histogram": {
+        "field": "@apache_timestamp",
+        "interval": "month"
+      },
+      "aggs": {
+        "scripted_ip_count": {
+          "scripted_metric": {
+            "init_script": "params._agg.ipCounts = new HashMap()",
+            "map_script": "params._agg.ipCounts.put(doc.clientip.value,'1')",
+            "reduce_script": "double total = 0; Map allIps = new HashMap(); for (a in params._aggs) { if (a != null && a.ipCounts != null) { for (ip in a.ipCounts.keySet()) { if (!allIps.containsKey(ip)) { allIps.put(ip,'1'); } } } } return allIps.keySet().size();"
+          }
+        }
+      }
+    }
+  }
+}
