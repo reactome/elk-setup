@@ -1,32 +1,5 @@
 [
   {
-    "_id": "1c6fc5e0-0aac-11e8-9ec1-43336f9f6e69",
-    "_type": "dashboard",
-    "_source": {
-      "title": "AnalysisService",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":4,\"h\":5,\"i\":\"1\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"b61f8e40-053f-11e8-b587-9994591e1da8\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":4,\"y\":0,\"w\":4,\"h\":5,\"i\":\"2\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"6f4ad0a0-0540-11e8-b587-9994591e1da8\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":3,\"i\":\"3\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"9cd851d0-02c7-11e8-b587-9994591e1da8\"}]",
-      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true,\"hidePanelTitles\":false}",
-      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
-      "version": 1,
-      "timeRestore": true,
-      "timeTo": "Sat Dec 31 2016 23:59:59 GMT-0500",
-      "timeFrom": "Fri Jan 01 2016 00:00:00 GMT-0500",
-      "refreshInterval": {
-        "display": "Off",
-        "pause": false,
-        "value": 0
-      },
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "379ebce0-0c5a-11e8-a9bf-2fef70854d2b",
     "_type": "dashboard",
     "_source": {
@@ -121,6 +94,53 @@
       "timeRestore": false,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "1c6fc5e0-0aac-11e8-9ec1-43336f9f6e69",
+    "_type": "dashboard",
+    "_source": {
+      "title": "AnalysisService",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"gridData\":{\"h\":5,\"i\":\"1\",\"w\":4,\"x\":0,\"y\":0},\"id\":\"b61f8e40-053f-11e8-b587-9994591e1da8\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":5,\"i\":\"2\",\"w\":4,\"x\":4,\"y\":0},\"id\":\"6f4ad0a0-0540-11e8-b587-9994591e1da8\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":3,\"i\":\"3\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"9cd851d0-02c7-11e8-b587-9994591e1da8\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":5,\"i\":\"4\",\"w\":11,\"x\":0,\"y\":26},\"id\":\"ea741c80-20a9-11e8-b589-376955287594\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":2,\"i\":\"5\",\"w\":7,\"x\":0,\"y\":8},\"id\":\"ddd6a470-20ae-11e8-b589-376955287594\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":5,\"i\":\"6\",\"w\":11,\"x\":0,\"y\":21},\"id\":\"7b696330-20af-11e8-b589-376955287594\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":2,\"i\":\"7\",\"w\":7,\"x\":0,\"y\":10},\"id\":\"f3a73f70-20af-11e8-b589-376955287594\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":5,\"i\":\"8\",\"w\":11,\"x\":0,\"y\":16},\"id\":\"c0b122c0-20af-11e8-b589-376955287594\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":2,\"i\":\"9\",\"w\":7,\"x\":0,\"y\":12},\"id\":\"193bc300-20b0-11e8-b589-376955287594\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":2,\"i\":\"10\",\"w\":7,\"x\":0,\"y\":14},\"id\":\"9194d620-20b5-11e8-b589-376955287594\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"gridData\":{\"h\":3,\"i\":\"11\",\"w\":9,\"x\":0,\"y\":5},\"id\":\"0a21ca80-20bb-11e8-b589-376955287594\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"version\":\"6.1.1\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "2017-01-01T04:59:59.000Z",
+      "timeFrom": "2016-01-01T05:00:00.000Z",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f3722cd0-214b-11e8-b589-376955287594",
+    "_type": "dashboard",
+    "_source": {
+      "title": "EHLD",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":8,\"i\":\"1\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"e4ab5e60-214b-11e8-b589-376955287594\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":5,\"i\":\"2\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"beb29ac0-214b-11e8-b589-376955287594\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true,\"hidePanelTitles\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
       }
     },
     "_meta": {
@@ -248,23 +268,6 @@
     }
   },
   {
-    "_id": "be439380-02c6-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Search - Details - PathwayBrowser",
-      "visState": "{\"title\":\"Search - Details - PathwayBrowser\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/content/detail*\\\" || reactome_application:\\\"/content/query?q=\\\" ||  reactome_application:*pathwaybrowser*\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "d346cf90-053c-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
@@ -292,40 +295,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:\\\"/AnalysisService\\\" && request:*download* && !_exists_:probably_a_bot && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "9cd851d0-02c7-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "ReactomeRESTfulAPI - ContentService - AnalysisService",
-      "visState": "{\"title\":\"ReactomeRESTfulAPI - ContentService - AnalysisService\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Hits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Application\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"customLabel\":\"Unique IPs\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/ && (response:200 || 304) && !_exists_:probably_a_bot\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "17e68b20-02d3-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Top 10 countries",
-      "visState": "{\"title\":\"Top 10 countries\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# page views\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.country_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && (response:200 || response:304) && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\"},\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true}"
       }
     },
     "_meta": {
@@ -497,24 +466,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "78b24c30-02e4-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Popular search strings for /content/query/",
-      "visState": "{\"title\":\"Popular search strings for /content/query/\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"q\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"query term\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/content/query?q=\\\" && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -770,24 +721,6 @@
     }
   },
   {
-    "_id": "736923c0-02d5-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Top 10 species codes",
-      "visState": "{\"title\":\"Top 10 species codes\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_species_code.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Species Code\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "73977520-128b-11e8-b534-9981af617f60",
     "_type": "visualization",
     "_source": {
@@ -890,6 +823,42 @@
     }
   },
   {
+    "_id": "78b24c30-02e4-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Popular search strings for /content/query/",
+      "visState": "{\"title\":\"Popular search strings for /content/query/\",\"type\":\"table\",\"params\":{\"perPage\":25,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"q\",\"size\":150000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"query term\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/content/query?q=\\\" && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "736923c0-02d5-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 10 species codes",
+      "visState": "{\"title\":\"Top 10 species codes\",\"type\":\"table\",\"params\":{\"perPage\":25,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_species_code.raw\",\"size\":250,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Species Code\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && response:200\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
     "_id": "000e7440-1b24-11e8-b589-376955287594",
     "_type": "visualization",
     "_source": {
@@ -917,6 +886,363 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"response:200 && !_exists_:probably_a_bot\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ea741c80-20a9-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService  - identifier(s) counts",
+      "visState": "{\"title\":\"AnalysisService  - identifier(s) counts\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_analysisService_path.raw\",\"size\":10000,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:\\\"/analysisservice\\\"   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && reactome_analysisService_path:/.*identifier[s\\\\/]?.*/\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "7b696330-20af-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService  - download counts",
+      "visState": "{\"title\":\"AnalysisService  - download counts\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_analysisService_path.raw\",\"size\":10000,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:\\\"/analysisservice\\\"   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && reactome_analysisService_path:/.*download.*/\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c0b122c0-20af-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService  - species counts",
+      "visState": "{\"title\":\"AnalysisService  - species counts\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":true,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_analysisService_path.raw\",\"size\":10000,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:\\\"/analysisservice\\\"   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && reactome_analysisService_path:/.*species.*/\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ddd6a470-20ae-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService  - identifier(s) counts - simple metric view",
+      "visState": "{\"title\":\"AnalysisService  - identifier(s) counts - simple metric view\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":30}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/analysisservice\\\"   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && reactome_analysisService_path:/.*identifier[s\\\\/]?.*/\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f3a73f70-20af-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService  - download counts - simple metric view",
+      "visState": "{\"title\":\"AnalysisService  - download counts - simple metric view\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":30}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/analysisservice\\\"   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && reactome_analysisService_path:/.*download.*/\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "193bc300-20b0-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService  - species counts - simple metric view",
+      "visState": "{\"title\":\"AnalysisService  - species counts - simple metric view\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":30}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/analysisservice\\\"   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && reactome_analysisService_path:/.*species.*/\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9194d620-20b5-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService  - token counts - simple metric view",
+      "visState": "{\"title\":\"AnalysisService  - token counts - simple metric view\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":30}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/analysisservice\\\"   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && reactome_analysisService_path:/.*token.*/\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9cd851d0-02c7-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "ReactomeRESTfulAPI - ContentService - AnalysisService",
+      "visState": "{\"title\":\"ReactomeRESTfulAPI - ContentService - AnalysisService\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Hits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Application\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"customLabel\":\"Unique IPs\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "0a21ca80-20bb-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService - counts of downloads + species + identifier(s) + token - simple metric view",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"field\":\"clientip\"},\"schema\":\"metric\",\"type\":\"cardinality\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"AnalysisService - counts of downloads + species + identifier(s) + token - simple metric view\",\"type\":\"metric\"}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:\\\"/analysisservice\\\"   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path:/.*species.*/ || reactome_analysisService_path:/.*token.*/ || reactome_analysisService_path:/.*identifier.*/ || reactome_analysisService_path:/.*download.*/ )\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "94c7ad40-20ba-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService - other paths",
+      "visState": "{\"title\":\"AnalysisService - other paths\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_analysisService_path.raw\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/analysisservice\\\"   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && !reactome_analysisService_path:/.*download.*/ && !reactome_analysisService_path:/.*token.*/ && !reactome_analysisService_path:/.*identifier.*/ && !reactome_analysisService_path:/.*species.*/\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "567efd20-20c1-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService - monthly hits (NO BOTS)",
+      "visState": "{\"title\":\"AnalysisService - monthly hits (NO BOTS)\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/analysisservice\\\" && !_exists_:probably_a_bot && (response:200 || response:304)\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "0fa504d0-20c1-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "ContentService - monthly hits (NO BOTS)",
+      "visState": "{\"title\":\"ContentService - monthly hits (NO BOTS)\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/contentservice\\\" && !_exists_:probably_a_bot && (response:200 || response:304)\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "6d7c1190-20bf-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "Search - Details - PathwayBrowser  - NO BOTS",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"field\":\"reactome_application.raw\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":10},\"schema\":\"bucket\",\"type\":\"terms\"}],\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":true,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"Search - Details - PathwayBrowser  - NO BOTS\",\"type\":\"table\"}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(reactome_application:\\\"/content/detail*\\\" || reactome_application:\\\"/contentservice*\\\" || reactome_application:\\\"/content/query?q=\\\" ||  reactome_application:*pathwaybrowser*) && !_exists_:internal_IP && !_exists_:probably_a_bot\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f56afd50-2150-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "All Downloads - from the Downloads directory (number of hits)",
+      "visState": "{\"title\":\"All Downloads - from the Downloads directory (number of hits)\",\"type\":\"table\",\"params\":{\"perPage\":100,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_download_file_name.raw\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "beb29ac0-214b-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "EHLD by month",
+      "visState": "{\"title\":\"EHLD by month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:\\\"/ehld-icons\\\" && !_exsists_:probably_a_bot && (response:200 || response:304)\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "be439380-02c6-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Search - Details - PathwayBrowser",
+      "visState": "{\"title\":\"Search - Details - PathwayBrowser\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"(reactome_application:\\\"/content/detail*\\\" || reactome_application:\\\"/content/query?q=\\\" ||  reactome_application:*pathwaybrowser* ) && !_exists_:internal_IP\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e4ab5e60-214b-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "EHLD - Top 100",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"field\":\"request.raw\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":100},\"schema\":\"bucket\",\"type\":\"terms\"}],\"params\":{\"perPage\":20,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"EHLD - Top 100\",\"type\":\"table\"}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:\\\"/ehld-icons\\\" && !_exsists_:probably_a_bot && (response:200 || response:304)\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f968eaa0-216b-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "Diagram downloads - counts per month",
+      "visState": "{\"title\":\"Diagram downloads - counts per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/download/current/diagram\\\" && request.raw:*json && !_exists_:probably_a_bot && !_exists_:internal_IP\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8bb524e0-2168-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "Diagram downloads (Top 500)",
+      "visState": "{\"title\":\"Diagram downloads (Top 500)\",\"type\":\"table\",\"params\":{\"perPage\":25,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_stable_identifier.raw\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"request.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/download/current/diagram\\\" && request.raw:*json && !_exists_:probably_a_bot && !request.raw:*graph.json\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "50421a40-2180-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "Any application via the PathwayBrowser",
+      "visState": "{\"title\":\"Any application via the PathwayBrowser\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"referrer:*PathwayBrowser* && (response:200 || response:304)\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "17e68b20-02d3-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 10 countries",
+      "visState": "{\"title\":\"Top 10 countries\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"hits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.country_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && (response:200 || response:304) && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\"},\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true}"
       }
     },
     "_meta": {
