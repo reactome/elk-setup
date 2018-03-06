@@ -42,7 +42,8 @@ GET reactome-main/_search
           "terms": {
             "useragent.name": [
               "Java",
-              "Other"
+              "Other",
+              "Wget"
             ]
           }
         }
@@ -112,7 +113,8 @@ GET reactome-main/_search
           "terms": {
             "useragent.name": [
               "Java",
-              "Other"
+              "Other",
+              "Wget"
             ]
           }
         }
