@@ -191,6 +191,32 @@
     }
   },
   {
+    "_id": "9cdd9930-ff13-11e8-8f30-7734483262fe",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Applications & Downloads - simple dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":6,\"i\":\"1\"},\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"339d64c0-ff11-11e8-8f30-7734483262fe\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":6,\"i\":\"3\"},\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"130fcb20-ff0d-11e8-8f30-7734483262fe\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true,\"hidePanelTitles\":false}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "Fri Nov 30 2018 23:59:59 GMT-0500",
+      "timeFrom": "Mon Jan 01 2018 00:00:00 GMT-0500",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
     "_id": "21cc6530-0a8d-11e8-9ec1-43336f9f6e69",
     "_type": "search",
     "_source": {
@@ -507,23 +533,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:\\\"/AnalysisService\\\" && request:*download* && !_exists_:probably_a_bot && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "b61f8e40-053f-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "AnalysisService via PathwayBrowser",
-      "visState": "{\"title\":\"AnalysisService via PathwayBrowser\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/analysisservice\\\" && referrer:*PathwayBrowser*  && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1591,6 +1600,57 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b61f8e40-053f-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "PathwayBrowser (Token)",
+      "visState": "{\"title\":\"PathwayBrowser (Token)\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/analysisservice\\\" && referrer:*PathwayBrowser*  && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && request:\\\"/AnalysisService/token\\\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "339d64c0-ff11-11e8-8f30-7734483262fe",
+    "_type": "visualization",
+    "_source": {
+      "title": "Assorted applications - total hits & client IP counts (no bots, response:200/304)",
+      "visState": "{\"title\":\"Assorted applications - total hits & client IP counts (no bots, response:200/304)\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showMeticsAtAllLevels\":true,\"showPartialRows\":true,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{ \\\"precision_threshold\\\": 40000 }\",\"customLabel\":\"\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Application name\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && !reactome_application:wordpress && !reactome_application:\\\"/content/schema\\\" && !reactome_application:\\\"/content/schema/objects\\\" && !reactome_application:\\\"/content/advanced\\\" && !reactome_application:\\\"/content/resources\\\" && !reactome_application:*gettags*  && (reactome_application:*analysis* || reactome_application:*content* || reactome_application:*restful* || reactome_application:*pathway* )\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "130fcb20-ff0d-11e8-8f30-7734483262fe",
+    "_type": "visualization",
+    "_source": {
+      "title": "Download-related \"applications\" - hits & IP counts (no bots, response:200/304)",
+      "visState": "{\"title\":\"Download-related \\\"applications\\\" - hits & IP counts (no bots, response:200/304)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":true,\"showPartialRows\":true,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{ \\\"precision_threshold\\\": 40000 }\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Download source\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && (reactome_application:\\\"*download*\\\" || reactome_application:\\\"*firework*\\\" || reactome_application:\\\"*diagram*\\\" || reactome_application:\\\"*ehld*\\\" || reactome_application:\\\"*icon*\\\" || reactome_download_file_name:/.+/)\"}}"
       }
     },
     "_meta": {
