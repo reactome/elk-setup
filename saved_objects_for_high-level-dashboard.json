@@ -197,8 +197,8 @@
       "title": "Applications & Downloads - simple dashboard",
       "hits": 0,
       "description": "",
-      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":6,\"i\":\"1\"},\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"339d64c0-ff11-11e8-8f30-7734483262fe\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":6,\"i\":\"3\"},\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"130fcb20-ff0d-11e8-8f30-7734483262fe\"}]",
-      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true,\"hidePanelTitles\":false}",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":6,\"i\":\"1\"},\"id\":\"339d64c0-ff11-11e8-8f30-7734483262fe\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":5,\"i\":\"3\"},\"id\":\"130fcb20-ff0d-11e8-8f30-7734483262fe\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":6,\"y\":5,\"w\":6,\"h\":8,\"i\":\"4\"},\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"99b508c0-ffb2-11e8-8f30-7734483262fe\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
       "version": 1,
       "timeRestore": true,
       "timeTo": "Fri Nov 30 2018 23:59:59 GMT-0500",
@@ -209,7 +209,7 @@
         "value": 0
       },
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
       }
     },
     "_meta": {
@@ -1590,6 +1590,40 @@
     }
   },
   {
+    "_id": "339d64c0-ff11-11e8-8f30-7734483262fe",
+    "_type": "visualization",
+    "_source": {
+      "title": "Assorted applications - total hits & client IP counts (no bots, response:200/304)",
+      "visState": "{\"title\":\"Assorted applications - total hits & client IP counts (no bots, response:200/304)\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showMeticsAtAllLevels\":true,\"showPartialRows\":true,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{ \\\"precision_threshold\\\": 40000 }\",\"customLabel\":\"\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Application name\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && !reactome_application:wordpress && !reactome_application:\\\"/content/schema\\\" && !reactome_application:\\\"/content/schema/objects\\\" && !reactome_application:\\\"/content/advanced\\\" && !reactome_application:\\\"/content/resources\\\" && !reactome_application:*gettags*  && (reactome_application:*analysis* || reactome_application:*content* || reactome_application:*restful* || reactome_application:*pathway* )\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "130fcb20-ff0d-11e8-8f30-7734483262fe",
+    "_type": "visualization",
+    "_source": {
+      "title": "Download-related \"applications\" - hits & IP counts (no bots, response:200/304)",
+      "visState": "{\"title\":\"Download-related \\\"applications\\\" - hits & IP counts (no bots, response:200/304)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":true,\"showPartialRows\":true,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{ \\\"precision_threshold\\\": 40000 }\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Download source\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && (reactome_application:\\\"*download*\\\" || reactome_application:\\\"*firework*\\\" || reactome_application:\\\"*diagram*\\\" || reactome_application:\\\"*ehld*\\\" || reactome_application:\\\"*icon*\\\" || reactome_download_file_name:/.+/)\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
     "_id": "feb9dc10-f340-11e8-8f30-7734483262fe",
     "_type": "visualization",
     "_source": {
@@ -1624,33 +1658,16 @@
     }
   },
   {
-    "_id": "339d64c0-ff11-11e8-8f30-7734483262fe",
+    "_id": "99b508c0-ffb2-11e8-8f30-7734483262fe",
     "_type": "visualization",
     "_source": {
-      "title": "Assorted applications - total hits & client IP counts (no bots, response:200/304)",
-      "visState": "{\"title\":\"Assorted applications - total hits & client IP counts (no bots, response:200/304)\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showMeticsAtAllLevels\":true,\"showPartialRows\":true,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{ \\\"precision_threshold\\\": 40000 }\",\"customLabel\":\"\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Application name\"}}]}",
+      "title": "Applications referred to by PathwayBrowser",
+      "visState": "{\"title\":\"Applications referred to by PathwayBrowser\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Application name\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && !reactome_application:wordpress && !reactome_application:\\\"/content/schema\\\" && !reactome_application:\\\"/content/schema/objects\\\" && !reactome_application:\\\"/content/advanced\\\" && !reactome_application:\\\"/content/resources\\\" && !reactome_application:*gettags*  && (reactome_application:*analysis* || reactome_application:*content* || reactome_application:*restful* || reactome_application:*pathway* )\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "130fcb20-ff0d-11e8-8f30-7734483262fe",
-    "_type": "visualization",
-    "_source": {
-      "title": "Download-related \"applications\" - hits & IP counts (no bots, response:200/304)",
-      "visState": "{\"title\":\"Download-related \\\"applications\\\" - hits & IP counts (no bots, response:200/304)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":true,\"showPartialRows\":true,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{ \\\"precision_threshold\\\": 40000 }\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Download source\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && (reactome_application:\\\"*download*\\\" || reactome_application:\\\"*firework*\\\" || reactome_application:\\\"*diagram*\\\" || reactome_application:\\\"*ehld*\\\" || reactome_application:\\\"*icon*\\\" || reactome_download_file_name:/.+/)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"message:*pathwaybrowser* && (response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && !reactome_application:\\\\/pathwaybrowser\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
