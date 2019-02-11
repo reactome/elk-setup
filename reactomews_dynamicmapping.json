@@ -1,4 +1,11 @@
 {
+    "index_patterns" : ["*reactome*"],
+    "settings" : {
+        "index" : {
+            "sort.field" : "@apache_timestamp",
+            "sort.order" : "desc"
+        }
+    },
     "mappings": {
         "doc": {
             "dynamic_templates": [
