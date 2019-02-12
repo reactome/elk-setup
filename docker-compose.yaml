@@ -42,7 +42,7 @@ services:
             - kibserver
         links:
             - kibserver
-        image: nginx
+        image: nginx:1.15.8-alpine
         ports:
             - 6601:6601
         environment:
