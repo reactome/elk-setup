@@ -74,6 +74,9 @@
                 }
             ],
             "properties": {
+                "@apache_timestamp": {
+                    "type": "date"
+                },
                 "geoip": {
                     "dynamic": true,
                     "properties": {
