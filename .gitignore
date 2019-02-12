@@ -1,5 +1,6 @@
 esdata
 kibanadata
+logstashqueue
 *.bkup
 *.crt
 *.csr
