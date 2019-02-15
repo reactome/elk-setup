@@ -1,0 +1,44 @@
+# Lots of regular expressions here. If you ever need to debug them, you might want to
+# look for a tool that can do railroad-style diagrams for regular
+# expressions. One such tool is https://regexper.com/
+# or if you use Atom, there's this: https://atom.io/packages/regex-railroad-diagram
+
+ARGS (?:\?).+
+EXPORT_FORMAT (pdf|png|jpg|jpeg|svg|gif|sbml|sbgn)
+EXPORTER_TYPE (diagram|(document\/event)|fireworks|reaction|event)
+CONTENT_SERVICE_EXPORTER exporter\/%{EXPORTER_TYPE:exporter_type}\/(?<exported_thing>.+)\.%{EXPORT_FORMAT:export_format}(%{ARGS:args})?
+
+DISCOVER (?<discover>data\/discover\/)(?<identifier>.+)
+
+ENTITIES data\/((?<query_type>(complex|entity))\/(?<identifier>[^/]+)\/(?<data_to_query>(subunits|componentOf|otherForms))|(?<query_type>complexes)\/(?<resource>[^/]+)\/(?<identifier>[^/]+))(%{ARGS:args})?
+
+EVENTS data\/((event\/(?<event_id>[^/]+)\/ancestors)|eventsHierarchy\/(?<species>[^?/]+))(%{ARGS:args})?
+
+INTERACTORS_PSICQUIC interactors\/(psicquic\/molecule(s?)\/(?<resource>[^/]+)(\/(?<accession>[^/]+))?(\/(?<summary_or_detail>details|summary))(%{ARGS:args})?)
+
+INTERACTORS_STATIC interactors\/(static\/molecule(s?)(\/(?<accession>[^/]+))?(\/(?<summary_or_detail_or_pathway>details|summary|pathways))(%{ARGS:args})?)
+
+INTERACTORS_OTHER interactors\/(((token\/(?<token>[^/]+))|(?<upload_type>upload\/(tuple\/(content|url|form))|psicquic\/url)))(%{ARGS:args})?
+
+MAPPING data\/mapping\/(?<resource>[^/]+)\/(?<identifier>[^/]+)\/(?<pathways_or_reactions>pathways|reactions)(%{ARGS:args})?
+
+ORTHOLOGIES data\/ortholog(ies\/ids|y\/(?<identifier>[^/]+))\/species\/(?<species>[^/]+)(%{ARGS:args})?
+
+PARTICIPANTS data\/participants\/(?<identifier>[^/?]+)(\/(?<participating_entity_type>participatingPhysicalEntities|referenceEntities))?(%{ARGS:args})?
+
+PATHWAYS data\/pathway\/(?<identifier>[^/?]+)\/containedEvents(\/(?<attributeName>[^/?]+))?(%{ARGS:args})?
+PATHWAYS_LOW data\/pathways\/low\/(diagram\/)?entity\/(?<identifier>[^/?]+)(\/allForms)?(%{ARGS:args})?
+PATHWAYS_TOP_LEVEL data\/pathways\/top\/(?<species>[^?/]+)(%{ARGS:args})?
+
+PERSON data\/(person\/(?<identifier>[^/?]+)(\/((?<authors_pathways_or_publications>authoredPathways|publications)|(?<filter_attrib>[^?/]+)))|people\/name\/(?<name>[^?/]+)(\/exact)?)(%{ARGS:args})?
+
+QUERY data\/query\/(ids(\/map)?|((enhanced\/)?(?<identifier>[^?/]+)(\/(?<filter_attrib>[^?/]+))?))(%{ARGS:args})?
+
+REFERENCES references\/mapping\/(?<identifier>[^/?])(%{ARGS:args})?
+
+SCHEMA data\/schema\/(?<schema_class>[^/?]+)(\/(?<query_option>count|min|reference))?(%{ARGS:args})?
+
+SEARCH_DIAGRAM (?<search_type>diagram)\/(summary|(?<diagram_identifier>[^/?]+))((\/occurrences\/(?<instance_identifier>([^?/]+)))|((\/(?<pathway_identifier>[^?/]+))?\/flag))?
+SEARCH search\/((?<search_type>facet(_query)?|fireworks(\/flag)?|query|spellcheck|suggest)|%{SEARCH_DIAGRAM})\/?(%{ARGS:args})?
+
+CONTENT_SERVICE_PATH \/ContentService\/(%{DISCOVER}|%{CONTENT_SERVICE_EXPORTER:exporter_path}|%{ENTITIES}|%{EVENTS}|%{INTERACTORS_PSICQUIC}|%{INTERACTORS_STATIC}|%{INTERACTORS_OTHER}|%{MAPPING}|%{ORTHOLOGIES}|%{PARTICIPANTS}|%{PATHWAYS}|%{PATHWAYS_LOW}|%{PATHWAYS_TOP_LEVEL}|%{PERSON}|%{QUERY}|%{REFERENCES}|%{SCHEMA}|%{SEARCH})$

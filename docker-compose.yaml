@@ -28,6 +28,9 @@ services:
             - "./logstash.yaml:/usr/share/logstash/config/logstash.yml"
             - "./pipeline.conf:/usr/share/logstash/pipeline/logstash.conf"
             - "./logstash.patterns:/usr/share/logstash/pipeline/patterns/logstash.patterns"
+            - "./analysis_service.patterns:/usr/share/logstash/pipeline/patterns/analysis_service.patterns"
+            - "./content_service.patterns:/usr/share/logstash/pipeline/patterns/content_service.patterns"
+            - "./referrers.patterns:/usr/share/logstash/pipeline/patterns/referrers.patterns"
             - "./logstashqueue:/var/queue"
         ports:
             - "5043:5043"
