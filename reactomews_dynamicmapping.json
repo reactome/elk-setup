@@ -1,4 +1,11 @@
 {
+    "index_patterns" : ["*reactome*"],
+    "settings" : {
+        "index" : {
+            "sort.field" : "@apache_timestamp",
+            "sort.order" : "desc"
+        }
+    },
     "mappings": {
         "doc": {
             "dynamic_templates": [
@@ -67,6 +74,9 @@
                 }
             ],
             "properties": {
+                "@apache_timestamp": {
+                    "type": "date"
+                },
                 "geoip": {
                     "dynamic": true,
                     "properties": {
