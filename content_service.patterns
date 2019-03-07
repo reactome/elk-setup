@@ -6,39 +6,39 @@
 ARGS (?:\?).+
 EXPORT_FORMAT (pdf|png|jpg|jpeg|svg|gif|sbml|sbgn)
 EXPORTER_TYPE (diagram|(document\/event)|fireworks|reaction|event)
-CONTENT_SERVICE_EXPORTER exporter\/%{EXPORTER_TYPE:exporter_type}\/(?<exported_thing>.+)\.%{EXPORT_FORMAT:export_format}(%{ARGS:args})?
+CONTENT_SERVICE_EXPORTER exporter\/%{EXPORTER_TYPE:reactome_content_service_exporter_type}\/(?<reactome_content_service_exported_thing>.+)\.%{EXPORT_FORMAT:reactome_content_service_export_format}(%{ARGS:args})?
 
-DISCOVER (?<discover>data\/discover\/)(?<identifier>.+)
+DISCOVER (?<reactome_content_service_discover>data\/discover\/)(?<reactome_content_service_identifier>.+)
 
-ENTITIES data\/((?<query_type>(complex|entity))\/(?<identifier>[^/]+)\/(?<data_to_query>(subunits|componentOf|otherForms))|(?<query_type>complexes)\/(?<resource>[^/]+)\/(?<identifier>[^/]+))(%{ARGS:args})?
+ENTITIES data\/((?<reactome_content_service_query_type>(complex|entity))\/(?<reactome_content_service_identifier>[^/]+)\/(?<reactome_content_service_data_to_query>(subunits|componentOf|otherForms))|(?<reactome_content_service_query_type>complexes)\/(?<reactome_content_service_resource>[^/]+)\/(?<reactome_content_service_identifier>[^/]+))(%{ARGS:args})?
 
-EVENTS data\/((event\/(?<event_id>[^/]+)\/ancestors)|eventsHierarchy\/(?<species>[^?/]+))(%{ARGS:args})?
+EVENTS data\/((event\/(?<reactome_content_service_event_id>[^/]+)\/ancestors)|eventsHierarchy\/(?<reactome_content_service_species>[^?/]+))(%{ARGS:args})?
 
-INTERACTORS_PSICQUIC interactors\/(psicquic\/molecule(s?)\/(?<resource>[^/]+)(\/(?<accession>[^/]+))?(\/(?<summary_or_detail>details|summary))(%{ARGS:args})?)
+INTERACTORS_PSICQUIC interactors\/(psicquic\/molecule(s?)\/(?<reactome_content_service_resource>[^/]+)(\/(?<reactome_content_service_accession>[^/]+))?(\/(?<reactome_content_service_summary_or_detail>details|summary))(%{ARGS:args})?)
 
-INTERACTORS_STATIC interactors\/(static\/molecule(s?)(\/(?<accession>[^/]+))?(\/(?<summary_or_detail_or_pathway>details|summary|pathways))(%{ARGS:args})?)
+INTERACTORS_STATIC interactors\/(static\/molecule(s?)(\/(?<reactome_content_service_accession>[^/]+))?(\/(?<reactome_content_service_summary_or_detail_or_pathway>details|summary|pathways))(%{ARGS:args})?)
 
-INTERACTORS_OTHER interactors\/(((token\/(?<token>[^/]+))|(?<upload_type>upload\/(tuple\/(content|url|form))|psicquic\/url)))(%{ARGS:args})?
+INTERACTORS_OTHER interactors\/(((token\/(?<reactome_content_service_token>[^/]+))|(?<reactome_content_service_upload_type>upload\/(tuple\/(content|url|form))|psicquic\/url)))(%{ARGS:args})?
 
-MAPPING data\/mapping\/(?<resource>[^/]+)\/(?<identifier>[^/]+)\/(?<pathways_or_reactions>pathways|reactions)(%{ARGS:args})?
+MAPPING data\/mapping\/(?<reactome_content_service_resource>[^/]+)\/(?<reactome_content_service_identifier>[^/]+)\/(?<reactome_content_service_pathways_or_reactions>pathways|reactions)(%{ARGS:args})?
 
-ORTHOLOGIES data\/ortholog(ies\/ids|y\/(?<identifier>[^/]+))\/species\/(?<species>[^/]+)(%{ARGS:args})?
+ORTHOLOGIES data\/ortholog(ies\/ids|y\/(?<reactome_content_service_identifier>[^/]+))\/species\/(?<reactome_content_service_species>[^/]+)(%{ARGS:args})?
 
-PARTICIPANTS data\/participants\/(?<identifier>[^/?]+)(\/(?<participating_entity_type>participatingPhysicalEntities|referenceEntities))?(%{ARGS:args})?
+PARTICIPANTS data\/participants\/(?<reactome_content_service_identifier>[^/?]+)(\/(?<reactome_content_service_participating_entity_type>participatingPhysicalEntities|referenceEntities))?(%{ARGS:args})?
 
-PATHWAYS data\/pathway\/(?<identifier>[^/?]+)\/containedEvents(\/(?<attributeName>[^/?]+))?(%{ARGS:args})?
-PATHWAYS_LOW data\/pathways\/low\/(diagram\/)?entity\/(?<identifier>[^/?]+)(\/allForms)?(%{ARGS:args})?
-PATHWAYS_TOP_LEVEL data\/pathways\/top\/(?<species>[^?/]+)(%{ARGS:args})?
+PATHWAYS data\/pathway\/(?<reactome_content_service_identifier>[^/?]+)\/containedEvents(\/(?<reactome_content_service_attributeName>[^/?]+))?(%{ARGS:args})?
+PATHWAYS_LOW data\/pathways\/low\/(diagram\/)?entity\/(?<reactome_content_service_identifier>[^/?]+)(\/allForms)?(%{ARGS:args})?
+PATHWAYS_TOP_LEVEL data\/pathways\/top\/(?<reactome_content_service_species>[^?/]+)(%{ARGS:args})?
 
-PERSON data\/(person\/(?<identifier>[^/?]+)(\/((?<authors_pathways_or_publications>authoredPathways|publications)|(?<filter_attrib>[^?/]+)))|people\/name\/(?<name>[^?/]+)(\/exact)?)(%{ARGS:args})?
+PERSON data\/(person\/(?<reactome_content_service_identifier>[^/?]+)(\/((?<reactome_content_service_authors_pathways_or_publications>authoredPathways|publications)|(?<reactome_content_service_filter_attrib>[^?/]+)))|people\/name\/(?<reactome_content_service_name>[^?/]+)(\/exact)?)(%{ARGS:args})?
 
-QUERY data\/query\/(ids(\/map)?|((enhanced\/)?(?<identifier>[^?/]+)(\/(?<filter_attrib>[^?/]+))?))(%{ARGS:args})?
+QUERY data\/query\/(ids(\/map)?|((enhanced\/)?(?<reactome_content_service_identifier>[^?/]+)(\/(?<reactome_content_service_filter_attrib>[^?/]+))?))(%{ARGS:args})?
 
-REFERENCES references\/mapping\/(?<identifier>[^/?])(%{ARGS:args})?
+REFERENCES references\/mapping\/(?<reactome_content_service_identifier>[^/?])(%{ARGS:args})?
 
-SCHEMA data\/schema\/(?<schema_class>[^/?]+)(\/(?<query_option>count|min|reference))?(%{ARGS:args})?
+SCHEMA data\/schema\/(?<reactome_content_service_schema_class>[^/?]+)(\/(?<reactome_content_service_query_option>count|min|reference))?(%{ARGS:args})?
 
-SEARCH_DIAGRAM (?<search_type>diagram)\/(summary|(?<diagram_identifier>[^/?]+))((\/occurrences\/(?<instance_identifier>([^?/]+)))|((\/(?<pathway_identifier>[^?/]+))?\/flag))?
-SEARCH search\/((?<search_type>facet(_query)?|fireworks(\/flag)?|query|spellcheck|suggest)|%{SEARCH_DIAGRAM})\/?(%{ARGS:args})?
+SEARCH_DIAGRAM (?<reactome_content_service_search_type>diagram)\/(summary|(?<reactome_content_service_diagram_identifier>[^/?]+))((\/occurrences\/(?<reactome_content_service_instance_identifier>([^?/]+)))|((\/(?<reactome_content_service_pathway_identifier>[^?/]+))?\/flag))?
+SEARCH search\/((?<reactome_content_service_search_type>facet(_query)?|fireworks(\/flag)?|query|spellcheck|suggest)|%{SEARCH_DIAGRAM})\/?(%{ARGS:args})?
 
 CONTENT_SERVICE_PATH \/ContentService\/(%{DISCOVER}|%{CONTENT_SERVICE_EXPORTER:exporter_path}|%{ENTITIES}|%{EVENTS}|%{INTERACTORS_PSICQUIC}|%{INTERACTORS_STATIC}|%{INTERACTORS_OTHER}|%{MAPPING}|%{ORTHOLOGIES}|%{PARTICIPANTS}|%{PATHWAYS}|%{PATHWAYS_LOW}|%{PATHWAYS_TOP_LEVEL}|%{PERSON}|%{QUERY}|%{REFERENCES}|%{SCHEMA}|%{SEARCH})$
