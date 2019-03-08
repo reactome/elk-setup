@@ -809,23 +809,6 @@
     }
   },
   {
-    "_id": "73977520-128b-11e8-b534-9981af617f60",
-    "_type": "visualization",
-    "_source": {
-      "title": "Referrer types and domains for each type",
-      "visState": "{\"title\":\"Referrer types and domains for each type\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"bottom\",\"isDonut\":false,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"referrer_type\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Referrer Type\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"referrer_domain\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Referrer\"}}]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[{\"meta\":{\"index\":\"REACTOME_INDEX\",\"type\":\"phrase\",\"key\":\"referrer_type\",\"value\":\"Other\",\"params\":{\"query\":\"Other\",\"type\":\"phrase\"},\"disabled\":false,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"referrer_type\":{\"query\":\"Other\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"!referrer_type:SELF && !referrer_type:Direct && !_exists_:probably_a_bot && !referrer_domain:127.0.0.1* && !referrer_domain:localhost* && !referrer_domain:192.*\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "98cbed90-2211-11e8-b589-376955287594",
     "_type": "visualization",
     "_source": {
@@ -2171,31 +2154,6 @@
     }
   },
   {
-    "_id": "b69f2900-40f5-11e9-9ef4-cfa48a9d7ea8",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Programmatic Access",
-      "hits": 0,
-      "description": "Stats on programmatic access for Reactome.",
-      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":19,\"i\":\"1\"},\"id\":\"03842d70-40f5-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":12,\"y\":0,\"w\":11,\"h\":19,\"i\":\"2\"},\"id\":\"3abb2820-40f5-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":true}},\"gridData\":{\"x\":0,\"y\":19,\"w\":17,\"h\":15,\"i\":\"3\"},\"id\":\"08537350-40f6-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":true}},\"gridData\":{\"x\":17,\"y\":19,\"w\":16,\"h\":15,\"i\":\"4\"},\"id\":\"52c140c0-40f6-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":23,\"y\":0,\"w\":10,\"h\":19,\"i\":\"5\"},\"id\":\"24bbad90-40f7-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"gridData\":{\"x\":33,\"y\":0,\"w\":12,\"h\":30,\"i\":\"6\"},\"version\":\"6.6.0\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"id\":\"ead46a80-40f7-11e9-9ef4-cfa48a9d7ea8\",\"embeddableConfig\":{}}]",
-      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
-      "version": 1,
-      "timeRestore": true,
-      "timeTo": "2019-01-01T04:59:59.999Z",
-      "timeFrom": "2018-01-01T05:00:00.000Z",
-      "refreshInterval": {
-        "pause": true,
-        "value": 0
-      },
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "08537350-40f6-11e9-9ef4-cfa48a9d7ea8",
     "_type": "visualization",
     "_source": {
@@ -2225,6 +2183,66 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"query\":{\"query\":\"!_exists_:probably_a_bot\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "73977520-128b-11e8-b534-9981af617f60",
+    "_type": "visualization",
+    "_source": {
+      "title": "Referrer types and domains for each type",
+      "visState": "{\"title\":\"Referrer types and domains for each type\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"bottom\",\"isDonut\":false,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"referrer_type\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Referrer Type\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"referrer_domain\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Referrer\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!referrer_type:SELF && !referrer_type:Direct && !_exists_:probably_a_bot && !referrer_domain:127.0.0.1* && !referrer_domain:localhost* && !referrer_domain:192.*\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c96b3490-410c-11e9-9ef4-cfa48a9d7ea8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Programmatic Access - Reactome applications (no bots)",
+      "visState": "{\"title\":\"Programmatic Access - Reactome applications (no bots)\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showMetricsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"(OTHER)\",\"missingBucket\":true,\"missingBucketLabel\":\"(MISSING)\",\"customLabel\":\"Reactome Application\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "749a51f0-4051-11e9-9ef4-cfa48a9d7ea8",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b69f2900-40f5-11e9-9ef4-cfa48a9d7ea8",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Programmatic Access",
+      "hits": 0,
+      "description": "Stats on programmatic access for Reactome.",
+      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":19,\"i\":\"1\"},\"id\":\"03842d70-40f5-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":12,\"y\":0,\"w\":11,\"h\":19,\"i\":\"2\"},\"id\":\"3abb2820-40f5-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":true}},\"gridData\":{\"x\":0,\"y\":19,\"w\":17,\"h\":15,\"i\":\"3\"},\"id\":\"08537350-40f6-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":true}},\"gridData\":{\"x\":17,\"y\":19,\"w\":16,\"h\":15,\"i\":\"4\"},\"id\":\"52c140c0-40f6-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":23,\"y\":0,\"w\":10,\"h\":19,\"i\":\"5\"},\"id\":\"24bbad90-40f7-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":36,\"y\":0,\"w\":12,\"h\":30,\"i\":\"6\"},\"id\":\"ead46a80-40f7-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":34,\"w\":17,\"h\":31,\"i\":\"7\"},\"id\":\"c96b3490-410c-11e9-9ef4-cfa48a9d7ea8\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.6.0\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "2019-01-01T04:59:59.999Z",
+      "timeFrom": "2018-01-01T05:00:00.000Z",
+      "refreshInterval": {
+        "pause": true,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
       }
     },
     "_meta": {
