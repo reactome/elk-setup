@@ -4,18 +4,18 @@
 # or if you use Atom, there's this: https://atom.io/packages/regex-railroad-diagram
 
 ARGS (?:\?).+
-DOWNLOAD download\/(?<token>[^/]+)\/(pathways\/(?<resource>[^/]+)\/(?<filename>[^/]+\.csv)|entities\/(not)?found\/((?<resource>[^/]+)\/)?(?<filename>[^/]+\.csv))(%{ARGS:args})?
+DOWNLOAD download\/(?<reactome_analysis_service_token>[^/]+)\/(pathways\/(?<reactome_analysis_service_resource>[^/]+)\/(?<reactome_analysis_service_filename>[^/]+\.csv)|entities\/(not)?found\/((?<reactome_analysis_service_resource>[^/]+)\/)?(?<reactome_analysis_service_filename>[^/]+\.csv))(%{ARGS:reactome_args})?
 
-IDENTIFIER identifier\/(?<identifier>[^/?]+)(\/projection)?(%{ARGS:args})?
+IDENTIFIER identifier\/(?<reactome_analysis_service_identifier>[^/?]+)(\/projection)?(%{ARGS:reactome_args})?
 
-IDENTIFIERS identifiers\/(form(\/projection)?|projection|url(\/projection)?)(%{ARGS:args})?
+IDENTIFIERS identifiers\/(form(\/projection)?|projection|url(\/projection)?)(%{ARGS:reactome_args})?
 
-REPORT report\/(?<token>[^/]+)\/(?<species>[^/]+)\/(?<filename>[^/]\.pdf)(%{ARGS:args})?
+REPORT report\/(?<reactome_analysis_service_token>[^/]+)\/(?<reactome_analysis_service_species>[^/]+)\/(?<reactome_analysis_service_filename>[^/]\.pdf)(%{ARGS:reactome_args})?
 
-SPECIES species\/homoSapiens\/(?<species>[^/?]+)(%{ARGS:args})?
+SPECIES species\/homoSapiens\/(?<reactome_analysis_service_species>[^/?]+)(%{ARGS:reactome_args})?
 
-PATHWAY (?<pathway>[^/?]+)
+PATHWAY (?<reactome_analysis_service_pathway>[^/?]+)
 TOKEN_FOUND found\/(all(\/%{PATHWAY})?|entities\/%{PATHWAY}|interactors\/%{PATHWAY})
-TOKEN token\/(?<token>[^/]+)\/(%{TOKEN_FOUND}|page\/%{PATHWAY}|reactions\/pathways|reactions\/%{PATHWAY}|notFound|resources|(filter\/(pathways|species\/(?<species>)[^/?]+)))(%{ARGS:args})?
+TOKEN token\/(?<reactome_analysis_service_token>[^/]+)\/(%{TOKEN_FOUND}|page\/%{PATHWAY}|reactions\/pathways|reactions\/%{PATHWAY}|notFound|resources|(filter\/(pathways|species\/(?<reactome_analysis_service_species>)[^/?]+)))(%{ARGS:reactome_args})?
 
 ANALYSIS_SERVICE_PATH \/AnalysisService\/(%{DOWNLOAD}|%{IDENTIFIER}|%{IDENTIFIERS}|%{REPORT}|%{SPECIES}|%{TOKEN})$
