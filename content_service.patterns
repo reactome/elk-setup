@@ -16,7 +16,7 @@ EVENTS data\/((event\/(?<reactome_content_service_event_id>[^/]+)\/ancestors)|ev
 
 INTERACTORS_PSICQUIC interactors\/(psicquic\/molecule(s?)\/(?<reactome_content_service_resource>[^/]+)(\/(?<reactome_content_service_accession>[^/]+))?(\/(?<reactome_content_service_summary_or_detail>details|summary))(%{ARGS:reactome_args})?)
 
-INTERACTORS_STATIC interactors\/(static\/molecule(s?)(\/(?<reactome_content_service_accession>[^/]+))?(\/(?<reactome_content_service_summary_or_detail_or_pathway>details|summary|pathways))(%{ARGSreactome_:args})?)
+INTERACTORS_STATIC interactors\/(static\/molecule(s?)(\/(?<reactome_content_service_accession>[^/]+))?(\/(?<reactome_content_service_summary_or_detail_or_pathway>details|summary|pathways))(%{ARGS:reactome_args})?)
 
 INTERACTORS_OTHER interactors\/(((token\/(?<reactome_content_service_token>[^/]+))|(?<reactome_content_service_upload_type>upload\/(tuple\/(content|url|form))|psicquic\/url)))(%{ARGS:reactome_args})?
 

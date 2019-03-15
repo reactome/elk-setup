@@ -17,8 +17,6 @@ WS_ARGS /[^/]+$
 CGI_SCRIPT ([^?/])+
 DOWNLOAD_FILE_PATTERN ([^/]+((\.pdf|\.rtf|\.png)?\.zip|\.txt|\.text|\.pdf|\.rtf|\.gz|\.tgz|\.jar))
 RESTFUL_API_PATH /ReactomeRESTfulAPI/RESTfulWS%{WS_PATH:reactome_RESTfulAPI_path}(%{WS_ARGS:reactome_RESTfulAPI_args})?
-CONTENT_SERVICE_PATH /ContentService%{WS_PATH:reactome_contentService_path}(%{WS_ARGS:reactome_contentService_args})?
-ANALYSIS_SERVICE_PATH /AnalysisService%{WS_PATH:reactome_analysisService_path}(%{WS_ARGS:reactome_analysisService_args})?
 
 CABIGR3WEBAPP_CYTOSCAPE_PATH (?i:Cytoscape\/(((plugins\/)?%{DOWNLOAD_FILE_PATTERN:reactome_cytoscape_download_file_name})|.*))
 LOOKUP_ID \d+
