@@ -108,7 +108,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"referrer_domain:/.*((genecards)|(uniprot)|(ebi\\\\.ac\\\\.uk)|(omim)|(broad)|(ncbi)|(genenames)|(pathwaycommons)|(impala.molgen)|(reddit)).*/ && (response:200 || response:304) && !_exists_:probably_a_bot\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"referrer_domain:/.*((genecards)|(uniprot)|(ebi\\\\.ac\\\\.uk)|(omim)|(broad)|(ncbi)|(genenames)|(pathwaycommons)|(impala.molgen)|(reddit)).*/ && (response:200 || response:304) && probably_a_bot:false\"}}"
       }
     },
     "_meta": {
@@ -125,7 +125,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:internal_IP && !_exists_:probably_a_bot && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"internal_IP:false && probably_a_bot:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -159,7 +159,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && !_exists_:probably_a_bot && reactome_download_file_name.raw:/.*((UniProt2Reactome)|(PPI)|(homo.*interaction)|(MITAB)|(gk_current)|(graph)|(ReactomeToBioSystems)|(ReactomePathways.gmt)|(BioPAX)).*/\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && probably_a_bot:false && reactome_download_file_name.raw:/.*((UniProt2Reactome)|(PPI)|(homo.*interaction)|(MITAB)|(gk_current)|(graph)|(ReactomeToBioSystems)|(ReactomePathways.gmt)|(BioPAX)).*/\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -176,7 +176,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && (reactome_download_file_name:/.*Reactome((To)|2).*/ || reactome_download_file_name:*BioPax* || reactome_download_file_name:*ReactomePathways.gmt*) && (response:2*)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && (reactome_download_file_name:/.*Reactome((To)|2).*/ || reactome_download_file_name:*BioPax* || reactome_download_file_name:*ReactomePathways.gmt*) && (response:2*)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -193,7 +193,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"_exists_:reactome_download_file_name.raw && reactome_download_file_name.raw:*mitab* && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"_exists_:reactome_download_file_name.raw && reactome_download_file_name.raw:*mitab* && probably_a_bot:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -227,7 +227,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && response:200 !_exists_:internal_IP\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"probably_a_bot:false && response:200 internal_IP:false\"}}"
       }
     },
     "_meta": {
@@ -244,7 +244,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:true\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -261,7 +261,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && (response:200 || response:304) && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -278,7 +278,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_download_file_name:*Uniprot2Reactome* && (response:2*) && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_download_file_name:*Uniprot2Reactome* && (response:2*) && probably_a_bot:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -295,7 +295,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && probably_a_bot:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -345,7 +345,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"referrer:*content\\\\/query?q=* && !_exists_:probably_a_bot && probably_not_a_page_view:false && request:\\\"/content/contact\\\"\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"referrer:*content\\\\/query?q=* && probably_a_bot:false && probably_not_a_page_view:false && request:\\\"/content/contact\\\"\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -370,7 +370,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"(_exists_:reactome_analysisService_path && request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/.+/) && reactome_application.raw:*analysisservice*  && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\",\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"(_exists_:reactome_analysisService_path && request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/.+/) && reactome_application.raw:*analysisservice*  && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -416,7 +416,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !request:/.*\\\\.((css)|(js)|(class)|(gif)|(jpg)|(jpeg)|(png)|(bmp)|(ico)|(rss)|(xml)|(swf))/ && !(request.raw:/.*header.php*/  || request.raw:/.*footer.php*/) && !_exists_:internal_IP && !clientip:\\\"::1\\\" && !clientip:127.0.0.1 && !_exists_:probably_a_bot\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !request:/.*\\\\.((css)|(js)|(class)|(gif)|(jpg)|(jpeg)|(png)|(bmp)|(ico)|(rss)|(xml)|(swf))/ && !(request.raw:/.*header.php*/  || request.raw:/.*footer.php*/) && internal_IP:false && !clientip:\\\"::1\\\" && !clientip:127.0.0.1 && probably_a_bot:false\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -439,7 +439,7 @@
       ],
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !request:/.*\\\\.((css)|(js)|(class)|(gif)|(jpg)|(jpeg)|(png)|(bmp)|(ico)|(rss)|(xml)|(swf))/  && !_exists_:internal_IP && !_exists_:probably_a_bot && !useragent.name:Other && !useragent.name:Java && !useragent.name:Wget\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !request:/.*\\\\.((css)|(js)|(class)|(gif)|(jpg)|(jpeg)|(png)|(bmp)|(ico)|(rss)|(xml)|(swf))/  && internal_IP:false && probably_a_bot:false && !useragent.name:Other && !useragent.name:Java && !useragent.name:Wget\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -534,7 +534,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:internal_IP && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"internal_IP:false && probably_a_bot:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -585,7 +585,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:true && _exists_:reactome_application && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:true && _exists_:reactome_application && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -619,7 +619,7 @@
       "description": "Reminder: you need a scripted field named \"http_code_category\", defined as 'return \"\" + (Integer.parseInt(doc['response'].value)/100) + \"xx\";'",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && _exists_:reactome_application  && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && _exists_:reactome_application  && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -653,7 +653,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path.raw:/\\\\/species.*/ || reactome_analysisService_path.raw:/\\\\/token.*/ || reactome_analysisService_path.raw:/\\\\/identifier.*/ || reactome_analysisService_path.raw:/\\\\/download.*/ || request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/species.+/ || request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/token.+/ || request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/identifier.+/ || request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/download.+/)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path.raw:/\\\\/species.*/ || reactome_analysisService_path.raw:/\\\\/token.*/ || reactome_analysisService_path.raw:/\\\\/identifier.*/ || reactome_analysisService_path.raw:/\\\\/download.*/ || request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/species.+/ || request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/token.+/ || request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/identifier.+/ || request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/download.+/)\"}}"
       }
     },
     "_meta": {
@@ -670,7 +670,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path:identifier\\\\/ || reactome_analysisService_path:identifiers\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifiers?\\\\/.*/)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path:identifier\\\\/ || reactome_analysisService_path:identifiers\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifiers?\\\\/.*/)\"}}"
       }
     },
     "_meta": {
@@ -687,7 +687,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice && referrer:*PathwayBrowser*  && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/token\\\\/.+/ || reactome_analysisService_path:\\\\/token )\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice && referrer:*PathwayBrowser*  && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/token\\\\/.+/ || reactome_analysisService_path:\\\\/token )\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -704,7 +704,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice && (request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/download.+/ || reactome_analysisService_path:\\\\/download) && !_exists_:probably_a_bot && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163) && (response:200 || response:304)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice && (request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/download.+/ || reactome_analysisService_path:\\\\/download) && probably_a_bot:false && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163) && (response:200 || response:304)\"}}"
       }
     },
     "_meta": {
@@ -721,7 +721,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path.raw:/\\\\/download.*/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/download.+/)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path.raw:/\\\\/download.*/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/download.+/)\"}}"
       }
     },
     "_meta": {
@@ -738,7 +738,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path:identifier\\\\/ || reactome_analysisService_path:identifiers\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifiers?\\\\/.*/)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path:identifier\\\\/ || reactome_analysisService_path:identifiers\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifiers?\\\\/.*/)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -755,7 +755,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_download_file_name.raw:*interactions* && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_download_file_name.raw:*interactions* && probably_a_bot:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -767,7 +767,7 @@
     "_type": "visualization",
     "_source": {
       "title": "Content query strings that yielded \"404\" response",
-      "visState": "{\"title\":\"Content query strings that yielded \\\"404\\\" response\",\"type\":\"table\",\"params\":{\"perPage\":25,\"showPartialRows\":true,\"showMeticsAtAllLevels\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"q\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "visState": "{\"title\":\"Content query strings that yielded \\\"404\\\" response\",\"type\":\"table\",\"params\":{\"perPage\":25,\"showPartialRows\":true,\"showMeticsAtAllLevels\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"kvXtrct_q\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "version": 1,
@@ -789,7 +789,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:200 && !_exists_:probably_a_bot && reactome_stable_identifier.raw:REACT_*\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:200 && probably_a_bot:false && reactome_stable_identifier.raw:REACT_*\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -806,7 +806,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(reactome_application:\\\"/content/detail*\\\" || reactome_application:\\\"/contentservice*\\\" || reactome_application:\\\"/content/query?q=\\\" ||  reactome_application:*pathwaybrowser*) && !_exists_:internal_IP && !_exists_:probably_a_bot\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(reactome_application:\\\"/content/detail*\\\" || reactome_application:\\\"/contentservice*\\\" || reactome_application:\\\"/content/query?q=\\\" ||  reactome_application:*pathwaybrowser*) && internal_IP:false && probably_a_bot:false\"}}"
       }
     },
     "_meta": {
@@ -823,7 +823,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -840,7 +840,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && (reactome_application:\\\"*download*\\\" || reactome_application:\\\"*firework*\\\" || reactome_application:\\\"*diagram*\\\" || reactome_application:\\\"*ehld*\\\" || reactome_application:\\\"*icon*\\\" || reactome_download_file_name:/.+/)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && probably_a_bot:false && internal_IP:false && (reactome_application:\\\"*download*\\\" || reactome_application:\\\"*firework*\\\" || reactome_application:\\\"*diagram*\\\" || reactome_application:\\\"*ehld*\\\" || reactome_application:\\\"*icon*\\\" || reactome_download_file_name:/.+/)\"}}"
       }
     },
     "_meta": {
@@ -857,7 +857,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"message:*pathwaybrowser* && (response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && !reactome_application:\\\\/pathwaybrowser\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"message:*pathwaybrowser* && (response:200 || response:304) && probably_a_bot:false && internal_IP:false && !reactome_application:\\\\/pathwaybrowser\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -874,7 +874,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && (reactome_application:\\\"*download*\\\" || reactome_application:\\\"*firework*\\\" || reactome_application:\\\"*diagram*\\\" || reactome_application:\\\"*ehld*\\\" || reactome_application:\\\"*icon*\\\" || reactome_download_file_name:/.+/)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"(response:200 || response:304) && probably_a_bot:false && internal_IP:false && (reactome_application:\\\"*download*\\\" || reactome_application:\\\"*firework*\\\" || reactome_application:\\\"*diagram*\\\" || reactome_application:\\\"*ehld*\\\" || reactome_application:\\\"*icon*\\\" || reactome_download_file_name:/.+/)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -891,7 +891,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && !_exists_:internal_IP\",\"language\":\"lucene\"},\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && internal_IP:false\",\"language\":\"lucene\"},\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true}"
       }
     },
     "_meta": {
@@ -908,7 +908,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"message:*pathwaybrowser* && (response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && !reactome_application:\\\\/pathwaybrowser\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"message:*pathwaybrowser* && (response:200 || response:304) && probably_a_bot:false && internal_IP:false && !reactome_application:\\\\/pathwaybrowser\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -925,7 +925,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && request:report.pdf && (request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/report.+/  || reactome_analysisService_path:\\\\/report)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && request:report.pdf && (request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/report.+/  || reactome_analysisService_path:\\\\/report)\"}}"
       }
     },
     "_meta": {
@@ -942,7 +942,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/  && (_exists_:reactome_analysisService_path || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/.+/ || _exists_:reactome_contentService_path || request.raw:/\\\\/[Cc]ontent[Ss]ervice\\\\/.+/ || _exists_:reactome_RESTfulAPI_path || request.raw:/\\\\/ReactomeRESTfulAPI\\\\/.+/)  && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/  && (_exists_:reactome_analysisService_path || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/.+/ || _exists_:reactome_contentService_path || request.raw:/\\\\/[Cc]ontent[Ss]ervice\\\\/.+/ || _exists_:reactome_RESTfulAPI_path || request.raw:/\\\\/ReactomeRESTfulAPI\\\\/.+/)  && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\"}}"
       }
     },
     "_meta": {
@@ -959,7 +959,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && request:report.pdf && (request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/report.+/  || reactome_analysisService_path:\\\\/report)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && request:report.pdf && (request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/report.+/  || reactome_analysisService_path:\\\\/report)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -976,7 +976,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path.raw:/\\\\/download.*/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/download.+/)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path.raw:/\\\\/download.*/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/download.+/)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -993,7 +993,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) &&  (reactome_analysisService_path.raw:/\\\\/species.*/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/species.+/)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) &&  (reactome_analysisService_path.raw:/\\\\/species.*/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/species.+/)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1010,7 +1010,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path.raw:/\\\\/token.*/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/token.+/)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path.raw:/\\\\/token.*/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/token.+/)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1027,7 +1027,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"referrer:*proteinatlas* && !_exists_:probably_a_bot && response:200\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"referrer:*proteinatlas* && probably_a_bot:false && response:200\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1044,7 +1044,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/contentservice\\\" && !_exists_:probably_a_bot && (response:200 || response:304)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/contentservice\\\" && probably_a_bot:false && (response:200 || response:304)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1078,7 +1078,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && _exists_:reactome_application && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && _exists_:reactome_application && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1095,7 +1095,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && _exists_:reactome_application  && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && _exists_:reactome_application  && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1112,7 +1112,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && _exists_:reactome_application  && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && _exists_:reactome_application  && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1129,7 +1129,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\"}}"
       }
     },
     "_meta": {
@@ -1146,7 +1146,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"probably_a_bot:false && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\"}}"
       }
     },
     "_meta": {
@@ -1163,7 +1163,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application.raw:/.*((analysisservice)|(contentservice)|(reactomerestfulapi)).*/   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && !reactome_analysisService_path:/.*swagger.*/ && !reactome_analysisService_path:/.*lib.*/ && !reactome_analysisService_path:/.*v2.*/ && !reactome_analysisService_path:/.*css.*/ && !reactome_analysisService_path:/.*api.docs.*/  && !reactome_analysisService_path:/.*images.*/\"}}"
       }
     },
     "_meta": {
@@ -1180,7 +1180,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot && !_exists_:internal_IP && !reactome_application:wordpress && !reactome_application:\\\"/content/schema\\\" && !reactome_application:\\\"/content/schema/objects\\\" && !reactome_application:\\\"/content/advanced\\\" && !reactome_application:\\\"/content/resources\\\" && !reactome_application:*gettags*  && (reactome_application:*analysis* || reactome_application:*content* || reactome_application:*restful* || reactome_application:*pathway* )\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && probably_a_bot:false && internal_IP:false && !reactome_application:wordpress && !reactome_application:\\\"/content/schema\\\" && !reactome_application:\\\"/content/schema/objects\\\" && !reactome_application:\\\"/content/advanced\\\" && !reactome_application:\\\"/content/resources\\\" && !reactome_application:*gettags*  && (reactome_application:*analysis* || reactome_application:*content* || reactome_application:*restful* || reactome_application:*pathway* )\"}}"
       }
     },
     "_meta": {
@@ -1214,7 +1214,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && probably_a_bot:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1248,7 +1248,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/download/current/diagram\\\" && request.raw:*json && !_exists_:probably_a_bot && !_exists_:internal_IP\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/download/current/diagram\\\" && request.raw:*json && probably_a_bot:false && internal_IP:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1265,7 +1265,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && (response:200 || response:304) && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\"},\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\"},\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true}"
       }
     },
     "_meta": {
@@ -1282,7 +1282,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/analysisservice\\\" && !_exists_:probably_a_bot && (response:200 || response:304)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/analysisservice\\\" && probably_a_bot:false && (response:200 || response:304)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1299,7 +1299,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"(reactome_application:\\\"/content/detail*\\\" || reactome_application:\\\"/content/query?q=\\\" ||  reactome_application:*pathwaybrowser* ) && !_exists_:internal_IP\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"(reactome_application:\\\"/content/detail*\\\" || reactome_application:\\\"/content/query?q=\\\" ||  reactome_application:*pathwaybrowser* ) && internal_IP:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1333,7 +1333,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"response:200 && !_exists_:probably_a_bot && _exists_:reactome_legacy_stable_identifier\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"response:200 && probably_a_bot:false && _exists_:reactome_legacy_stable_identifier\"}}"
       }
     },
     "_meta": {
@@ -1350,7 +1350,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"response:200 && !_exists_:probably_a_bot && !_exists_:reactome_legacy_stable_identifier\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"response:200 && probably_a_bot:false && !_exists_:reactome_legacy_stable_identifier\"}}"
       }
     },
     "_meta": {
@@ -1367,7 +1367,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:200 && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:200 && probably_a_bot:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1403,7 +1403,7 @@
       "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && (response:200 || response:304) && !_exists_:internal_IP && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1421,7 +1421,7 @@
       "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && response:200\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1439,7 +1439,7 @@
       "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"!_exists_:probably_a_bot && response:200\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && response:200\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1457,7 +1457,7 @@
       "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot && response:200\"}}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"probably_a_bot:false && response:200\"}}"
       }
     },
     "_meta": {
@@ -1493,7 +1493,7 @@
       "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/content/detail\\\" && !_exists_:probably_a_bot && response:200\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/content/detail\\\" && probably_a_bot:false && response:200\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1505,13 +1505,13 @@
     "_type": "visualization",
     "_source": {
       "title": "Popular search strings for /content/query/",
-      "visState": "{\"title\":\"Popular search strings for /content/query/\",\"type\":\"table\",\"params\":{\"perPage\":25,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"q\",\"size\":150000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"query term\"}}]}",
+      "visState": "{\"title\":\"Popular search strings for /content/query/\",\"type\":\"table\",\"params\":{\"perPage\":25,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"kvXtrct_q\",\"size\":150000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"query term\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/content/query?q=\\\" && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"reactome_application.raw:\\\"/content/query?q=\\\" && probably_a_bot:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1528,7 +1528,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice  && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path.raw:/\\\\/species.+/ || request.raw:/\\\\/[Aa]nalysis[sS]ervice\\\\/species.+/)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice  && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path.raw:/\\\\/species.+/ || request.raw:/\\\\/[Aa]nalysis[sS]ervice\\\\/species.+/)\"}}"
       }
     },
     "_meta": {
@@ -1545,7 +1545,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/token\\\\/.+/ || reactome_analysisService_path:\\\\/token )\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (request.raw:/\\\\/[aA]nalysis[sS]ervice\\\\/token\\\\/.+/ || reactome_analysisService_path:\\\\/token )\"}}"
       }
     },
     "_meta": {
@@ -1562,7 +1562,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path:identifier\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifier\\\\/.*/)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path:identifier\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifier\\\\/.*/)\"}}"
       }
     },
     "_meta": {
@@ -1579,7 +1579,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path:identifiers\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifiers\\\\/.*/)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path:identifiers\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifiers\\\\/.*/)\"}}"
       }
     },
     "_meta": {
@@ -1596,7 +1596,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path:identifiers\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifiers\\\\/.*/)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path:identifiers\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifiers\\\\/.*/)\"}}"
       }
     },
     "_meta": {
@@ -1613,7 +1613,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path:identifier\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifier\\\\/.*/)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path:identifier\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifier\\\\/.*/)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1630,7 +1630,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path:identifiers\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifiers\\\\/.*/)\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path:identifiers\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifiers\\\\/.*/)\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1647,7 +1647,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && _exists_:reactome_analysisService_path && !reactome_analysisService_path:/.*download.*/ && !reactome_analysisService_path:/.*token.*/ && !reactome_analysisService_path:/.*identifier.*/ && !reactome_analysisService_path:/.*species.*/\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && _exists_:reactome_analysisService_path && !reactome_analysisService_path:/.*download.*/ && !reactome_analysisService_path:/.*token.*/ && !reactome_analysisService_path:/.*identifier.*/ && !reactome_analysisService_path:/.*species.*/\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1664,7 +1664,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && _exists_:reactome_analysisService_path && !reactome_analysisService_path:/.*download.*/ && !reactome_analysisService_path:/.*token.*/ && !reactome_analysisService_path:/.*identifier.*/ && !reactome_analysisService_path:/.*species.*/\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && _exists_:reactome_analysisService_path && !reactome_analysisService_path:/.*download.*/ && !reactome_analysisService_path:/.*token.*/ && !reactome_analysisService_path:/.*identifier.*/ && !reactome_analysisService_path:/.*species.*/\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1681,7 +1681,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && (reactome_analysisService_path:identifier\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifier\\\\/.*/)\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && (reactome_analysisService_path:identifier\\\\/ || request.raw:/\\\\/[Aa]nalysis[Ss]ervice\\\\/identifier\\\\/.*/)\"}}"
       }
     },
     "_meta": {
@@ -1715,7 +1715,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && !_exists_:internal_IP && !_exists_:probably_a_bot && (response:200 || response:304) && _exists_:reactome_analysisService_path && !reactome_analysisService_path:/.*download.*/ && !reactome_analysisService_path:/.*token.*/ && !reactome_analysisService_path:/.*identifier.*/ && !reactome_analysisService_path:/.*species.*/\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:analysisservice   && internal_IP:false && probably_a_bot:false && (response:200 || response:304) && _exists_:reactome_analysisService_path && !reactome_analysisService_path:/.*download.*/ && !reactome_analysisService_path:/.*token.*/ && !reactome_analysisService_path:/.*identifier.*/ && !reactome_analysisService_path:/.*species.*/\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1749,7 +1749,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"response:200 && !_exists_:probably_a_bot\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"response:200 && probably_a_bot:false\"}}"
       }
     },
     "_meta": {
@@ -1767,7 +1767,7 @@
       "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"response:200 && !_exists_:probably_a_bot && !reactome_species_code:HSA\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"response:200 && probably_a_bot:false && !reactome_species_code:HSA\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1785,7 +1785,7 @@
       "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"referrer_domain:/.*((genecards)|(uniprot)|(ebi\\\\.ac\\\\.uk)|(omim)|(broad)|(ncbi)|(genenames)|(pathwaycommons)|(impala.molgen)|(reddit)).*/ && (response:200 || response:304) && !_exists_:probably_a_bot\"},\"highlightAll\":true,\"version\":true}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"referrer_domain:/.*((genecards)|(uniprot)|(ebi\\\\.ac\\\\.uk)|(omim)|(broad)|(ncbi)|(genenames)|(pathwaycommons)|(impala.molgen)|(reddit)).*/ && (response:200 || response:304) && probably_a_bot:false\"},\"highlightAll\":true,\"version\":true}"
       }
     },
     "_meta": {
@@ -1803,7 +1803,7 @@
       "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!referrer_domain:*reactome* && !referrer_domain:*127.0.0.1* && !_exists_:probably_a_bot && !_exists_:internal_IP\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!referrer_domain:*reactome* && !referrer_domain:*127.0.0.1* && probably_a_bot:false && internal_IP:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1821,7 +1821,7 @@
       "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && !_exists_:probably_a_bot\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"(response:200 || response:304) && probably_a_bot:false\"}}"
       }
     },
     "_meta": {
@@ -1833,12 +1833,12 @@
     "_type": "visualization",
     "_source": {
       "title": "ContentService exporters - bar graph",
-      "visState": "{\"title\":\"ContentService exporters - bar graph\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"reactome_contentService_path.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Exporter path\"}}]}",
+      "visState": "{\"title\":\"ContentService exporters - bar graph\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"reactome_content_service_exporter_path.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Exporter path\"}}]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:contentservice && reactome_contentService_path:*export*  && !response:5*\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:contentservice && reactome_content_service_exporter_path:*export*  && !response:5*\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1850,12 +1850,12 @@
     "_type": "visualization",
     "_source": {
       "title": "ContentService exporters",
-      "visState": "{\"title\":\"ContentService exporters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_contentService_path.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Exporter path\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}}]}",
+      "visState": "{\"title\":\"ContentService exporters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_content_service_exporter_path.raw\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Exporter path\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:contentservice && reactome_contentService_path:*export*  && !response:5*\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:contentservice && reactome_content_service_exporter_path:*export*  && !response:5*\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1909,7 +1909,7 @@
       "savedSearchId": "a93c39c0-02b6-11e8-b587-9994591e1da8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"response:200 && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"response:200 && probably_a_bot:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1926,7 +1926,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/download/current/diagram\\\" && request.raw:*json && !_exists_:probably_a_bot && !request.raw:*graph.json\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/download/current/diagram\\\" && request.raw:*json && probably_a_bot:false && !request.raw:*graph.json\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1999,7 +1999,7 @@
       "savedSearchId": "749a51f0-4051-11e9-9ef4-cfa48a9d7ea8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":\"(reactome_application:ReactomeRESTfulAPI || reactome_application:ContentService || reactome_application:AnalysisService) && !_exists_:probably_a_bot\",\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"query\":{\"query\":\"(reactome_application:ReactomeRESTfulAPI || reactome_application:ContentService || reactome_application:AnalysisService) && probably_a_bot:false\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -2017,7 +2017,7 @@
       "savedSearchId": "749a51f0-4051-11e9-9ef4-cfa48a9d7ea8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":\"!_exists_:probably_a_bot\",\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"query\":{\"query\":\"probably_a_bot:false\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -2035,7 +2035,7 @@
       "savedSearchId": "749a51f0-4051-11e9-9ef4-cfa48a9d7ea8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"!_exists_:probably_a_bot\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"probably_a_bot:false\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -2053,7 +2053,7 @@
       "savedSearchId": "749a51f0-4051-11e9-9ef4-cfa48a9d7ea8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":\"!_exists_:probably_a_bot\",\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"query\":{\"query\":\"probably_a_bot:false\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -2071,7 +2071,7 @@
       "savedSearchId": "749a51f0-4051-11e9-9ef4-cfa48a9d7ea8",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":\"!_exists_:probably_a_bot\",\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"query\":{\"query\":\"probably_a_bot:false\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -2088,7 +2088,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!referrer_type:SELF && !referrer_type:Direct && !_exists_:probably_a_bot && !referrer_domain:127.0.0.1* && !referrer_domain:localhost* && !referrer_domain:192.*\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!referrer_type:SELF && !referrer_type:Direct && probably_a_bot:false && !referrer_domain:127.0.0.1* && !referrer_domain:localhost* && !referrer_domain:192.*\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -2191,7 +2191,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"query\":{\"language\":\"lucene\",\"query\":\"(reactome_application:ReactomeRESTfulAPI || reactome_application:ContentService || reactome_application:AnalysisService) && !_exists_:probably_a_bot\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"query\":{\"language\":\"lucene\",\"query\":\"(reactome_application:ReactomeRESTfulAPI || reactome_application:ContentService || reactome_application:AnalysisService) && probably_a_bot:false\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -2317,7 +2317,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"query\":{\"query\":\"response:200 && !_exists_:probably_a_bot\",\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"query\":{\"query\":\"response:200 && probably_a_bot:false\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -2334,7 +2334,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:200 && !_exists_:probably_a_bot\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"REACTOMEWS_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:200 && probably_a_bot:false\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -2370,7 +2370,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"query\":{\"query\":\"_exists_:agent && useragent.name:Other && !_exists_:internal_IP && agent:/\\\\\\\"~-\\\\\\\"/\",\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"query\":{\"query\":\"_exists_:agent && useragent.name:Other && internal_IP:false && agent:/\\\\\\\"~-\\\\\\\"/\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
