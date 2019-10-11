@@ -382,23 +382,6 @@
     }
   },
   {
-    "_id": "677a6fa0-0c59-11e8-a9bf-2fef70854d2b",
-    "_type": "visualization",
-    "_source": {
-      "title": "Downloads - based on SAB presentation.",
-      "visState": "{\"title\":\"Downloads - based on SAB presentation.\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"reactome_download_file_name.raw\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"File\",\"row\":false}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && probably_a_bot:false && reactome_download_file_name.raw:/.*((UniProt2Reactome)|(PPI)|(homo.*interaction)|(MITAB)|(gk_current)|(graph)|(ReactomeToBioSystems)|(ReactomePathways.gmt)|(BioPAX)).*/\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "3271c7d0-0520-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
@@ -1242,23 +1225,6 @@
     }
   },
   {
-    "_id": "49d12b70-c8b9-11e8-8f30-7734483262fe",
-    "_type": "visualization",
-    "_source": {
-      "title": "Referrer by Application by ReferrerDomain",
-      "visState": "{\"title\":\"Referrer by Application by ReferrerDomain\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"referrer_type\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"reactome_application.raw\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"referrer_domain\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!referrer_type:SELF && !referrer_type:Direct\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "7dd70550-24cd-11e9-8f30-7734483262fe",
     "_type": "visualization",
     "_source": {
@@ -1464,24 +1430,6 @@
     }
   },
   {
-    "_id": "5c052ca0-02d6-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "unique IPs per month",
-      "visState": "{\"title\":\"unique IPs per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":0,\"extended_bounds\":{},\"json\":\"\",\"customLabel\":\"Month\"}}]}",
-      "uiStateJSON": "{\n  \"vis\": {\n    \"params\": {\n      \"sort\": {\n        \"columnIndex\": null,\n        \"direction\": null\n      }\n    }\n  }\n}",
-      "description": "",
-      "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163)\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "36067bf0-02de-11e8-b587-9994591e1da8",
     "_type": "visualization",
     "_source": {
@@ -1529,23 +1477,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"probably_a_bot:false && response:200\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "73977520-128b-11e8-b534-9981af617f60",
-    "_type": "visualization",
-    "_source": {
-      "title": "Referrer types and domains for each type",
-      "visState": "{\"title\":\"Referrer types and domains for each type\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"bottom\",\"isDonut\":false,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"referrer_type\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Referrer Type\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"referrer_domain\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Referrer\"}}]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!referrer_type:SELF && !referrer_type:Direct && probably_a_bot:false && !referrer_domain:127.0.0.1* && !referrer_domain:localhost* && !referrer_domain:192.*\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -1726,24 +1657,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"probably_a_bot:false\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "08537350-40f6-11e9-9ef4-cfa48a9d7ea8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Top 10 Client IPs - Programmatic Access (no bots)",
-      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Client IP\",\"field\":\"clientip\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"size\":10},\"schema\":\"segment\",\"type\":\"terms\"}],\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"labels\":{\"last_level\":true,\"show\":false,\"truncate\":100,\"values\":true},\"legendPosition\":\"right\",\"type\":\"pie\"},\"title\":\"Top 10 Client IPs - Programmatic Access (no bots)\",\"type\":\"pie\"}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "749a51f0-4051-11e9-9ef4-cfa48a9d7ea8",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":\"probably_a_bot:false\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -2246,67 +2159,6 @@
     }
   },
   {
-    "_id": "2cf34280-50a0-11e9-9ef4-cfa48a9d7ea8",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Referrers",
-      "hits": 0,
-      "description": "Dashboard for hits from referrers.",
-      "panelsJSON": "[{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"h\":33,\"i\":\"1\",\"w\":33,\"x\":0,\"y\":30},\"id\":\"73977520-128b-11e8-b534-9981af617f60\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":30,\"i\":\"2\",\"w\":33,\"x\":0,\"y\":0},\"id\":\"49d12b70-c8b9-11e8-8f30-7734483262fe\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":18,\"i\":\"3\",\"w\":15,\"x\":33,\"y\":0},\"id\":\"687a9400-02b5-11e8-b587-9994591e1da8\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":30,\"i\":\"4\",\"w\":15,\"x\":33,\"y\":18},\"id\":\"d9838c50-02c5-11e8-b587-9994591e1da8\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.6.0\"}]",
-      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
-      "version": 1,
-      "timeRestore": true,
-      "timeTo": "2019-01-01T04:59:59.000Z",
-      "timeFrom": "2018-01-01T05:00:00.000Z",
-      "refreshInterval": {
-        "pause": true,
-        "value": 0
-      },
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "d9838c50-02c5-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Referrals  - preferrred domains",
-      "visState": "{\"title\":\"Referrals  - preferrred domains\",\"type\":\"table\",\"params\":{\"perPage\":22,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\",\"showMetricsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"referrer_domain\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"(OTHER)\",\"missingBucket\":true,\"missingBucketLabel\":\"(MISSING)\",\"customLabel\":\"Referrer (peer)\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"referrer_type:Peer && (response:200 || response:304) && probably_a_bot:false\",\"language\":\"lucene\"},\"highlightAll\":true,\"version\":true}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "687a9400-02b5-11e8-b587-9994591e1da8",
-    "_type": "visualization",
-    "_source": {
-      "title": "Top 10 Referrers (Any)",
-      "visState": "{\"title\":\"Top 10 Referrers (Any)\",\"type\":\"table\",\"params\":{\"perPage\":11,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\",\"showMetricsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"referrer_domain\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"(OTHER)\",\"missingBucket\":false,\"missingBucketLabel\":\"(MISSING)\",\"customLabel\":\"Referrer (any)\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!referrer_domain:*reactome* && !referrer_domain:*127.0.0.1* && probably_a_bot:false && internal_IP:false\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "96927e90-23fa-11e9-8f30-7734483262fe",
     "_type": "visualization",
     "_source": {
@@ -2351,6 +2203,23 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"query\":{\"language\":\"lucene\",\"query\":\"request.raw:*\\\\/content\\\\/detail\\\\/interactor\\\\/*\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "35dde830-2191-11e8-b589-376955287594",
+    "_type": "visualization",
+    "_source": {
+      "title": "Application hits from ProteinAtlas",
+      "visState": "{\"title\":\"Application hits from ProteinAtlas\",\"type\":\"table\",\"params\":{\"perPage\":18,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\",\"showMetricsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"timeRange\":{\"from\":\"2018-01-01T05:00:00.000Z\",\"to\":\"2019-01-01T04:59:59.999Z\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Application\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"referrer:*proteinatlas* && probably_a_bot:false && response:200\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
@@ -2426,23 +2295,6 @@
     }
   },
   {
-    "_id": "35dde830-2191-11e8-b589-376955287594",
-    "_type": "visualization",
-    "_source": {
-      "title": "Application hits from ProteinAtlas",
-      "visState": "{\"title\":\"Application hits from ProteinAtlas\",\"type\":\"table\",\"params\":{\"perPage\":18,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\",\"showMetricsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"timeRange\":{\"from\":\"2018-01-01T05:00:00.000Z\",\"to\":\"2019-01-01T04:59:59.999Z\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reactome_application.raw\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Application\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"referrer:*proteinatlas* && probably_a_bot:false && response:200\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "8bb524e0-2168-11e8-b589-376955287594",
     "_type": "visualization",
     "_source": {
@@ -2453,6 +2305,389 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"reactome_application:\\\"/download/current/diagram\\\" && request.raw:*json && probably_a_bot:false && !request.raw:*graph.json\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "677a6fa0-0c59-11e8-a9bf-2fef70854d2b",
+    "_type": "visualization",
+    "_source": {
+      "title": "Downloads - based on SAB presentation.",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"File\",\"field\":\"reactome_download_file_name.raw\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"row\":false,\"size\":20},\"schema\":\"split\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"Month\",\"drop_partials\":false,\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"min_doc_count\":1,\"timeRange\":{\"from\":\"2018-01-01T05:00:00.000Z\",\"mode\":\"absolute\",\"to\":\"2019-01-01T04:59:59.999Z\"},\"time_zone\":\"America/New_York\",\"useNormalizedEsInterval\":true},\"schema\":\"bucket\",\"type\":\"date_histogram\"}],\"params\":{\"perPage\":12,\"showMetricsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"Downloads - based on SAB presentation.\",\"type\":\"table\"}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"response:2* && _exists_:reactome_download_file_name.raw && probably_a_bot:false && reactome_download_file_name.raw:/.*((UniProt2Reactome)|(PPI)|(homo.*interaction)|(MITAB)|(gk_current)|(graph)|(ReactomeToBioSystems)|(ReactomePathways.gmt)|(BioPAX)|(ReactomePathways.txt)).*/\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ec7aa350-7332-11e9-97ad-c79af0ab302e",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Trends",
+      "hits": 0,
+      "description": "Trends for file downloads, AnalysisService, ContentService",
+      "panelsJSON": "[{\"gridData\":{\"x\":0,\"y\":0,\"w\":48,\"h\":17,\"i\":\"1\"},\"version\":\"6.6.0\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"id\":\"5039fc80-7331-11e9-97ad-c79af0ab302e\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":0,\"y\":32,\"w\":48,\"h\":16,\"i\":\"2\"},\"version\":\"6.6.0\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"id\":\"5baaa5a0-7332-11e9-97ad-c79af0ab302e\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":0,\"y\":17,\"w\":48,\"h\":15,\"i\":\"3\"},\"version\":\"6.6.0\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"id\":\"743218b0-7332-11e9-97ad-c79af0ab302e\",\"embeddableConfig\":{}}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true,\"hidePanelTitles\":false}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5039fc80-7331-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "download trends",
+      "visState": "{\"title\":\"download trends\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q='response:2* && _exists_:reactome_download_file_name.raw && probably_a_bot:false', timefield=@apache_timestamp, index=reactome-main*, metric=count),\\n\\n.es(q='response:2* && _exists_:reactome_download_file_name.raw && probably_a_bot:false', timefield=@apache_timestamp, index=reactome-main*, metric=count).trend()\",\"interval\":\"auto\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "2cf34280-50a0-11e9-9ef4-cfa48a9d7ea8",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Referrers",
+      "hits": 0,
+      "description": "Dashboard for hits from referrers.",
+      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":15,\"h\":19,\"i\":\"3\"},\"id\":\"687a9400-02b5-11e8-b587-9994591e1da8\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.6.0\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":15,\"y\":0,\"w\":15,\"h\":30,\"i\":\"4\"},\"id\":\"d9838c50-02c5-11e8-b587-9994591e1da8\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.6.0\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "2019-01-01T04:59:59.000Z",
+      "timeFrom": "2018-01-01T05:00:00.000Z",
+      "refreshInterval": {
+        "pause": true,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "687a9400-02b5-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 50 Referrers (Any)",
+      "visState": "{\"title\":\"Top 50 Referrers (Any)\",\"type\":\"table\",\"params\":{\"perPage\":26,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\",\"showMetricsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"referrer_domain\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"(OTHER)\",\"missingBucket\":false,\"missingBucketLabel\":\"(MISSING)\",\"customLabel\":\"Referrer (any)\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"!referrer_domain:*reactome* && !referrer_domain:*127.0.0.1* && probably_a_bot:false && internal_IP:false && !referrer_type:SELF\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "08537350-40f6-11e9-9ef4-cfa48a9d7ea8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top 25 Client IPs - Programmatic Access (no bots)",
+      "visState": "{\"title\":\"Top 25 Client IPs - Programmatic Access (no bots)\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"labels\":{\"last_level\":true,\"show\":false,\"truncate\":100,\"values\":true},\"legendPosition\":\"right\",\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"clientip\",\"size\":25,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Client IP\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "749a51f0-4051-11e9-9ef4-cfa48a9d7ea8",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"probably_a_bot:false\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c89a09f0-7335-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "download trends - ReactomePathways.txt",
+      "visState": "{\"title\":\"download trends - ReactomePathways.txt\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q='response:2* && _exists_:reactome_download_file_name.raw && probably_a_bot:false && reactome_download_file_name:ReactomePathways.txt', timefield=@apache_timestamp, index=reactome-main*, metric=count),\\n\\n.es(q='response:2* && _exists_:reactome_download_file_name.raw && probably_a_bot:false && reactome_download_file_name:ReactomePathways.txt', timefield=@apache_timestamp, index=reactome-main*, metric=count).trend()\",\"interval\":\"auto\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5baaa5a0-7332-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "AnalysisService trend",
+      "visState": "{\"title\":\"AnalysisService trend\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q='reactome_application:AnalysisService && probably_a_bot:false && (response:200 || response:304)', timefield=@apache_timestamp, index=reactome-main*, metric=count),\\n\\n.es(q='reactome_application:AnalysisService && probably_a_bot:false', timefield=@apache_timestamp, index=reactome-main*, metric=count).trend()\",\"interval\":\"auto\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "743218b0-7332-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "ContentService trend",
+      "visState": "{\"title\":\"ContentService trend\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q=' reactome_application:ContentService && probably_a_bot:false && (response:200 || response:304)', timefield=@apache_timestamp, index=reactome-main*, metric=count),\\n\\n.es(q=' reactome_application:ContentService && probably_a_bot:false && (response:200 || response:304)', timefield=@apache_timestamp, index=reactome-main*, metric=count).trend()\",\"interval\":\"auto\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "361986b0-ec42-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "unique IPs per month - with country breakdown",
+      "visState": "{\"title\":\"unique IPs per month - with country breakdown\",\"type\":\"table\",\"params\":{\"perPage\":100,\"showMetricsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"timeRange\":{\"from\":\"2019-01-01T05:00:00.000Z\",\"to\":\"2019-10-01T03:59:59.999Z\",\"mode\":\"absolute\"},\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":0,\"extended_bounds\":{},\"json\":\"\",\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.country_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163 || clientip:100.25.71.177)\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d9838c50-02c5-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Referrals  - preferrred domains",
+      "visState": "{\"title\":\"Referrals  - preferrred domains\",\"type\":\"table\",\"params\":{\"perPage\":22,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\",\"showMetricsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"referrer_domain\",\"size\":40,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"(OTHER)\",\"missingBucket\":true,\"missingBucketLabel\":\"(MISSING)\",\"customLabel\":\"Referrer (peer)\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"(referrer_type:Peer || (referrer_domain:*blueprint-epigenome*|| referrer_domain:*peptracker* || referrer_domain:*iomics.ugent* || referrer_domain:*ilincs.org* || referrer_domain:*integratedproteomics*)) && (response:200 || response:304) && probably_a_bot:false && !referrer_domain:*biogps*\",\"language\":\"lucene\"},\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5c052ca0-02d6-11e8-b587-9994591e1da8",
+    "_type": "visualization",
+    "_source": {
+      "title": "unique IPs per month",
+      "visState": "{\"title\":\"unique IPs per month\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showMetricsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":0,\"extended_bounds\":{},\"json\":\"\",\"customLabel\":\"Month\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163 || clientip:100.25.71.177)\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ed4f2250-ec3c-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Ashburn IP counts",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"drop_partials\":false,\"extended_bounds\":{},\"field\":\"@apache_timestamp\",\"interval\":\"M\",\"min_doc_count\":1,\"timeRange\":{\"from\":\"2019-05-01T04:00:00.000Z\",\"mode\":\"absolute\",\"to\":\"2019-10-01T03:59:59.999Z\"},\"time_zone\":\"America/New_York\",\"useNormalizedEsInterval\":true},\"schema\":\"bucket\",\"type\":\"date_histogram\"}],\"params\":{\"perPage\":10,\"showMetricsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"Ashburn IP counts\",\"type\":\"table\"}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"query\":{\"query\":\"geoip.city_name:Ashburn\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "38f1fc60-e5f2-11e9-97ad-c79af0ab302e",
+    "_type": "search",
+    "_source": {
+      "title": "Searches that yield 404 (not found)",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "reactome_application",
+        "response",
+        "reactome_stable_identifier"
+      ],
+      "sort": [
+        "@apache_timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"reactome_application:\\\"/content/detail\\\" && !response:200\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "3865e050-ec45-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Hits per month - China",
+      "visState": "{\"title\":\"Hits per month - China\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\",\"showMetricsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163) && geoip.country_name:China\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9396b6d0-ec44-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "unique IPs per month - China",
+      "visState": "{\"title\":\"unique IPs per month - China\",\"type\":\"table\",\"params\":{\"perPage\":70,\"showMetricsAtAllLevels\":true,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"timeRange\":{\"from\":\"2019-04-01T04:00:00.000Z\",\"to\":\"2019-10-01T03:59:59.999Z\",\"mode\":\"absolute\"},\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":0,\"extended_bounds\":{},\"json\":\"\",\"customLabel\":\"Month\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163 || clientip:100.25.71.177) && geoip.country_name:China\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "bd9e8b50-ec4a-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "unique IPs per month - China - by city",
+      "visState": "{\"title\":\"unique IPs per month - China - by city\",\"type\":\"table\",\"params\":{\"perPage\":70,\"showMetricsAtAllLevels\":true,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"timeRange\":{\"from\":\"2019-04-01T04:00:00.000Z\",\"to\":\"2019-10-01T03:59:59.999Z\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":0,\"extended_bounds\":{},\"json\":\"\",\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.city_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163 || clientip:100.25.71.177) && geoip.country_name:China\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "cc0fe6c0-ec4a-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Hits per month - China - by city",
+      "visState": "{\"title\":\"Hits per month - China - by city\",\"type\":\"table\",\"params\":{\"perPage\":60,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\",\"showMetricsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"timeRange\":{\"from\":\"2019-04-01T04:00:00.000Z\",\"to\":\"2019-10-01T03:59:59.999Z\",\"mode\":\"absolute\"},\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.city_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163) && geoip.country_name:China\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "767df7a0-ec4b-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Unique IPs - world map",
+      "visState": "{\"title\":\"Unique IPs - world map\",\"type\":\"tile_map\",\"params\":{\"addTooltip\":true,\"colorSchema\":\"Yellow to Red\",\"heatClusterSize\":1.5,\"isDesaturated\":true,\"legendPosition\":\"bottomright\",\"mapCenter\":[0,0],\"mapType\":\"Heatmap\",\"mapZoom\":2,\"wms\":{\"enabled\":false,\"options\":{\"format\":\"image/png\",\"transparent\":true}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.location\",\"autoPrecision\":true,\"isFilteredByCollar\":true,\"useGeocentroid\":true,\"mapZoom\":4,\"mapCenter\":{\"lon\":113.02734375000001,\"lat\":33.15594830078649},\"mapBounds\":{\"bottom_right\":{\"lat\":-2.1967272417616583,\"lon\":167.34375},\"top_left\":{\"lat\":58.53959476664049,\"lon\":58.71093749999999}},\"precision\":2}}]}",
+      "uiStateJSON": "{\"mapCenter\":[44.96479793033104,11.25],\"mapZoom\":2}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c74c5eb0-ec5f-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "unique IPs per month - US - by city",
+      "visState": "{\"title\":\"unique IPs per month - US - by city\",\"type\":\"table\",\"params\":{\"perPage\":70,\"showMetricsAtAllLevels\":true,\"showPartialRows\":false,\"showTotal\":true,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"{\\\"precision_threshold\\\":40000}\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"timeRange\":{\"from\":\"2019-04-01T04:00:00.000Z\",\"to\":\"2019-10-01T03:59:59.999Z\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":0,\"extended_bounds\":{},\"json\":\"\",\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.city_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "f7700a20-0c1d-11e8-a9bf-2fef70854d2b",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163 || clientip:100.25.71.177) && (geoip.country_name:\\\"United States\\\" || geoip.country_name:US)\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "0ae7f4e0-ec60-11e9-97ad-c79af0ab302e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Hits per month - US - by city",
+      "visState": "{\"title\":\"Hits per month - US - by city\",\"type\":\"table\",\"params\":{\"perPage\":60,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\",\"showMetricsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"@apache_timestamp\",\"timeRange\":{\"from\":\"2019-04-01T04:00:00.000Z\",\"to\":\"2019-10-01T03:59:59.999Z\",\"mode\":\"absolute\"},\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Month\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"geoip.city_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"REACTOME_INDEX\",\"filter\":[],\"query\":{\"query\":\"probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\\\"::1\\\" || clientip:206.108.125.163) && (geoip.country_name:US || geoip.country_name:\\\"United States\\\")\",\"language\":\"lucene\"}}"
       }
     },
     "_meta": {
