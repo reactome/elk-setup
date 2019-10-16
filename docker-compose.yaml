@@ -10,6 +10,9 @@ services:
             - node.name=esserver
             - network.host=_site_
             - "ES_JAVA_OPTS=-Xms4g -Xmx20g"
+        ports:
+            - "9200:9200"
+            - "9300:9300"
 
     kibserver:
         image: docker.elastic.co/kibana/kibana-oss:6.6.0
@@ -45,7 +48,7 @@ services:
             - kibserver
         links:
             - kibserver
-        image: nginx:1.15.8-alpine
+        image: nginx:1.17.4-alpine
         ports:
             - 6601:6601
         environment:
