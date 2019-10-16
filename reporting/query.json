@@ -1,0 +1,62 @@
+{
+  "aggs": {
+    "month_agg": {
+      "date_histogram": {
+        "field": "@apache_timestamp",
+        "interval": "1M",
+        "time_zone": "America/New_York",
+        "min_doc_count": "0",
+        "format": "yyyy-MM-dd"
+      },
+      "aggs": {
+        "ip_count": {
+          "cardinality": {
+            "field": "clientip",
+            "precision_threshold": 40000
+          }
+        }
+      }
+    }
+  },
+  "size": 0,
+  "version": true,
+  "docvalue_fields": [
+    {
+      "field": "@apache_timestamp",
+      "format": "date_time"
+    },
+    {
+      "field": "@timestamp",
+      "format": "date_time"
+    }
+  ],
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "query_string": {
+            "query": "probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\"::1\" || clientip:206.108.125.163 || clientip:100.25.71.177)",
+            "analyze_wildcard": true,
+            "default_field": "*"
+          }
+        },
+        {
+          "query_string": {
+            "query": "(response:200 || response:304) && !request:/.*\\.((css)|(js)|(class)|(gif)|(jpg)|(jpeg)|(png)|(bmp)|(ico)|(rss)|(xml)|(swf))/  && internal_IP:false && probably_a_bot:false && !useragent.name:Other && !useragent.name:Java && !useragent.name:Wget",
+            "analyze_wildcard": true,
+            "default_field": "*"
+          }
+        },
+        {
+          "range": {
+            "@apache_timestamp": {
+              "gte": _FROM_DATE,
+              "lte": _TO_DATE,
+              "format": "basic_date"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
