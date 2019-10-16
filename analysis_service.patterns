@@ -1,0 +1,21 @@
+# Lots of regular expressions here. If you ever need to debug them, you might want to
+# look for a tool that can do railroad-style diagrams for regular
+# expressions. One such tool is https://regexper.com/
+# or if you use Atom, there's this: https://atom.io/packages/regex-railroad-diagram
+
+ARGS (?:\?).+
+DOWNLOAD download\/(?<reactome_analysis_service_download_token>[^/]+)\/(pathways\/(?<reactome_analysis_service_resource>[^/]+)\/(?<reactome_analysis_service_filename>[^/]+\.csv)|entities\/(not)?found\/((?<reactome_analysis_service_resource>[^/]+)\/)?(?<reactome_analysis_service_filename>[^/]+\.csv))(%{ARGS:reactome_args})?
+
+IDENTIFIER identifier\/(?<reactome_analysis_service_identifier>[^/?]+)(\/projection)?(%{ARGS:reactome_args})?
+
+IDENTIFIERS identifiers\/(form(\/projection)?|projection|url(\/projection)?)(%{ARGS:reactome_args})?
+
+REPORT report\/(?<reactome_analysis_service_report_token>[^/]+)\/(?<reactome_analysis_service_report_species>[^/]+)\/(?<reactome_analysis_service_filename>[^/]\.pdf)(%{ARGS:reactome_args})?
+
+SPECIES species\/homoSapiens\/(?<reactome_analysis_service_species>[^/?]+)(%{ARGS:reactome_args})?
+
+PATHWAY (?<reactome_analysis_service_pathway>[^/?]+)
+TOKEN_FOUND found\/(all(\/%{PATHWAY})?|entities\/%{PATHWAY}|interactors\/%{PATHWAY})
+TOKEN token\/(?<reactome_analysis_service_token>[^/]+)\/(%{TOKEN_FOUND}|page\/%{PATHWAY}|reactions\/pathways|reactions\/%{PATHWAY}|notFound|resources|(filter\/(pathways|species\/(?<reactome_analysis_service_species>)[^/?]+)))(%{ARGS:reactome_args})?
+
+ANALYSIS_SERVICE_PATH \/AnalysisService\/(%{DOWNLOAD}|%{IDENTIFIER}|%{IDENTIFIERS}|%{REPORT}|%{SPECIES}|%{TOKEN})$

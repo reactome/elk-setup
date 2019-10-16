@@ -64,6 +64,16 @@
                     }
                 },
                 {
+                    "match_kv_extracts": {
+                        "match_mapping_type": "string",
+                        "match": "kvXtrct_*",
+                        "mapping": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                {
                     "strings_as_keywords": {
                         "match_mapping_type": "string",
                         "mapping": {

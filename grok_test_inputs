@@ -1,0 +1,105 @@
+# Some patterns to use for grok-testing with ContentService and AnalysisService patterns.
+
+/AnalysisService/token/MjAxODAyMjMwNzQzNDlfMjUzMw==/resources
+/AnalysisService/token/MjAxOTAxMjYyMjAzMzZfNzg=/filter/pathways?resource=UNIPROT
+/AnalysisService/token/MjAxOTAxMjYyMjAzMzZfNzg=/reactions/pathways?resource=UNIPROT
+/AnalysisService/token/MjAxOTAxMjcxMzQ4MjFfMTcz/page/354192?resource=TOTAL
+/AnalysisService/token/MjAxOTAxMjcxMzQ4MjFfMTcz/found/all/354192?resource=TOTAL
+/AnalysisService/token/MjAxOTAxMjcxMzQ4MjFfMTcz/notFound?pageSize=40&page=1
+/AnalysisService/token/MjAxOTAxMjYyMjAzMzZfNzg=/found/entities/10077520?resource=UNIPROT&pageSize=40&page=1
+/AnalysisService/token/MjAxOTAxMjcxMzQ4MjFfMTcz/filter/pathways?resource=TOTAL
+
+/AnalysisService/species/homoSapiens/205621?pageSize=20&page=1
+
+/AnalysisService/report/MjAxOTAxMjcxMzM4MDJfMTY5/Homo sapiens/report.pdf?resource=TOTAL&diagramProfile=Modern&analysisProfile=Standard&fireworksProfile=Copper
+
+/AnalysisService/identifiers/projection?interactors=false&pageSize=20&page=1
+
+/AnalysisService/identifier/TLR7/projection?interactors=false&pageSize=20&page=1&sortBy=ENTITIES_PVALUE&order=ASC&resource=TOTAL
+/AnalysisService/identifier/9606?interactors=false&pageSize=20&page=1&sortBy=ENTITIES_PVALUE&order=ASC&resource=TOTAL
+
+/AnalysisService/download/MjAxOTAxMjYxMDQ2NThfMTk4Mw==/entities/notfound/not_found.csv
+/AnalysisService/download/MjAxOTAxMjcxMjIyMThfMTY1/pathways/TOTAL/result.csv
+/AnalysisService/download/MjAxOTAxMjcxNDAwMDNfMTc1/entities/found/CHEBI/mapping.csv
+
+
+
+/AnalysisService/download/MjAxOTAxMjcxNDAwMDNfMTc1/pathways/CHEBI/result.csv
+
+/ContentService/search/suggest?query=vi
+/ContentService/search/fireworks/?query=vipr2&species=Homo sapiens&start=0&rows=30
+
+/ContentService/search/diagram/R-HSA-418555/occurrences/R-HSA-420227
+/ContentService/search/diagram/R-DME-196071/flag?query=Q9VLP9
+/ContentService/search/diagram/summary?query=vipr2&species=Homo sapiens&diagram=R-HSA-418555
+/ContentService/search/diagram/R-HSA-418555?query=vipr2&start=0&rows=30
+
+/ContentService/data/schema/ReferenceIsoform/min
+/ContentService/data/schema/ReferenceIsoform/count?species=Homo sapiens
+/ContentService/data/schema/Complex?species=9606&page=480&offset=25
+
+/ContentService/references/mapping/ENSG00000130726
+
+/ContentService/data/query/ids/map
+/ContentService/data/query/R-HSA-321321/modified
+/ContentService/data/query/R-HSA-321321
+/ContentService/data/query/enhanced/R-HSA-1221632
+/ContentService/data/query/ids
+
+/ContentService/data/person/391309/firstName
+/ContentService/data/person/391309/
+/ContentService/data/person/391309/authoredPathways
+/ContentService/data/person/72179/publications
+
+/ContentService/data/pathways/top/Homo+sapiens
+/ContentService/data/pathways/low/entity/R-HSA-6802292/allForms?species=Homo+sapiens
+/ContentService/data/pathways/low/diagram/entity/R-MMU-8865393?species=Mus musculus
+/ContentService/data/pathway/R-HSA-5673001/containedEvents/stId
+/ContentService/data/pathway/R-HSA-5673001/containedEvents
+/ContentService/data/pathways/low/diagram/entity/R-HSA-163098
+/ContentService/data/pathways/low/diagram/entity/R-HSA-71184?species=Homo sapiens
+
+
+/ContentService/data/participants/8978868/participatingPhysicalEntities
+/ContentService/data/participants/R-HSA-265464/referenceEntities
+/ContentService/data/participants/R-HSA-210993.1?species=Homo+species
+
+/ContentService/data/participants/5619036
+
+/ContentService/data/participants/189530/referenceEntities
+
+/ContentService/data/orthology/R-HSA-6799198/species/49633
+/ContentService/data/orthologies/ids/species/48887
+/ContentService/data/orthologies/ids/species/48892
+
+/ContentService/data/mapping/UniProt/ABCC8/pathways?species=Homo sapiens
+/ContentService/data/mapping/UniProt/PTEN/reactions?species=9606
+
+/ContentService/interactors/upload/tuple/content?name=PARP14
+/ContentService/interactors/token/bbf90ece08788c2c9335b7049006212c?v=1544984096632
+/ContentService/interactors/static/molecules/details
+/ContentService/interactors/static/molecule/O60242/pathways?&species=Homo sapiens&onlyDiagrammed=true
+/ContentService/interactors/static/molecules/details/?v=1550160823227
+
+/ContentService/interactors/psicquic/molecule/IntAct/P08226/details?v=123234
+/ContentService/interactors/psicquic/molecules/UniProt/details?v=1550180104903
+/ContentService/interactors/psicquic/molecule/IntAct/P08226/summary
+
+/ContentService/data/event/69620/ancestors
+/ContentService/data/eventsHierarchy/Mus musculus?content-type=application/json
+
+/ContentService/data/complex/R-HSA-9626923/subunits?excludeStructures=false
+/ContentService/data/complexes/UniProt/Q53FA7
+/ContentService/data/complex/77258/subunits
+/ContentService/data/entity/R-HSA-9007464/componentOf
+
+/ContentService/data/discover/R-HSA-9007464
+
+/ContentService/data/query/enhanced/R-HSA-1221632
+
+/ContentService/exporter/event/R-GGA-1266738.sbml
+/ContentService/exporter/document/event/R-HSA-1221632.pdf?diagramProfile=Modern&token=MjAxOTAyMTMyMjExNTFfMzU0&analysisProfile=Standard
+/ContentService/exporter/fireworks/Homo sapiens.svg?margin=15&diagramProfile=undefined&title=false
+/ContentService/exporter/event/R-GGA-1266738.sbgn
+/ContentService/exporter/reaction/R-HSA-374680.svg?title=false
+/ContentService/exporter/diagram/R-HSA-211945.svg?margin=15&ehld=true&diagramProfile=Modern&sel=R-HSA-211981&token=MjAxODEyMzEwOTE3MThfNzQw&analysisProfile=Standard&resource=TOTAL&title=false

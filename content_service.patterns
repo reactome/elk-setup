@@ -1,0 +1,44 @@
+# Lots of regular expressions here. If you ever need to debug them, you might want to
+# look for a tool that can do railroad-style diagrams for regular
+# expressions. One such tool is https://regexper.com/
+# or if you use Atom, there's this: https://atom.io/packages/regex-railroad-diagram
+
+ARGS (?:\?).+
+EXPORT_FORMAT (pdf|png|jpg|jpeg|svg|gif|sbml|sbgn)
+EXPORTER_TYPE (diagram|(document\/event)|fireworks|reaction|event)
+CONTENT_SERVICE_EXPORTER exporter\/%{EXPORTER_TYPE:reactome_content_service_exporter_type}\/(?<reactome_content_service_exported_thing>.+)\.%{EXPORT_FORMAT:reactome_content_service_export_format}(%{ARGS:reactome_args})?
+
+DISCOVER (?<reactome_content_service_discover>data\/discover\/)(?<reactome_content_service_identifier>.+)
+
+ENTITIES data\/((?<reactome_content_service_query_type>(complex|entity))\/(?<reactome_content_service_identifier>[^/]+)\/(?<reactome_content_service_data_to_query>(subunits|componentOf|otherForms))|(?<reactome_content_service_query_type>complexes)\/(?<reactome_content_service_resource>[^/]+)\/(?<reactome_content_service_identifier>[^/]+))(%{ARGS:reactome_args})?
+
+EVENTS data\/((event\/(?<reactome_content_service_event_id>[^/]+)\/ancestors)|eventsHierarchy\/(?<reactome_content_service_species>[^?/]+))(%{ARGS:reactome_args})?
+
+INTERACTORS_PSICQUIC interactors\/(psicquic\/molecule(s?)\/(?<reactome_content_service_resource>[^/]+)(\/(?<reactome_content_service_accession>[^/]+))?(\/(?<reactome_content_service_summary_or_detail>details|summary))(%{ARGS:reactome_args})?)
+
+INTERACTORS_STATIC interactors\/(static\/molecule(s?)(\/(?<reactome_content_service_accession>[^/]+))?(\/(?<reactome_content_service_summary_or_detail_or_pathway>details|summary|pathways))(%{ARGS:reactome_args})?)
+
+INTERACTORS_OTHER interactors\/(((token\/(?<reactome_content_service_token>[^/]+))|(?<reactome_content_service_upload_type>upload\/(tuple\/(content|url|form))|psicquic\/url)))(%{ARGS:reactome_args})?
+
+MAPPING data\/mapping\/(?<reactome_content_service_resource>[^/]+)\/(?<reactome_content_service_identifier>[^/]+)\/(?<reactome_content_service_pathways_or_reactions>pathways|reactions)(%{ARGS:reactome_args})?
+
+ORTHOLOGIES data\/ortholog(ies\/ids|y\/(?<reactome_content_service_identifier>[^/]+))\/species\/(?<reactome_content_service_species>[^/]+)(%{ARGS:reactome_args})?
+
+PARTICIPANTS data\/participants\/(?<reactome_content_service_identifier>[^/?]+)(\/(?<reactome_content_service_participating_entity_type>participatingPhysicalEntities|referenceEntities))?(%{ARGS:reactome_args})?
+
+PATHWAYS data\/pathway\/(?<reactome_content_service_identifier>[^/?]+)\/containedEvents(\/(?<reactome_content_service_attributeName>[^/?]+))?(%{ARGS:reactome_args})?
+PATHWAYS_LOW data\/pathways\/low\/(diagram\/)?entity\/(?<reactome_content_service_identifier>[^/?]+)(\/allForms)?(%{ARGS:reactome_args})?
+PATHWAYS_TOP_LEVEL data\/pathways\/top\/(?<reactome_content_service_species>[^?/]+)(%{ARGS:reactome_args})?
+
+PERSON data\/(person\/(?<reactome_content_service_identifier>[^/?]+)(\/((?<reactome_content_service_authors_pathways_or_publications>authoredPathways|publications)|(?<reactome_content_service_filter_attrib>[^?/]+)))|people\/name\/(?<reactome_content_service_name>[^?/]+)(\/exact)?)(%{ARGS:reactome_args})?
+
+QUERY data\/query\/(ids(\/map)?|((enhanced\/)?(?<reactome_content_service_identifier>[^?/]+)(\/(?<reactome_content_service_filter_attrib>[^?/]+))?))(%{ARGS:reactome_args})?
+
+REFERENCES references\/mapping\/(?<reactome_content_service_identifier>[^/?])(%{ARGS:reactome_args})?
+
+SCHEMA data\/schema\/(?<reactome_content_service_schema_class>[^/?]+)(\/(?<reactome_content_service_query_option>count|min|reference))?(%{ARGS:reactome_args})?
+
+SEARCH_DIAGRAM (?<reactome_content_service_search_type>diagram)\/(summary|(?<reactome_content_service_diagram_identifier>[^/?]+))((\/occurrences\/(?<reactome_content_service_instance_identifier>([^?/]+)))|((\/(?<reactome_content_service_pathway_identifier>[^?/]+))?\/flag))?
+SEARCH search\/((?<reactome_content_service_search_type>facet(_query)?|fireworks(\/flag)?|query|spellcheck|suggest)|%{SEARCH_DIAGRAM})\/?(%{ARGS:reactome_args})?
+
+CONTENT_SERVICE_PATH \/ContentService\/(%{DISCOVER}|%{CONTENT_SERVICE_EXPORTER:reactome_content_service_exporter_path}|%{ENTITIES}|%{EVENTS}|%{INTERACTORS_PSICQUIC}|%{INTERACTORS_STATIC}|%{INTERACTORS_OTHER}|%{MAPPING}|%{ORTHOLOGIES}|%{PARTICIPANTS}|%{PATHWAYS}|%{PATHWAYS_LOW}|%{PATHWAYS_TOP_LEVEL}|%{PERSON}|%{QUERY}|%{REFERENCES}|%{SCHEMA}|%{SEARCH})$
