@@ -1,5 +1,21 @@
 #! /bin/bash
 
+# Runs a report in elasticsearch, processes the result into a CSV, and then sends it to an email address.
+# Arguments:
+#  1 - FROM_DATE - the beginning of the reporting period, formatted as yyyymmdd. Example: 20181017
+#  2 - TO_DATE - the end of the reporting period, formatted as yyyymmdd. Example: 20191017
+#  3 - QUERY_FILE - the path to the file containing the query for elasticsearch.
+#      This file should contain the placeholder strings _FROM_DATE and _TO_DATE so that this
+#      script can replace them with the user-provided values.
+#  4 - OUTPUT_FILE_PREFIX - output files will be named as ${OUTPUT_FILE_PREFIX}_${FROM_DATE}_to_${TO_DATE}.csv
+#  5 - HEADER - the header that will appear at the top of the file.
+#  6 - JQ_FILTER - This is a string that will be fed to jq to process the JSON results from elastic search into CSV-formatted data.
+#      This should be in single-quotes.
+#  7 - MAIL_TO - email address(es) that the reports will be sent to. You can specify multiple addresses if
+#      you need to, by separating them with a comma (no spaces). mutt is used to send email.
+# Requirements:
+#  This script assumes that elasticsearch is running locally. It requires curl, mutt, and jq. mutt may require the gpgsm package.
+
 FROM_DATE=$1
 TO_DATE=$2
 QUERY_FILE=$3

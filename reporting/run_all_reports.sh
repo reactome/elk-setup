@@ -1,4 +1,12 @@
 #! /bin/bash
+
+# This script will call run_report.sh to generate and send (by email) several reports.
+# Reports will span the time period $FROM_DATE to $TO_DATE
+# Arguments:
+#  1 - FROM_DATE - the earlier date of the reporting period. Formatted as yyyymmddd. Example: 20181017
+#  2 - TO_DATE - the later date of the reporting period. Formatted as yyyymmddd. Example: 20191017
+#  3 - MAIL_TO - The email address of the recipient of these reports. A list of emails can be given, if they are separated by a comma only (no spaces).
+
 FROM_DATE=$1
 TO_DATE=$2
 MAIL_TO=$3
