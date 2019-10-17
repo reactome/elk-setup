@@ -1,0 +1,61 @@
+{
+  "aggs": {
+    "Month": {
+      "date_histogram": {
+        "field": "@apache_timestamp",
+        "interval": "1M",
+        "time_zone": "America/New_York",
+        "min_doc_count": 1,
+        "format": "yyyy-MM-dd"
+      },
+      "aggs": {
+        "Bytes_transferred": {
+          "sum": {
+            "field": "bytes",
+            "script": {
+              "source" : "((_value / 1024) / 1024) / 1024"
+            }
+          }
+        }
+      }
+    },
+    "all_bytes":{
+      "sum_bucket": {
+            "buckets_path": "Month.Bytes_transferred"
+      }
+    }
+  },
+  "size": 0,
+  "docvalue_fields": [
+    {
+      "field": "@apache_timestamp",
+      "format": "date_time"
+    },
+    {
+      "field": "@timestamp",
+      "format": "date_time"
+    }
+  ],
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "query_string": {
+            "query": "internal_IP:false && probably_a_bot:false && !(clientip:127.0.0.1 || clientip:\"::1\" || clientip:206.108.125.163)",
+            "analyze_wildcard": true,
+            "default_field": "*"
+          }
+        },
+        {
+          "range": {
+            "@apache_timestamp": {
+                "gte": _FROM_DATE,
+                "lte": _TO_DATE,
+                "format": "basic_date"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
