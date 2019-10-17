@@ -3,7 +3,7 @@ FROM_DATE=$1
 TO_DATE=$2
 MAIL_TO=$3
 # The query file should have placeholder so that we can specify the date range.
-QUERY=$(sed -e "s/_FROM_DATE/$FROM_DATE/g" < query.json | sed -e "s/_TO_DATE/$TO_DATE/g")
+QUERY=$(sed -e "s/_FROM_DATE/$FROM_DATE/g" <  unique_ips_by_month.query.json | sed -e "s/_TO_DATE/$TO_DATE/g")
 FILE_NAME=ip_counts_${FROM_DATE}_to_${TO_DATE}.csv
 # write the file header.
 echo "Month, IP Count" > $FILE_NAME
