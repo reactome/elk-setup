@@ -10,6 +10,7 @@ services:
             - node.name=esserver
             - network.host=_site_
             - "ES_JAVA_OPTS=-Xms4g -Xmx20g"
+            - "path.repo=/usr/share/elasticsearch/data/backups"
         ports:
             - "9200:9200"
             - "9300:9300"
