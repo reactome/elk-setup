@@ -2,7 +2,7 @@ version: '3'
 
 services:
     esserver:
-        image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.6.0
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
         volumes:
             - "./esdata:/usr/share/elasticsearch/data/"
         environment:
@@ -11,12 +11,13 @@ services:
             - network.host=_site_
             - "ES_JAVA_OPTS=-Xms4g -Xmx20g"
             - "path.repo=/usr/share/elasticsearch/data/backups"
+            - "search.max_buckets=1000000"
         ports:
             - "9200:9200"
             - "9300:9300"
 
     kibserver:
-        image: docker.elastic.co/kibana/kibana-oss:6.6.0
+        image: docker.elastic.co/kibana/kibana:7.4.0
         volumes:
             - "./kibana.yaml:/usr/share/kibana/config/kibana.yml"
             - "./kibanadata:/usr/share/kibana/data"
