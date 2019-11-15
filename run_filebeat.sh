@@ -5,7 +5,6 @@
 # trying to import any log files.
 
 docker run --rm --name filebeat -v $(pwd)/filebeat.yml:/usr/share/filebeat/filebeat.yml:rw \
-                                -v $(pwd)/reactomews.dynamicmapping.json:/reactomews.dynamicmapping.json \
-                                -v /datastore/logs_for_elk/extended_log:/logs_for_elk/2016_extended_log \
-                                --network=elksetup_default \
-                                docker.elastic.co/beats/filebeat:6.6.0 /bin/bash -c "/usr/local/bin/docker-entrypoint -e"
+                                -v $(pwd)/extended_log:/logs_for_elk/extended_log \
+                                --network=elk_default \
+                                docker.elastic.co/beats/filebeat:7.4.0 /bin/bash -c "/usr/local/bin/docker-entrypoint -e"
