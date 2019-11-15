@@ -37,12 +37,14 @@ services:
             - "./content_service.patterns:/usr/share/logstash/pipeline/patterns/content_service.patterns"
             - "./referrers.patterns:/usr/share/logstash/pipeline/patterns/referrers.patterns"
             - "./logstashqueue:/var/queue"
+            - "./ips_with_usage_types.csv:/ips.csv"
         ports:
             - "5043:5043"
         depends_on:
             - esserver
         environment:
              - "LS_OPTS=--quiet"
+             - LS_JAVA_OPTS=-Xmx3g
 
     nginx:
         depends_on:
