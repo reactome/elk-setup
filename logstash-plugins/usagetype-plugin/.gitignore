@@ -1,2 +1,7 @@
 build/
 .gradle/
+*.gem
+*.gemspec
+lib/
+vendor/
+Gemfile
