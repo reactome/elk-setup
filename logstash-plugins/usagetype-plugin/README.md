@@ -21,3 +21,23 @@ To build a gem that can be installed into logstash, execute:
 ```bash
 $ ./gradlew gem
 ```
+
+
+## Usage types
+
+| Usage Type | Description |
+| -----------| ------------|
+| COM | Commercial |
+| ORG |Organization |
+| GOV |Government |
+| MIL |Military |
+| EDU |University/College/School |
+| LIB | Library |
+| CDN |Content Delivery Network |
+| ISP |Fixed Line ISP |
+| MOB |Mobile ISP |
+| DCH |Data Center/Web Hosting/Transit |
+| SES | Search Engine Spider |
+| RSV |Reserved |
+
+(From https://blog.ip2location.com/knowledge-base/what-is-usage-type/ )
