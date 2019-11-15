@@ -1,0 +1,58 @@
+{
+  "aggs": {
+    "Month": {
+      "date_histogram": {
+        "field": "@apache_timestamp",
+        "interval": "1M",
+        "time_zone": "America/New_York",
+        "min_doc_count": 1,
+        "format": "yyyy-MM-dd"
+      },
+      "aggs": {
+        "HTTP_Code_Category": {
+          "terms": {
+            "field": "http_code_category",
+            "size": 6,
+            "order": {
+              "_count": "desc"
+            },
+            "missing": "__missing__"
+          }
+        }
+      }
+    }
+  },
+  "size": 0,
+  "docvalue_fields": [
+    {
+      "field": "@apache_timestamp",
+      "format": "date_time"
+    },
+    {
+      "field": "@timestamp",
+      "format": "date_time"
+    }
+  ],
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "query_string": {
+            "query": "_exists_:probably_a_bot && probably_a_bot=true",
+            "analyze_wildcard": true,
+            "default_field": "*"
+          }
+        },
+        {
+          "range": {
+            "@apache_timestamp": {
+                "gte": _FROM_DATE,
+                "lte": _TO_DATE,
+                "format": "basic_date"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
