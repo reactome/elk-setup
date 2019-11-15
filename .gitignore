@@ -6,3 +6,5 @@ logstashqueue
 *.csr
 *.key
 *.htpasswd
+*.gem
+*.gemspec
