@@ -8,3 +8,4 @@ logstashqueue
 *.htpasswd
 *.gem
 *.gemspec
+ips_with_usage_types.csv
