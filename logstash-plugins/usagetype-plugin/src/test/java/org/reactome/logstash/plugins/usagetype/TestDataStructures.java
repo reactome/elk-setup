@@ -43,50 +43,105 @@ public class TestDataStructures
 		rt.put(r6, "F");
 
 		Range<BigInteger> tmp = rt.findRangeForValue(BigInteger.valueOf(100));
+		String value = rt.getForValue(BigInteger.valueOf(100));
 		assertNotNull(tmp);
+		assertNotNull(value);
 		assertEquals(rt.get(tmp),"A");
+		assertEquals(value, "A");
 		System.out.println(tmp);
 
 		tmp = rt.findRangeForValue(BigInteger.valueOf(100000));
+		value = rt.getForValue(BigInteger.valueOf(100000));
+		assertNull(value);
 		assertNull(tmp);
 		System.out.println();
 
 		tmp = rt.findRangeForValue(BigInteger.valueOf(1001));
+		value = rt.getForValue(BigInteger.valueOf(1001));
 		assertNull(tmp);
+		assertNull(value);
 		System.out.println();
 
 		tmp = rt.findRangeForValue(BigInteger.valueOf(-1001));
+		value = rt.getForValue(BigInteger.valueOf(-1001));
 		assertNull(tmp);
+		assertNull(value);
 		System.out.println();
 
 		tmp = rt.findRangeForValue(BigInteger.valueOf(1000));
+		value = rt.getForValue(BigInteger.valueOf(1000));
 		assertNotNull(tmp);
 		assertEquals("A", rt.get(tmp));
+		assertNotNull(value);
+		assertEquals("A", value);
 		System.out.println(tmp);
 
 		tmp = rt.findRangeForValue(BigInteger.valueOf(1550));
+		value = rt.getForValue(BigInteger.valueOf(1550));
 		assertNotNull(tmp);
 		assertEquals("C", rt.get(tmp));
+		assertNotNull(value);
+		assertEquals("C", value);
 		System.out.println(tmp);
 
 		tmp = rt.findRangeForValue(BigInteger.valueOf(30000));
+		value = rt.getForValue(BigInteger.valueOf(30000));
 		assertNotNull(tmp);
 		assertEquals("D", rt.get(tmp));
+		assertNotNull(value);
+		assertEquals("D", value);
 		System.out.println(tmp);
 
 		tmp = rt.findRangeForValue(BigInteger.valueOf(30001));
+		value = rt.getForValue(BigInteger.valueOf(30001));
 		assertNotNull(tmp);
 		assertEquals("D", rt.get(tmp));
+		assertNotNull(value);
+		assertEquals("D", value);
 		System.out.println(tmp);
 
 		tmp = rt.findRangeForValue(BigInteger.valueOf(40000));
+		value = rt.getForValue(BigInteger.valueOf(40000));
 		assertNotNull(tmp);
 		assertEquals("F", rt.get(tmp));
+		assertNotNull(value);
+		assertEquals("F", value);
 		System.out.println(tmp);
 
 		tmp = rt.findRangeForValue(BigInteger.valueOf(2345));
 		assertNotNull(tmp);
 		assertEquals("B", rt.get(tmp));
 		System.out.println(tmp);
+
+		value = rt.getForValue(BigInteger.valueOf(2345));
+		assertNotNull(value);
+		assertEquals("B", value);
+		System.out.println(value);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testOverlapExceptions()
+	{
+		Range<BigInteger> r1 = new Range<>(BigInteger.valueOf(15), BigInteger.valueOf(26));
+		Range<BigInteger> r2 = new Range<>(BigInteger.valueOf(10), BigInteger.valueOf(20));
+
+		r1.compareTo(r2);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testOverlapExceptions2()
+	{
+		Range<BigInteger> r1 = new Range<>(BigInteger.valueOf(1), BigInteger.valueOf(5));
+		Range<BigInteger> r2 = new Range<>(BigInteger.valueOf(0), BigInteger.valueOf(3));
+
+		r1.compareTo(r2);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testInvalidStartEnd()
+	{
+		@SuppressWarnings("unused")
+		Range<BigInteger> r = new Range<>(BigInteger.valueOf(100), BigInteger.valueOf(26));
+
 	}
 }

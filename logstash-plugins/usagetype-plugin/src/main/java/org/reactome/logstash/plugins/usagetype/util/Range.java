@@ -61,8 +61,41 @@ public class Range<T extends Number & Comparable<T>> implements Comparable<Range
 	@Override
 	public int compareTo(Range<T> o)
 	{
-		// A range is considered < another range if its start is < the other's start. This assumes that you won't be working with overlapping/containing ranges; it *might* work
-		// in those cases, I just haven't tested it, since the IP ranges I'm using are known to be non-overlapping.
-		return this.start.compareTo(o.start);
+		// A range is considered < another range if its start is < the other's start.
+		// Ranges are == if one's start/end are within another's start/end.
+		// A range is > if it's end is > then the other's.
+		// This assumes that you won't be working with overlapping/containing ranges,
+		// and I'm not sure this would work with overlapping ranges - I think a different
+		// comparison would be necessary in that case.
+
+		// Throw an exception for overlapping ranges.
+		// Overlap at upper, for example, this: [10..20] and other: [15..26]
+		boolean overlapAtUpperBound = this.getStart().compareTo(o.getStart()) < 0 // This start-point is smaller than other's start-point.
+										&& this.getEnd().compareTo(o.getStart()) > 0 // This end-point is bigger than other's start-point.
+										&& this.getEnd().compareTo(o.getEnd()) < 0; // this end-point is smaller than other's end-point
+
+		// Overlap at lower, for example this: [1..5] and other: [0..3]
+		boolean overlapAtLowerBound = this.getStart().compareTo(o.getStart()) > 0
+										&& this.getStart().compareTo(o.getEnd()) < 0
+										&& this.getEnd().compareTo(o.getEnd()) > 0;
+
+
+		if (overlapAtUpperBound || overlapAtLowerBound)
+		{
+			throw new IllegalArgumentException("These ranges cannot overlap. Cannot compare " + this.toString() + " to " + o.toString());
+		}
+
+		if (this.getStart().compareTo(o.getStart()) >= 0 && this.getEnd().compareTo(o.getEnd()) <= 0)
+		{
+			return 0;
+		}
+		else if (this.getStart().compareTo(o.getStart()) < 0)
+		{
+			return -1;
+		}
+		else //if (this.getEnd().compareTo(o.getEnd()) > 0)
+		{
+			return 1;
+		}
 	}
 }

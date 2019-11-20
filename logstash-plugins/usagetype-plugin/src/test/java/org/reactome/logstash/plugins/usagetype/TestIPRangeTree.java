@@ -19,6 +19,7 @@ public class TestIPRangeTree
 	public static void startup()
 	{
 		tree = new IPRangeTree("sample_usage_type_file.csv");
+		System.out.println(tree.size());
 	}
 
 	@Test

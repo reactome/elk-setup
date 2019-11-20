@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.math.BigInteger;
 import java.net.UnknownHostException;
+import java.util.Optional;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
@@ -45,17 +46,7 @@ public class IPRangeTree extends RangeTree<BigInteger>
 
 	public String getUsageTypeForIP(String ip) throws IllegalArgumentException, UnknownHostException
 	{
-		String usageType = UNKNOWN_USAGE_TYPE;
-
-		Range<BigInteger> r = this.findRangeForValue(IPUtils.convertIPToNumber(ip));
-		if ( r!=null )
-		{
-			usageType = this.get(r);
-		}
-		// IF I had access to the tree nodes themselves, I could return the *value* of the node whose range-key contains the input value,
-		// and I wouldn't need to first call findRangeForValue() and then call get() - if I had direct access to this tree's nodes, I
-		// probably could do it all in one operation.
-		return usageType;
+		return Optional.ofNullable(this.getForValue(IPUtils.convertIPToNumber(ip))).orElse(UNKNOWN_USAGE_TYPE);
 	}
 
 	public int getStartIndex()

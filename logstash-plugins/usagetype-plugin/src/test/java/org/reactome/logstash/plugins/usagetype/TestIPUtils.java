@@ -55,8 +55,8 @@ public class TestIPUtils
 	{
 		String ipString = "123.456.789.-123";
 
+		@SuppressWarnings("unused")
 		BigInteger num = IPUtils.convertIPToNumber(ipString);
-		System.out.println(num.longValue());
 	}
 
 	@Test(expected = IllegalArgumentException.class)

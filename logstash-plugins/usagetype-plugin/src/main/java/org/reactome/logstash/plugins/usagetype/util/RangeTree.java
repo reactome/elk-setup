@@ -1,11 +1,25 @@
 package org.reactome.logstash.plugins.usagetype.util;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.TreeMap;
 
 public class RangeTree<N extends Number & Comparable<N>> extends TreeMap<Range<N>, String>
 {
 	private static final long serialVersionUID = 720362968233917584L;
+
+	public RangeTree()
+	{
+		super(new Comparator<Range<N>>()
+		{
+			@Override
+			public int compare(Range<N> o1, Range<N> o2)
+			{
+				return o1.compareTo(o2);
+			}
+		});
+	}
+
 	/**
 	 * Searches for a node whose key is a range which contains value. If there is more than one range that could contain value,
 	 * the first range encountered will be returned, it should be the range with the lowest starting value.
@@ -29,4 +43,24 @@ public class RangeTree<N extends Number & Comparable<N>> extends TreeMap<Range<N
 		}
 		return foundRange;
 	}
+
+	/**
+	 * Gets the value that a numeric value refers to. Creates a range where start and end are scalarKey,
+	 * and then looks that range up as a key. If it falls within a range already described in the tree, the value
+	 * indexed by that range will be returned.
+	 * @param scalarKey
+	 * @return
+	 */
+	public String getForValue(N scalarKey)
+	{
+		String value = null;
+
+		// Create a new range with start/end the same value so that it is easier to find.
+		Range<N> tmpRange = new Range<>(scalarKey, scalarKey);
+
+		value = this.get(tmpRange);
+
+		return value;
+	}
+
 }
