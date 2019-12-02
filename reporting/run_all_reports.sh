@@ -22,3 +22,5 @@ bash run_report.sh $FROM_DATE $TO_DATE hits_by_month.query.json hits_by_month "M
 bash run_report.sh $FROM_DATE $TO_DATE http_codes_by_month_no_bots.query.json HTTP_Codes_no_bots "Month, HTTP Code, Count, HTTP Code, Count, HTTP Code, Count, HTTP Code, Count" '.aggregations.Month.buckets[] | [.key_as_string, (.HTTP_Code_Category.buckets[] | .key, .doc_count)] |@csv' $MAIL_TO
 
 bash run_report.sh $FROM_DATE $TO_DATE http_codes_by_month_WITH_bots.query.json HTTP_Codes_With_bots "Month, HTTP Code, Count, HTTP Code, Count, HTTP Code, Count, HTTP Code, Count" '.aggregations.Month.buckets[] | [.key_as_string, (.HTTP_Code_Category.buckets[] | .key, .doc_count)] |@csv' $MAIL_TO
+
+bash run_report.sh $FROM_DATE $TO_DATE usage_types_by_month.json usage_types_by_month "Month, Usage Type, Count" '.aggregations.YearMonth.buckets[] as $x | $x.UsageType.buckets[] | [$x.key_as_string, .key, .doc_count] | @csv' $MAIL_TO
