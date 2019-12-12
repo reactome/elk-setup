@@ -3,7 +3,7 @@
     "YearMonth": {
       "date_histogram": {
         "field": "@apache_timestamp",
-        "format": "yyyy-MM-dd",
+        "format": "yyyyMM",
         "calendar_interval": "1M",
         "time_zone": "America/Toronto",
         "min_doc_count": 1

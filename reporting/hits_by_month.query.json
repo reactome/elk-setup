@@ -6,7 +6,7 @@
         "interval": "1M",
         "time_zone": "America/New_York",
         "min_doc_count": 1,
-        "format": "yyyy-MM-dd"
+        "format": "yyyyMM"
       }
     }
   },

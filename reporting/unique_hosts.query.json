@@ -5,6 +5,7 @@
         "field": "@apache_timestamp",
         "calendar_interval": "1M",
         "time_zone": "America/Toronto",
+		"format": "yyyyMM",
         "min_doc_count": 1
       },
       "aggs": {
