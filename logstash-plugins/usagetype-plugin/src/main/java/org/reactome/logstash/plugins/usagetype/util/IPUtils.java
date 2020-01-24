@@ -34,11 +34,10 @@ public final class IPUtils
 				throw new IllegalArgumentException("Input string was not formatted correctly. Should be formatted as ###.###.###.### (regular expression: \\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}) ; Input given was: " + ipString);
 			}
 			String[] octets = ipString.split("\\.");
-			long ipAsNumber = 0;
-			ipAsNumber = (Long.parseLong(octets[0]) * MULT_FOR_FIRST_OCTET) // 2^24 = 16777216
-						+ (Long.parseLong(octets[1]) * MULT_FOR_SECOND_OCTET) // 2^16 = 65536
-						+ (Long.parseLong(octets[2]) * (256)) // 2^8 = 256
-						+ (Long.parseLong(octets[3]));
+			long ipAsNumber = (Long.parseLong(octets[0]) * MULT_FOR_FIRST_OCTET) // 2^24 = 16777216
+							+ (Long.parseLong(octets[1]) * MULT_FOR_SECOND_OCTET) // 2^16 = 65536
+							+ (Long.parseLong(octets[2]) * (256)) // 2^8 = 256
+							+ (Long.parseLong(octets[3]));
 			return BigInteger.valueOf( ipAsNumber );
 		}
 		else
