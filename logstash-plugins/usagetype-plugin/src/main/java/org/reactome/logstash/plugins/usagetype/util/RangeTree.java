@@ -4,6 +4,12 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.TreeMap;
 
+/**
+ * A Tree that contains ranges. The nodes in this tree are keyed by ranges, and store Strings as values.
+ * @author sshorser
+ *
+ * @param <N> N is a numeric that extends Number and Comparable.
+ */
 public class RangeTree<N extends Number & Comparable<N>> extends TreeMap<Range<N>, String>
 {
 	private static final long serialVersionUID = 720362968233917584L;
@@ -47,7 +53,7 @@ public class RangeTree<N extends Number & Comparable<N>> extends TreeMap<Range<N
 	/**
 	 * Gets the value that a numeric value refers to. Creates a range where start and end are scalarKey,
 	 * and then looks that range up as a key. If it falls within a range already described in the tree, the value
-	 * indexed by that range will be returned.
+	 * indexed by that range will be returned. If it is not found, NULL is returned.
 	 * @param scalarKey
 	 * @return
 	 */

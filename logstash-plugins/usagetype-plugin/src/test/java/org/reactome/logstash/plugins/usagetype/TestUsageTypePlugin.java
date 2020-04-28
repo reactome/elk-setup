@@ -25,7 +25,7 @@ public class TestUsageTypePlugin
 
 	private Configuration config;
 	private Context context;
-	private UsageType filter;
+	private UsageType usageTypefilter;
 
 	class TestMatchListener implements FilterMatchListener
 	{
@@ -56,7 +56,7 @@ public class TestUsageTypePlugin
 
 		this.context = new ContextImpl(null, null);
 
-		this.filter = new UsageType("test_id", config, context);
+		this.usageTypefilter = new UsageType("test_id", config, context);
 	}
 
 	@Test
@@ -68,7 +68,7 @@ public class TestUsageTypePlugin
 		// Of course, you should verify that this IP *is* in the file before running the test.
 		// In my sample file, this IP's usage type is "ISP".
 		e.setField(UsageType.IP_FIELD_NAME, "104.145.10.202");
-		Collection<Event> results = filter.filter(Collections.singletonList(e), matchListener);
+		Collection<Event> results = usageTypefilter.filter(Collections.singletonList(e), matchListener);
 
 		assertEquals(1, results.size());
 		assertEquals("ISP", e.getField(UsageType.USAGE_TYPE_FIELD_NAME));
@@ -83,7 +83,7 @@ public class TestUsageTypePlugin
 
 		// Of course, you should verify that this IP is NOT in the file before running the test.
 		e.setField(UsageType.IP_FIELD_NAME, "177.243.23.105");
-		Collection<Event> results = filter.filter(Collections.singletonList(e), matchListener);
+		Collection<Event> results = usageTypefilter.filter(Collections.singletonList(e), matchListener);
 
 		assertEquals(1, results.size());
 		assertEquals(IPRangeTree.UNKNOWN_USAGE_TYPE, e.getField(UsageType.USAGE_TYPE_FIELD_NAME));
@@ -98,7 +98,7 @@ public class TestUsageTypePlugin
 
 		// a NULL value will results in NULL usage_type
 		e.setField(UsageType.IP_FIELD_NAME, null);
-		Collection<Event> results = filter.filter(Collections.singletonList(e), matchListener);
+		Collection<Event> results = usageTypefilter.filter(Collections.singletonList(e), matchListener);
 
 		assertEquals(1, results.size());
 		assertNull(e.getField(UsageType.USAGE_TYPE_FIELD_NAME));

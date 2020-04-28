@@ -4,7 +4,7 @@ package org.reactome.logstash.plugins.usagetype.util;
  * Represents a range of comparable numerics. This is intended for NON-overlapping ranges ONLY.
  * @author sshorser
  *
- * @param <T>
+ * @param <T> T is any numeric type that extends Number and Comparable.
  */
 public class Range<T extends Number & Comparable<T>> implements Comparable<Range<T>>
 {

@@ -5,3 +5,9 @@ build/
 lib/
 vendor/
 Gemfile
+/bin/
+
+# Eclipse files
+.classpath
+.project
+.settings
