@@ -55,7 +55,7 @@ public class Range<T extends Number & Comparable<T>> implements Comparable<Range
 	@Override
 	public String toString()
 	{
-		return start.toString() + ".." + end.toString();
+		return this.start.toString() + ".." + this.end.toString();
 	}
 
 	@Override
@@ -63,7 +63,7 @@ public class Range<T extends Number & Comparable<T>> implements Comparable<Range
 	{
 		// A range is considered < another range if its start is < the other's start.
 		// Ranges are == if one's start/end are within another's start/end.
-		// A range is > if it's end is > then the other's.
+		// A range is > if it's end is > than the other's.
 		// This assumes that you won't be working with overlapping/containing ranges,
 		// and I'm not sure this would work with overlapping ranges - I think a different
 		// comparison would be necessary in that case.

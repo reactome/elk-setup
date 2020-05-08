@@ -51,7 +51,7 @@ public class IPRangeTree extends RangeTree<BigInteger>
 
 	public int getStartIndex()
 	{
-		return startIndex;
+		return this.startIndex;
 	}
 
 	public void setStartIndex(int startIndex)
@@ -61,7 +61,7 @@ public class IPRangeTree extends RangeTree<BigInteger>
 
 	public int getEndIndex()
 	{
-		return endIndex;
+		return this.endIndex;
 	}
 
 	public void setEndIndex(int endIndex)
@@ -71,7 +71,7 @@ public class IPRangeTree extends RangeTree<BigInteger>
 
 	public int getUsageTypeIndex()
 	{
-		return usageTypeIndex;
+		return this.usageTypeIndex;
 	}
 
 	public void setUsageTypeIndex(int usageTypeIndex)
