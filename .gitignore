@@ -10,3 +10,6 @@ logstashqueue
 *.gemspec
 ips_with_usage_types.csv
 *.class
+*.classpath
+*.project
+*.settings
