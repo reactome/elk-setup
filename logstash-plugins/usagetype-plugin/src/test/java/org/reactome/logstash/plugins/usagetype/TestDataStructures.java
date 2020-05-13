@@ -76,6 +76,14 @@ public class TestDataStructures
 		assertEquals("A", value);
 		System.out.println(tmp);
 
+		tmp = rt.findRangeForValue(BigInteger.valueOf(15000));
+		value = rt.getForValue(BigInteger.valueOf(15000));
+		assertNotNull(tmp);
+		assertEquals("E", rt.get(tmp));
+		assertNotNull(value);
+		assertEquals("E", value);
+		System.out.println(tmp);
+		
 		tmp = rt.findRangeForValue(BigInteger.valueOf(1550));
 		value = rt.getForValue(BigInteger.valueOf(1550));
 		assertNotNull(tmp);
