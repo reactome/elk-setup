@@ -18,9 +18,12 @@ public class TestDataStructures
 	public void testRange()
 	{
 		Range<BigInteger> r = new Range<>(BigInteger.valueOf(123), BigInteger.valueOf(456));
-		assertEquals(0,r.isInRange(BigInteger.valueOf(222)));
+		// in range
+		assertEquals(0, r.isInRange(BigInteger.valueOf(222)));
+		// "less than" the range's lower bound
 		assertTrue(0 > r.isInRange(BigInteger.valueOf(1)));
-		assertTrue(r.isInRange(BigInteger.valueOf(10000)) > 0);
+		// greater than the range's upper bound
+		assertTrue( 0 < r.isInRange(BigInteger.valueOf(10000)));
 	}
 
 	@Test
