@@ -59,10 +59,9 @@ public class RangeTree<N extends Number & Comparable<N>> extends TreeMap<Range<N
 	 */
 	public String getForValue(N scalarKey)
 	{
-		String value = null;
 		// Create a new range with start/end the same value so that it is easier to find.
 		Range<N> tmpRange = new Range<>(scalarKey, scalarKey);
-		value = this.get(tmpRange);
+		String value = this.get(tmpRange);
 		// value _could_ be null at this point, which would happen if there are no ranges containing scalerKey
 		return value;
 	}
