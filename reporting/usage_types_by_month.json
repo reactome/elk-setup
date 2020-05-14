@@ -1,0 +1,66 @@
+{
+  "aggs": {
+    "YearMonth": {
+      "date_histogram": {
+        "field": "@apache_timestamp",
+        "format": "yyyyMM",
+        "calendar_interval": "1M",
+        "time_zone": "America/Toronto",
+        "min_doc_count": 1
+      },
+      "aggs": {
+        "UsageType": {
+          "terms": {
+            "field": "usage_type",
+            "order": {
+              "_count": "desc"
+            },
+            "missing": "__missing__",
+            "size": 50
+          }
+        }
+      }
+    }
+  },
+  "size": 0,
+  "_source": {
+    "excludes": []
+  },
+  "stored_fields": [
+    "*"
+  ],
+  "docvalue_fields": [
+    {
+      "field": "@apache_timestamp",
+      "format": "date_time"
+    },
+    {
+      "field": "@timestamp",
+      "format": "date_time"
+    },
+    {
+      "field": "kvXtrct_anxd",
+      "format": "date_time"
+    }
+  ],
+  "query": {
+    "bool": {
+        "must": [
+          {
+            "match_all": {}
+          }
+        ],
+      "filter": [
+        {
+          "range": {
+            "@apache_timestamp": {
+              "format": "basic_date",
+              "gte": _FROM_DATE,
+              "lte": _TO_DATE
+            }
+          }
+        }
+      ]
+    }
+  }
+}

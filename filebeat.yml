@@ -1,7 +1,7 @@
 # By convention, place the reactome.org logs as "extended_log" in /logs_for_elk and place the reactomews.oicr.on.ca logs in /logs_for_elk/reactomews/*.txt
 # The logstash pipeline relies on "reactomews" being in the "source" field to ensure that the events get placed in the correct index.
-filebeat.prospectors:
-- input_type: log
+filebeat.inputs:
+- type: log
   paths:
     - /logs_for_elk/*extended_log*
     - /logs_for_elk/reactomews/*.txt 

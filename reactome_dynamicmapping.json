@@ -1,0 +1,109 @@
+POST _template/reactome_template
+{
+    "index_patterns" : ["*reactome*"],
+    "settings" : {
+        "index" : {
+            "sort.field" : "@apache_timestamp",
+            "sort.order" : "desc"
+        }
+    },
+    "mappings": {
+        "dynamic_templates": [
+            {
+                "match_url": {
+                    "match_mapping_type": "string",
+                    "match": "url",
+                    "mapping": {
+                        "type": "text",
+                        "fields": {
+                            "raw": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "match_request": {
+                    "match_mapping_type": "string",
+                    "match": "request",
+                    "mapping": {
+                        "type": "text",
+                        "fields": {
+                            "raw": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "match_message": {
+                    "match_mapping_type": "string",
+                    "match": "message",
+                    "mapping": {
+                        "type": "text"
+                    }
+                }
+            },
+            {
+                "match_reactome_fields": {
+                    "match_mapping_type": "string",
+                    "match": "reactome_*",
+                    "mapping": {
+                        "type": "text",
+                        "fields": {
+                            "raw": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "match_kv_extracts": {
+                    "match_mapping_type": "string",
+                    "match": "kvXtrct_*",
+                    "mapping": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                    }
+                }
+            },
+            {
+                "strings_as_keywords": {
+                    "match_mapping_type": "string",
+                    "mapping": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                    }
+                }
+            }
+        ],
+        "properties": {
+            "@apache_timestamp": {
+                "type": "date"
+            },
+            "geoip": {
+                "dynamic": true,
+                "properties": {
+                    "ip": {
+                        "type": "ip"
+                    },
+                    "location": {
+                        "type": "geo_point"
+                    },
+                    "latitude": {
+                        "type": "half_float"
+                    },
+                    "longitude": {
+                        "type": "half_float"
+                    }
+                }
+            }
+        }
+    }
+}

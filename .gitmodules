@@ -1,0 +1,3 @@
+[submodule "logstash-plugins/usagetype-plugin/logstash"]
+	path = logstash-plugins/usagetype-plugin/logstash
+	url = https://github.com/elastic/logstash.git

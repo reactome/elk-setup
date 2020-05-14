@@ -1,0 +1,63 @@
+{
+  "aggs": {
+    "month_agg": {
+      "date_histogram": {
+        "field": "@apache_timestamp",
+        "calendar_interval": "1M",
+		"format": "yyyyMM",
+        "time_zone": "America/Toronto",
+        "min_doc_count": 1
+      },
+      "aggs": {
+        "usage_type_agg": {
+          "terms": {
+            "field": "usage_type",
+            "order": {
+              "_count": "desc"
+            },
+            "missing": "__missing__",
+            "size": 20
+          },
+          "aggs": {
+            "bytes_agg": {
+              "sum": {
+                "field": "bytes"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "size": 0,
+  "docvalue_fields": [
+    {
+      "field": "@apache_timestamp",
+      "format": "date_time"
+    }
+  ],
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "query_string": {
+            "query": "probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\"::1\" || clientip:206.108.125.163)",
+            "analyze_wildcard": true,
+            "time_zone": "America/Toronto"
+          }
+        }
+      ],
+      "filter": [
+        {
+            "range": {
+            "@apache_timestamp": {
+              "format": "basic_date",
+              "gte": _FROM_DATE,
+              "lte": _TO_DATE
+            }
+          }
+        }
+      ]
+    }
+  }
+}

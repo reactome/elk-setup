@@ -1,0 +1,57 @@
+{
+  "aggs": {
+    "months_agg": {
+      "date_histogram": {
+        "field": "@apache_timestamp",
+        "calendar_interval": "1M",
+        "time_zone": "America/Toronto",
+		"format": "yyyyMM",
+        "min_doc_count": 1
+      },
+      "aggs": {
+        "usage_type_agg": {
+          "terms": {
+            "field": "usage_type",
+            "order": {
+              "unique_ip_agg": "desc"
+            },
+            "size": 20
+          },
+          "aggs": {
+            "unique_ip_agg": {
+              "cardinality": {
+                "field": "clientip",
+                "precision_threshold": 40000
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "size": 0,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "query_string": {
+            "query": "probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\"::1\" || clientip:206.108.125.163 || clientip:100.25.71.177) && programmatic_access:false && !request:/.*\\\\.((css)|(js)|(class)|(gif)|(jpg)|(jpeg)|(png)|(bmp)|(ico)|(rss)|(xml)|(swf))/",
+            "analyze_wildcard": true,
+            "time_zone": "America/Toronto"
+          }
+        }
+      ],
+      "filter": [
+        {
+          "range": {
+            "@apache_timestamp": {
+              "format": "basic_date",
+              "gte": _FROM_DATE,
+              "lte": _TO_DATE
+            }
+          }
+        }
+      ]
+    }
+  }
+}

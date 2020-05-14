@@ -6,15 +6,12 @@
         "interval": "1M",
         "time_zone": "America/New_York",
         "min_doc_count": 1,
-        "format": "yyyy-MM-dd"
+        "format": "yyyyMM"
       },
       "aggs": {
         "Bytes_transferred": {
           "sum": {
-            "field": "bytes",
-            "script": {
-              "source" : "((_value / 1024) / 1024) / 1024"
-            }
+            "field": "bytes"
           }
         }
       }
