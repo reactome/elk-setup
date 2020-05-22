@@ -2,7 +2,7 @@ version: '3'
 
 services:
     esserver:
-        image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.6.1
         volumes:
             - "./esdata:/usr/share/elasticsearch/data/"
         environment:
@@ -17,7 +17,7 @@ services:
             - "9300:9300"
 
     kibserver:
-        image: docker.elastic.co/kibana/kibana:7.4.0
+        image: docker.elastic.co/kibana/kibana:7.6.1
         volumes:
             - "./kibana.yaml:/usr/share/kibana/config/kibana.yml"
             - "./kibanadata:/usr/share/kibana/data"
