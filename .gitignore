@@ -13,3 +13,5 @@ ips_with_usage_types.csv
 *.classpath
 *.project
 *.settings
+*.pem
+*.srl

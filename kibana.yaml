@@ -1,8 +1,14 @@
-# xpack.monitoring.enabled: false
+xpack.monitoring.enabled: false
 server:
     name: "kibserver"
     host: "kibserver"
-elasticsearch.hosts: "http://esserver:9200"
+elasticsearch.hosts: "https://esserver:9200"
 elasticsearch.requestTimeout: 200000
 elasticsearch.shardTimeout: 200000
 elasticsearch.startupTimeout: 60000
+elasticsearch.ssl.certificateAuthorities: ["/usr/share/kibana/config/root-ca.pem"]
+# elasticsearch.ssl.verificationMode: full
+elasticsearch.ssl.verificationMode: none
+elasticsearch.username: "kibanaserver"
+elasticsearch.password: 
+xpack.security.enabled: false
