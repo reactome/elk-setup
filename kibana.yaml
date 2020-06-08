@@ -1,4 +1,3 @@
-xpack.monitoring.enabled: false
 server:
     name: "kibserver"
     host: "kibserver"
@@ -9,6 +8,12 @@ elasticsearch.startupTimeout: 60000
 elasticsearch.ssl.certificateAuthorities: ["/usr/share/kibana/config/root-ca.pem"]
 # elasticsearch.ssl.verificationMode: full
 elasticsearch.ssl.verificationMode: none
+# elasticsearch.ssl.verificationMode: certificate
+elasticsearch.ssl.certificate: "/usr/share/kibana/config/admin.pem"
+elasticsearch.ssl.key: "/usr/share/kibana/config/admin-key.pem"
 elasticsearch.username: "kibanaserver"
-elasticsearch.password: 
+elasticsearch.password:
 xpack.security.enabled: false
+xpack.monitoring.enabled: true
+# opendistro_security.configuration.enabled: true
+# opendistro_security.allow_client_certificates: true
