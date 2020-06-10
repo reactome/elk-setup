@@ -13,7 +13,13 @@ elasticsearch.ssl.certificate: "/usr/share/kibana/config/admin.pem"
 elasticsearch.ssl.key: "/usr/share/kibana/config/admin-key.pem"
 elasticsearch.username: "kibanaserver"
 elasticsearch.password:
+
+monitoring.ui.elasticsearch.username: "kibanaserver"
+monitoring.ui.elasticsearch.password: 
+
 xpack.security.enabled: false
-xpack.monitoring.enabled: true
+monitoring.enabled: true
 # opendistro_security.configuration.enabled: true
-# opendistro_security.allow_client_certificates: true
+opendistro_security.allow_client_certificates: true
+monitoring.ui.elasticsearch.ssl.verificationMode: certificate
+monitoring.ui.elasticsearch.ssl.certificateAuthorities: ["/usr/share/kibana/config/root-ca.pem"]
