@@ -79,6 +79,7 @@ services:
             - "./referrers.patterns:/usr/share/logstash/pipeline/patterns/referrers.patterns"
             - "./logstashqueue:/var/queue"
             - "./ips_with_usage_types.csv:/ips.csv"
+            - "./root-ca.pem:/etc/elasticsearch/certs/ca/root-ca.pem:ro"
         ports:
             - "5043:5043"
         depends_on:
