@@ -7,25 +7,25 @@ _meta:
   config_version: 2
 
 # Define your internal users here
-
+#Admin!
 admin:
-  hash: "hash removed"
+  hash: 
   reserved: true
   backend_roles:
   - "admin"
   description: "Admin user"
 
 kibanaserver:
-  hash: "hash removed"
+  hash:
   reserved: true
   description: "Kibanaserver user"
 
-# logstash:
-#   hash:
-#   reserved: false
-#   backend_roles:
-#   - "logstash"
-#   description: "Logstash user"
+logstash:
+  hash:
+  reserved: false
+  backend_roles:
+  - "logstash"
+  description: "Logstash user"
 #
 # readall:
 #   hash:
