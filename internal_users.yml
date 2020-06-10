@@ -7,36 +7,25 @@ _meta:
   config_version: 2
 
 # Define your internal users here
-#Admin!
 admin:
-  hash: 
+  hash: "hash removed"
   reserved: true
   backend_roles:
   - "admin"
   description: "Admin user"
 
 kibanaserver:
-  hash:
+  hash: "hash removed"
   reserved: true
   description: "Kibanaserver user"
 
+# The logstash user by default has index-level permissions for indices beginning with "logstash-*"
+# To work with reactome* indicies, new permissions will need to be added. I've done this in Kibana
+# with a new Role that is a copy of the logstash role, with with index permission for "reactome*" indices.
+# There's probably a way to do this automatically via yaml config, just need to work that out.
 logstash:
-  hash:
+  hash: "hash removed"
   reserved: false
   backend_roles:
   - "logstash"
   description: "Logstash user"
-#
-# readall:
-#   hash:
-#   reserved: false
-#   backend_roles:
-#   - "readall"
-#   description: "Readall user"
-#
-# snapshotrestore:
-#   hash:
-#   reserved: false
-#   backend_roles:
-#   - "snapshotrestore"
-#   description: "Snapshotrestore user"
