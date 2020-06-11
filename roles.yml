@@ -1,0 +1,31 @@
+---
+_meta:
+  type: "roles"
+  config_version: 2
+
+
+reactome-logstash-role:
+  description: "A role for logstash to use with Reactome indices"
+  cluster_permissions:
+  - "cluster_monitor"
+  - "cluster_composite_ops"
+  - "indices:admin/template/get"
+  - "indices:admin/template/put"
+  - "cluster:admin/ingest/pipeline/put"
+  - "cluster:admin/ingest/pipeline/get"
+  index_permissions:
+  - index_patterns:
+    - "logstash-*"
+    allowed_actions:
+    - "crud"
+    - "create_index"
+  - index_patterns:
+    - "*beat*"
+    allowed_actions:
+    - "crud"
+    - "create_index"
+  - index_patterns:
+    - "reactome*"
+    allowed_actions:
+    - "crud"
+    - "create_index"

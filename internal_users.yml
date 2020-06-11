@@ -7,6 +7,7 @@ _meta:
   config_version: 2
 
 # Define your internal users here
+
 admin:
   hash: "hash removed"
   reserved: true
@@ -29,3 +30,5 @@ logstash:
   backend_roles:
   - "logstash"
   description: "Logstash user"
+  opendistro_security_roles:
+  - "reactome-logstash-role"

@@ -17,6 +17,9 @@ version: '3'
 # #Then export JAVA_HOME=/usr/share/elasticsearch/jdk
 # #Then run: /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh -h esserver -p 9300 -cd ../securityconfig/ -icl -nhnv -cacert ../../../config/root-ca.pem -cert ../../../config/admin.pem -key ../../../config/admin-key.pem
 # Maybe try: $JAVA_HOME/bin/keytool -importcert -keystore ../../../config/elasticsearch.keystore   -storepass changeit  -file ../../../config/root-ca.pem
+#
+# From the command line (without entering the container interactively):
+#    docker exec elk_esserver_1 /bin/bash /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh -h esserver -p 9300 -cd /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/ -icl -nhnv -cacert /usr/share/elasticsearch/config/root-ca.pem -cert /usr/share/elasticsearch/config/admin.pem -key /usr/share/elasticsearch/config/admin-key.pem
 services:
     esserver:
         hostname: esserver
@@ -30,6 +33,7 @@ services:
             - "./admin.pem:/usr/share/elasticsearch/config/admin.pem:ro"
             - "./root-ca.pem:/usr/share/elasticsearch/config/root-ca.pem:ro"
             - "./internal_users.yml:/usr/share/elasticsearch/plugins/opendistro_security/securityconfig/internal_users.yml"
+            - "./roles.yml:/usr/share/elasticsearch/plugins/opendistro_security/securityconfig/roles.yml"
             # - "./roles_mapping.yml:/usr/share/elasticsearch/plugins/opendistro_security/securityconfig/roles_mapping.yml"
             - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
         environment:
