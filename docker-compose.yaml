@@ -65,9 +65,6 @@ services:
             - esserver
         ports:
             - 5601:5601
-        # environment:
-        #     ELASTICSEARCH_URL: https://esserver:9200
-        #     ELASTICSEARCH_HOSTS: https://esserver:9200
 
     logstash_server:
         build:
@@ -91,21 +88,3 @@ services:
         environment:
              - "LS_OPTS=--quiet"
              - LS_JAVA_OPTS=-Xmx3g
-# Run `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./server.key -out ./server.crt` to create self-signed certificates for local testing.
-# Run `sudo htpasswd -c ./.htpasswd admin` to create the password file.
-    # nginx:
-    #     depends_on:
-    #         - esserver
-    #         - kibserver
-    #     links:
-    #         - kibserver
-    #     image: nginx:1.17.4-alpine
-    #     ports:
-    #         - 6601:6601
-    #     environment:
-    #         - NGINX_PORT=6601
-    #     volumes:
-    #         - "./nginx.conf:/etc/nginx/nginx.conf:ro"
-    #         - "./server.crt:/etc/nginx/conf.d/server.crt"
-    #         - "./server.key:/etc/nginx/conf.d/server.key"
-    #         - "./.htpasswd:/etc/nginx/conf.d/.htpasswd"
