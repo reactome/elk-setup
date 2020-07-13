@@ -23,7 +23,6 @@ version: '3'
 services:
     esserver:
         hostname: esserver
-        # image: docker.elastic.co/elasticsearch/elasticsearch:7.6.1
         build:
           context: .
           dockerfile: elasticsearch.dockerfile
@@ -48,10 +47,8 @@ services:
         ports:
             - "9200:9200"
             - "9300:9300"
-        # command: /usr/local/bin/docker-entrypoint.sh /bin/bash -c "/usr/share/elasticsearch/eswrapper && cd /usr/share/elasticsearch/plugins/opendistro_security/tools && ./securityadmin.sh -h esserver -p 9300 -cd ../securityconfig/ -icl -nhnv -cacert ../../../config/root-ca.pem -cert ../../../config/admin.pem -key ../../../config/admin-key.pem"
 
     kibserver:
-        # image: docker.elastic.co/kibana/kibana:7.6.1
         build:
           context: .
           dockerfile: kibana.dockerfile
