@@ -25,6 +25,13 @@ openssl x509 -req -in admin.csr -CA root-ca.pem -CAkey root-ca-key.pem -CAcreate
 ```bash
 docker exec elk_esserver_1 /bin/bash /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh -h esserver -p 9300 -cd /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/ -icl -nhnv -cacert /usr/share/elasticsearch/config/root-ca.pem -cert /usr/share/elasticsearch/config/admin.pem -key /usr/share/elasticsearch/config/admin-key.pem
 ```
+ 1. Set passwords.  You will need to do this for the main users: admin, kibanaserver, and logstash.
+  - In the elastic search container (esserver), there is an _interactive_ `hash.sh` script in `/usr/share/elasticsearch/plugins/opendistro_security/tools` that will generate the hash for a password (other hash tools may not work with OpenDistro). You can use this command:
+```bash
+docker exec -it elk_esserver_1 /bin/bash /usr/share/elasticsearch/plugins/opendistro_security/tools/hash.sh
+```
+  - Copy & paste that hash into internal_users.yml. If you add new users, be sure to set them up with a password.
+
 
 If these steps run without errors, you can proceed to starting the other containers:
 
