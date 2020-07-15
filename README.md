@@ -10,6 +10,7 @@ You will need to generate certificates, follow these steps:
 1. These first two commands result in root CA file: root-ca.pem
 ```bash
 openssl genrsa -out root-ca-key.pem 2048
+# You can add the "-days" flag to the command below, followed by a numeric value to specify how long the certificate should be valid. Default is 30 days, I think. Use "-days 10000" for a certificate that will be valid for many years.
 openssl req -new -x509 -sha256 -key root-ca-key.pem -out root-ca.pem
 ```
 2. Next few commands generate key (admin-key.pem) and certificate (admin.pem)
@@ -17,8 +18,10 @@ openssl req -new -x509 -sha256 -key root-ca-key.pem -out root-ca.pem
 openssl genrsa -out admin-key-temp.pem 2048
 openssl pkcs8 -inform PEM -outform PEM -in admin-key-temp.pem -topk8 -nocrypt -v1 PBE-SHA1-3DES -out admin-key.pem
 openssl req -new -key admin-key.pem -out admin.csr
+# You can add the "-days" flag to the command below, followed by a numeric value to specify how long the certificate should be valid. Default is 30 days, I think. Use "-days 10000" for a certificate that will be valid for many years.
 openssl x509 -req -in admin.csr -CA root-ca.pem -CAkey root-ca-key.pem -CAcreateserial -sha256 -out admin.pem
 ```
+(You could also try using the certificate generating tools at https://certificatetools.com/)
 3. Run `docker-compose up esserver`, because we need to initialise the Open Distro for Elastic security plugin before running the rest of the stack.
 4. Run the security plugin tool:
 ```bash
