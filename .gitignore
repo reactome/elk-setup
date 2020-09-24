@@ -15,3 +15,4 @@ ips_with_usage_types.csv
 *.settings
 *.pem
 *.srl
+.netrc
