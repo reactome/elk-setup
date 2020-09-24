@@ -3,7 +3,7 @@
     "Month": {
       "date_histogram": {
         "field": "@apache_timestamp",
-        "interval": "1M",
+        "calendar_interval": "1M",
         "time_zone": "America/New_York",
         "min_doc_count": 1,
         "format": "yyyyMM"
@@ -11,7 +11,7 @@
       "aggs": {
         "HTTP_Code_Category": {
           "terms": {
-            "field": "http_code_category",
+            "field": "http_code_category.keyword",
             "size": 6,
             "order": {
               "_count": "desc"
