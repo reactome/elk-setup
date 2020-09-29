@@ -1,3 +1,4 @@
+# See: https://opendistro.github.io/for-elasticsearch-docs/docs/security/configuration/configuration/ for more information about configuration
 opendistro_security:
   dynamic:
     http:
