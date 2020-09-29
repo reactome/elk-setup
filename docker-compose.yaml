@@ -1,25 +1,9 @@
 version: '3'
 
-# Generate self-signed certs with:
-# openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
-# openssl req -new -key key.pem -x509 -days 1000 -out CA-cert.pem
+# See the README.md file for instructions on how to generate the key and
+# certificate files, as well as instructions on how to set up the security
+# plugin.
 
-# # Generating certificates: https://opendistro.github.io/for-elasticsearch-docs/docs/security-configuration/generate-certificates/
-# # First two commands result in root CA file: root-ca.pem
-# openssl genrsa -out root-ca-key.pem 2048
-# openssl req -new -x509 -sha256 -key root-ca-key.pem -out root-ca.pem
-# # Next few commands generate key (admin-key.pem) and certificate (admin.pem)
-# openssl genrsa -out admin-key-temp.pem 2048
-# openssl pkcs8 -inform PEM -outform PEM -in admin-key-temp.pem -topk8 -nocrypt -v1 PBE-SHA1-3DES -out admin-key.pem
-# openssl req -new -key admin-key.pem -out admin.csr
-# openssl x509 -req -in admin.csr -CA root-ca.pem -CAkey root-ca-key.pem -CAcreateserial -sha256 -out admin.pem
-# #...
-# #Then export JAVA_HOME=/usr/share/elasticsearch/jdk
-# #Then run: /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh -h esserver -p 9300 -cd ../securityconfig/ -icl -nhnv -cacert ../../../config/root-ca.pem -cert ../../../config/admin.pem -key ../../../config/admin-key.pem
-# Maybe try: $JAVA_HOME/bin/keytool -importcert -keystore ../../../config/elasticsearch.keystore   -storepass changeit  -file ../../../config/root-ca.pem
-#
-# From the command line (without entering the container interactively):
-#    docker exec elk_esserver_1 /bin/bash /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh -h esserver -p 9300 -cd /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/ -icl -nhnv -cacert /usr/share/elasticsearch/config/root-ca.pem -cert /usr/share/elasticsearch/config/admin.pem -key /usr/share/elasticsearch/config/admin-key.pem
 services:
     esserver:
         hostname: esserver
