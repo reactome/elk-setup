@@ -1,5 +1,19 @@
 # elk-setup
-Setup to use when processing logs with ElasticSearch, Logstash, &amp; Kibana
+This document describes the setup to use when processing logs with ElasticSearch, Logstash, &amp; Kibana
+
+First, build the Usage Type plugin for Logstash:
+
+```bash
+cd logstash-plugins/usagetype-plugin
+./gradlew gem
+mv *.gem ../../
+mv *.gemspec ../../
+```
+> (For more on building logstash plugins, see: https://www.elastic.co/guide/en/logstash/7.x/java-filter-plugin.html#_running_the_gradle_packaging_task_3)
+
+This will set up the files needed for later, when you build the Logstash docker image.
+
+Once this is done, you can move on to the next steps.
 
 Run the elastic server first, to set up security.
 
