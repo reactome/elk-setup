@@ -1,0 +1,33 @@
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0
+
+######## Start OpenDistro for Elasticsearch Security Configuration ########
+# WARNING: revise all the lines below before you go into production
+opendistro_security.ssl.transport.pemcert_filepath: /usr/share/elasticsearch/config/admin.pem
+opendistro_security.ssl.transport.pemkey_filepath: /usr/share/elasticsearch/config/admin-key.pem
+opendistro_security.ssl.transport.pemtrustedcas_filepath: /usr/share/elasticsearch/config/root-ca.pem
+opendistro_security.ssl.transport.enforce_hostname_verification: false
+opendistro_security.ssl.http.enabled: true
+opendistro_security.ssl.http.pemcert_filepath: /usr/share/elasticsearch/config/admin.pem
+opendistro_security.ssl.http.pemkey_filepath: /usr/share/elasticsearch/config/admin-key.pem
+opendistro_security.ssl.http.pemtrustedcas_filepath: /usr/share/elasticsearch/config/root-ca.pem
+opendistro_security.allow_unsafe_democertificates: false
+
+opendistro_security.authcz.admin_dn:
+  - "CN=esserver,O=Reactome,L=Toronto,ST=ON,C=CA"
+
+opendistro_security.audit.type: internal_elasticsearch
+opendistro_security.enable_snapshot_restore_privilege: true
+opendistro_security.check_snapshot_restore_write_privileges: true
+opendistro_security.restapi.roles_enabled: ["all_access", "security_rest_api_access"]
+
+# opendistro_security.allow_client_certificates: true
+
+# opendistro_security.ssl.transport.resolve_hostname: false
+
+cluster.routing.allocation.disk.threshold_enabled: false
+# node.max_local_storage_nodes: 3
+######## End OpenDistro for Elasticsearch Security Configuration ########
+xpack.security.enabled: false
+xpack.monitoring.enabled: true
+xpack.monitoring.collection.enabled: true

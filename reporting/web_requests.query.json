@@ -4,14 +4,14 @@
       "date_histogram": {
         "field": "@apache_timestamp",
         "calendar_interval": "1M",
-		"format": "yyyyMM",
+        "format": "yyyyMM",
         "time_zone": "America/Toronto",
         "min_doc_count": 1
       },
       "aggs": {
         "usage_type_agg": {
           "terms": {
-            "field": "usage_type",
+            "field": "usage_type.keyword",
             "order": {
               "_count": "desc"
             },

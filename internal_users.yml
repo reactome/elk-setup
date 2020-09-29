@@ -1,0 +1,34 @@
+---
+# This is the internal user database
+# The hash value is a bcrypt hash and can be generated with plugin/tools/hash.sh
+
+_meta:
+  type: "internalusers"
+  config_version: 2
+
+# Define your internal users here
+
+admin:
+  hash: "hash removed"
+  reserved: true
+  backend_roles:
+  - "admin"
+  description: "Admin user"
+
+kibanaserver:
+  hash: "hash removed"
+  reserved: true
+  description: "Kibanaserver user"
+
+# The logstash user by default has index-level permissions for indices beginning with "logstash-*"
+# To work with reactome* indicies, new permissions will need to be added. I've done this in Kibana
+# with a new Role that is a copy of the logstash role, with with index permission for "reactome*" indices.
+# There's probably a way to do this automatically via yaml config, just need to work that out.
+logstash:
+  hash: "hash removed"
+  reserved: false
+  backend_roles:
+  - "logstash"
+  description: "Logstash user"
+  opendistro_security_roles:
+  - "reactome-logstash-role"

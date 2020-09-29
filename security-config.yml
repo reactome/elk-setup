@@ -1,0 +1,15 @@
+# See: https://opendistro.github.io/for-elasticsearch-docs/docs/security/configuration/configuration/ for more information about configuration
+opendistro_security:
+  dynamic:
+    http:
+      anonymous_auth_enabled: false
+    authc:
+        http_enabled: true
+        transport_enabled: true
+        order: 1
+        http_authenticator:
+          type: basic
+          challenge: true
+        authentication_backend:
+          type: internal
+    authz: {}

@@ -5,13 +5,13 @@
         "field": "@apache_timestamp",
         "calendar_interval": "1M",
         "time_zone": "America/Toronto",
-		"format": "yyyyMM",
+        "format": "yyyyMM",
         "min_doc_count": 1
       },
       "aggs": {
         "usage_type_agg": {
           "terms": {
-            "field": "usage_type",
+            "field": "usage_type.keyword",
             "order": {
               "unique_ip_agg": "desc"
             },
@@ -20,7 +20,7 @@
           "aggs": {
             "unique_ip_agg": {
               "cardinality": {
-                "field": "clientip",
+                "field": "clientip.keyword",
                 "precision_threshold": 40000
               }
             }
