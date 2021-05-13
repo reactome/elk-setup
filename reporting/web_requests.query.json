@@ -11,7 +11,7 @@
       "aggs": {
         "usage_type_agg": {
           "terms": {
-            "field": "usage_type.keyword",
+            "field": "usage_type",
             "order": {
               "_count": "desc"
             },

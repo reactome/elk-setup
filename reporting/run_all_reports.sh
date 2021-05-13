@@ -7,6 +7,9 @@
 #  2 - TO_DATE - the later date of the reporting period. Formatted as yyyymmddd. Example: 20191017
 #  3 - MAIL_TO - The email address of the recipient of these reports. A list of emails can be given, if they are separated by a comma only (no spaces).
 
+# You can run this script from cron, with an expression like this:
+# run_all_reports.sh $(date --date="$(date +%Y%m%d) -1 year" +%Y%m%d) $(date +%Y%m%d) recipient1@emailaddress.com,recipient2@emailaddress.com
+
 FROM_DATE=$1
 TO_DATE=$2
 MAIL_TO=$3

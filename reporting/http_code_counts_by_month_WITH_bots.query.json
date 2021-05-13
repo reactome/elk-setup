@@ -11,7 +11,7 @@
       "aggs": {
         "HTTP_Code_Category": {
           "terms": {
-            "field": "http_code_category.keyword",
+            "field": "http_code_category",
             "size": 6,
             "order": {
               "_count": "desc"

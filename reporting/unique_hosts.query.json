@@ -11,7 +11,7 @@
       "aggs": {
         "usage_type_agg": {
           "terms": {
-            "field": "usage_type.keyword",
+            "field": "usage_type",
             "order": {
               "unique_ip_agg": "desc"
             },
@@ -20,7 +20,7 @@
           "aggs": {
             "unique_ip_agg": {
               "cardinality": {
-                "field": "clientip.keyword",
+                "field": "clientip",
                 "precision_threshold": 40000
               }
             }

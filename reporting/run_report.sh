@@ -31,8 +31,7 @@ FILE_NAME=${OUTPUT_FILE_PREFIX}_${FROM_DATE}_to_${TO_DATE}.csv
 echo "$HEADER" > $FILE_NAME
 # Query elasticsearch. You will need to have jq installed to transform elasticsearch's JSON output into a CSV.
 # Also: Make sure you store your elastic credentials in a .netrc files in the directory where run_report.sh (this script) lives
-curl --netrc-file ./.netrc --insecure -s -H 'Content-Type: application/json'  -XGET https://localhost:9200/reactome-main*/_search/ -d "$QUERY" \
-        | jq -r "$JQ_FILTER" >> $FILE_NAME
+curl --netrc-file ./.netrc --insecure -s -H 'Content-Type: application/json'  -XGET https://localhost:9200/reactome-main*/_search/ -d "$QUERY" | jq -r "$JQ_FILTER" >> $FILE_NAME
 # send the report. If mutt gives you the error "GPGME: CMS protocol not available" you may need to install the gpgsm package.
 mutt -s "Report from ELK: $FILE_NAME" -a $FILE_NAME -- $MAIL_TO  <<< "Report $FILE_NAME is attached."
 set +e
