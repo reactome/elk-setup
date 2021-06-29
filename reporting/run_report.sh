@@ -25,7 +25,7 @@ JQ_FILTER=$6
 MAIL_TO=$7
 set -e
 # The query file should have placeholder so that we can specify the date range.
-QUERY=$(sed -e "s/_FROM_DATE/$FROM_DATE/g" <  $QUERY_FILE | sed -e "s/_TO_DATE/$TO_DATE/g")
+QUERY=$(sed -e "s/_FROM_DATE/\"$FROM_DATE\"/g" <  $QUERY_FILE | sed -e "s/_TO_DATE/\"$TO_DATE\"/g")
 FILE_NAME=${OUTPUT_FILE_PREFIX}_${FROM_DATE}_to_${TO_DATE}.csv
 # write the file header.
 echo "$HEADER" > $FILE_NAME
