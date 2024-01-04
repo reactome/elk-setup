@@ -12,10 +12,10 @@ elasticsearch.ssl.verificationMode: none
 elasticsearch.ssl.certificate: "/usr/share/kibana/config/admin.pem"
 elasticsearch.ssl.key: "/usr/share/kibana/config/admin-key.pem"
 elasticsearch.username: "kibanaserver"
-elasticsearch.password:
+elasticsearch.password: "kib"
 
 monitoring.ui.elasticsearch.username: "kibanaserver"
-monitoring.ui.elasticsearch.password: 
+monitoring.ui.elasticsearch.password: "kib"
 
 xpack.security.enabled: false
 monitoring.enabled: true
@@ -23,3 +23,4 @@ monitoring.enabled: true
 opendistro_security.allow_client_certificates: true
 monitoring.ui.elasticsearch.ssl.verificationMode: certificate
 monitoring.ui.elasticsearch.ssl.certificateAuthorities: ["/usr/share/kibana/config/root-ca.pem"]
+xpack.maps.showMapVisualizationTypes: true

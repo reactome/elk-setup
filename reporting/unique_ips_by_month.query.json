@@ -3,7 +3,7 @@
     "month_agg": {
       "date_histogram": {
         "field": "@apache_timestamp",
-        "interval": "1M",
+        "calendar_interval": "1M",
         "time_zone": "America/New_York",
         "min_doc_count": "0",
         "format": "yyyyMM"

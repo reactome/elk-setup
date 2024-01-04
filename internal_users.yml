@@ -9,14 +9,14 @@ _meta:
 # Define your internal users here
 
 admin:
-  hash: "hash removed"
+  hash: "$2y$12$Cfm2CWegPYx/jceP/GvOKeruhBFdSSqhBw.VWUvTaRt0xhhx1vX5O"
   reserved: true
   backend_roles:
   - "admin"
   description: "Admin user"
 
 kibanaserver:
-  hash: "hash removed"
+  hash: "$2y$12$ncVm7.gSyxykQvuClC.I2OsLkx058s5PhZAMxUhpH6.bo5S1V2m6."
   reserved: true
   description: "Kibanaserver user"
 
@@ -25,7 +25,7 @@ kibanaserver:
 # with a new Role that is a copy of the logstash role, with with index permission for "reactome*" indices.
 # There's probably a way to do this automatically via yaml config, just need to work that out.
 logstash:
-  hash: "hash removed"
+  hash: "$2y$12$mMhAbqm6UCM.H01eugWWmur.ThpcdEMvsYzqAhWVdC6HrA8rLV5ku"
   reserved: false
   backend_roles:
   - "logstash"

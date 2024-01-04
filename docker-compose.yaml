@@ -21,6 +21,13 @@ version: '3'
 # From the command line (without entering the container interactively):
 #    docker exec elk_esserver_1 /bin/bash /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh -h esserver -p 9300 -cd /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/ -icl -nhnv -cacert /usr/share/elasticsearch/config/root-ca.pem -cert /usr/share/elasticsearch/config/admin.pem -key /usr/share/elasticsearch/config/admin-key.pem
 services:
+    filebeat:
+        hostname: filebeat
+        image: "docker.elastic.co/beats/filebeat:7.16.2"
+        entrypoint: "filebeat -e -strict.perms=false"
+        volumes:
+           - "./filebeat.yml:/usr/share/filebeat/filebeat.yml:rw"
+           - "./logs_for_elk:/logs_for_elk:ro"
     esserver:
         hostname: esserver
         build:
@@ -85,3 +92,21 @@ services:
         environment:
              - "LS_OPTS=--quiet"
              - LS_JAVA_OPTS=-Xmx3g
+
+
+    nginx:
+        depends_on:
+            - esserver
+            - kibserver
+        links:
+            - kibserver
+        image: nginx:1.21.0-alpine
+        ports:
+            - 443:443
+        environment:
+            - NGINX_PORT=443
+        volumes:
+            - "./nginx.conf:/etc/nginx/nginx.conf:ro"
+            - "./server.crt:/etc/nginx/conf.d/server.crt"
+            - "./server.key:/etc/nginx/conf.d/server.key"
+              #            - "./.htpasswd:/etc/nginx/conf.d/.htpasswd"

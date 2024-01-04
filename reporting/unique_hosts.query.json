@@ -35,7 +35,7 @@
       "must": [
         {
           "query_string": {
-            "query": "probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\"::1\" || clientip:206.108.125.163 || clientip:100.25.71.177) && programmatic_access:false && !request:/.*\\\\.((css)|(js)|(class)|(gif)|(jpg)|(jpeg)|(png)|(bmp)|(ico)|(rss)|(xml)|(swf))/",
+            "query": "probably_a_bot:false && (response:200 || response:304) && internal_IP:false && !(clientip:127.0.0.1 || clientip:\"::1\" || clientip:206.108.125.163 || clientip:100.25.71.177) && programmatic_access:false",
             "analyze_wildcard": true,
             "time_zone": "America/Toronto"
           }
